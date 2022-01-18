@@ -99,8 +99,50 @@ h2{
     font-size: 15px;
 }
 
+.search{
+    float: left;
+    margin-left: 20px;
+}
 
+.button{
+    width: 350px;
+    height: 30px;
+}
 
+.srch{
+    font-family: 'Raleway', 'Comic Sans MS';
+    width: 200px;
+    border: 1px solid #f2f2ff;
+    margin: 10px 0px;
+    font-size: 18px;
+    font-weight: bold;
+    float: left;
+    padding: 5px ;    
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn{
+    width: 100px;
+    height: 30px;
+    background: #0065FC;
+    color: white;
+    border: 1px solid;
+    margin: 10px 0px;
+    font-size: 18px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn:hover{
+    color: black;
+}
+
+.btn:focus, .src:focus{
+    outline: none;
+}
 
 
 
