@@ -39,8 +39,8 @@ header{
 }
 
 .logo img{
-    width: 70px;
-    height: 30px;    
+    width: 85px;
+    height: 40px;    
 }
 
 nav{
@@ -61,7 +61,7 @@ nav ul{
 nav li{
     list-style: none;
     margin-right: 20px;
-    font-size: 10px;
+    font-size: 15px;
 }
 
 nav a{
@@ -87,7 +87,7 @@ h1{
     flex-direction: column;
     font-family: 'Raleway', 'Comic Sans MS';
     font-weight: bold;
-    font-size: 17px;
+    font-size: 18px;
   }
 
 h2{
@@ -95,7 +95,7 @@ h2{
     flex-direction: column;
     font-family: 'Raleway', 'Comic Sans MS';
     font-weight: normal;
-    font-size: 10px;
+    font-size: 13px;
 }
 
 .search{
@@ -113,7 +113,7 @@ h2{
     width: 200px;
     border: 2px solid #f2f2f2;
     margin: 10px 0px;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: bold;
     float: left;
     padding: 5px ;    
@@ -128,7 +128,7 @@ h2{
     color: white;
     border: 1px solid;
     margin: 10px 0px;
-    font-size: 18px;
+    font-size: 17px;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
     cursor: pointer;    
