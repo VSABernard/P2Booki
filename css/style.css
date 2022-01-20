@@ -3,7 +3,7 @@
 /* box-sizing est appliqué à tous les éléments */
 * {
     box-sizing: border-box;
-    padding: 0;
+  
   }
 
 
@@ -61,7 +61,7 @@ nav ul{
 nav li{
     list-style: none;
     margin-right: 20px;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 nav a{
@@ -80,22 +80,19 @@ nav a:hover{
 .search{
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
 }
 
 h1{
-    display: flex;
-    flex-direction: column;
     font-family: 'Raleway', 'Comic Sans MS';
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
   }
 
 h2{
-    display: flex;
-    flex-direction: column;
     font-family: 'Raleway', 'Comic Sans MS';
     font-weight: normal;
-    font-size: 13px;
+    font-size: 17px;
 }
 
 .search{
@@ -104,35 +101,41 @@ h2{
 }
 
 .search_area{
-    width: 350px;
-    height: 30px;
+    display: flex;
+    margin: 10px 0px;
+    font-size: 18px;
+    max-width: 400px;
+    justify-content: flex-start;
 }
 
-.srch{
-    font-family: 'Raleway', 'Comic Sans MS';
-    width: 200px;
-    border: 2px solid #f2f2f2;
-    margin: 10px 0px;
-    font-size: 17px;
-    font-weight: bold;
-    float: left;
-    padding: 5px ;    
+#map_marker{
+    display: flex;
+    flex: 1;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.srch{
+    flex: 10;
+    font-family: 'Raleway', 'Comic Sans MS';
+    border: 2px solid #f2f2f2;    
+    font-weight: bold;
+    padding: 5px;     
 }
 
 .btn{
-    width: 100px;
+    flex: 6;
     height: 30px;
     background: #0065FC;
     color: white;
     border: 1px solid;
-    margin: 10px 0px;
-    font-size: 17px;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
     cursor: pointer;    
-    transition: 0.2s ease;
+    transition: 0.5s ease;
 }
 
 .btn:hover{
