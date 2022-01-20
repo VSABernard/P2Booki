@@ -3,7 +3,7 @@
 /* box-sizing est appliqué à tous les éléments */
 * {
     box-sizing: border-box;
-  
+    font-family: 'Raleway', 'Comic Sans MS';
   }
 
 
@@ -65,8 +65,7 @@ nav li{
 }
 
 nav a{
-    text-decoration: none;    
-    font-family: 'Raleway', 'Comic Sans MS';
+    text-decoration: none;        
     font-weight: normal;
     padding-bottom: 3px;
 }
@@ -84,15 +83,13 @@ nav a:hover{
 }
 
 h1{
-    font-family: 'Raleway', 'Comic Sans MS';
     font-weight: bold;
     font-size: 20px;
   }
 
 h2{
-    font-family: 'Raleway', 'Comic Sans MS';
     font-weight: normal;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .search{
@@ -120,7 +117,6 @@ h2{
 
 .srch{
     flex: 10;
-    font-family: 'Raleway', 'Comic Sans MS';
     border: 2px solid #f2f2f2;    
     font-weight: bold;
     padding: 5px;     
@@ -146,8 +142,25 @@ h2{
     outline: none;
 }
 
+.filter{
+    display: flex;
+    margin: 10px 0px;
+    font-size: 17px;
+    max-width: 850px;
+    justify-content: flex-start;
+}
 
+#money, #child, #heart, #dog{
+    display: flex;
+    flex: 1;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
 
+h3{
+    font-weight: bold;
+}
 
 
 
