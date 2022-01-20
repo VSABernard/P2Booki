@@ -178,6 +178,7 @@ h2{
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
     min-width: 120px;
+    margin: 0px 10px;
 }
 
 .information{
@@ -198,8 +199,9 @@ h2{
 
 h5{
     display: flex;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: normal;
+    margin: 0px 10px;
 }
 
 
