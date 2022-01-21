@@ -48,14 +48,12 @@ header{
     width: 300px;
     height: 20px;
     flex: 1;
-    color: black;
 }
 
 .menu ul{    
     display: flex;
     align-content: flex-end;
     justify-content: flex-end;
-    
 }
 
 .menu li{
@@ -66,15 +64,16 @@ header{
 
 .menu a{
     text-decoration: none;        
-    font-weight: normal;
-    padding-bottom: 3px;
+    font-weight: normal;   
     display: inline-block;
     position: relative;
-    padding:  40px 10px;
+    padding: 35px 10px;
+    color: black;
 }
 
 .menu a:hover{
-    color: #0065FC;               /* couleur bleu */
+      
+    color: #0065FC;             /* couleur bleu */
     border-top: 1px solid #0065FC;
 }
 
@@ -217,14 +216,19 @@ h5{
 
 
 
+
+
+
+
 /* FOOTER */
 footer{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding-top: 40px;   
     font-size: 15px;
     background-color: #F2F2F2;
 }    
+
 
 footer ul{   
     margin-left: 20px;
@@ -236,13 +240,13 @@ footer li{
     list-style: none;
     font-size: 15px;
     text-align: left;
-  
+    min-height: 40px;
 }
 
 footer a{
     text-decoration: none;        
     font-weight: normal;
-    padding: 40px 10px;
+    margin: 0px 20px 20px 0px ;
     color: black;
 }
 
@@ -251,18 +255,18 @@ footer a:hover{
 }
 
 .foot{
-    margin-left: 30px;
+    margin-left: 20px;
     font-weight: bold;
 }
 
-#propos{
-flex: 3;
+.propos{
+    flex: 5;
 }
 
-#hebergements{
-flex: 2;
+.hebergements{
+    flex: 5;
 }
 
-#assistance{
-flex: 1;
+.assistance{
+    flex: 6;
 }
