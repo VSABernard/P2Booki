@@ -8,13 +8,15 @@
     font-family: 'Raleway', 'Comic Sans MS';   
   }
 
+body{
+    margin: 0;
+}
 
 .main{
     display: flex;
     flex-direction: column;
     margin: 0px;
     min-height: 100vh;
-    flex: 1;
 }
 
 /* HEADER */
@@ -84,6 +86,8 @@ header{
 
 
 /* SECTION */
+
+
 
 .section_recherche{                                     /* SECTION DE RECHERCHE GLOBAL */                               
     display: flex;
@@ -225,7 +229,9 @@ h5{
     margin: 0px 10px;
 }
 
-
+.block_hebergements, .block_activites{
+    flex-grow: 1;
+}
 
 
 
