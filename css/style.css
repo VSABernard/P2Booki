@@ -12,10 +12,11 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
-    margin: 20px;
+    margin: 0px 10px;
 }
 
-/* header */
+/* HEADER */
+
 header{
     display: flex;
     flex-direction: column;
@@ -23,15 +24,15 @@ header{
     align-items: stretch;
 }
 
-.title{
+.title{                                             /* PREMIERE PARTIE DE HEADER */
     display: flex;
     flex-direction: row;
-    width: 97%;
+    width: 100%;
     height: 50px;
-    margin-left: 20px;
+    margin: auto;
 }
 
-.logo{
+.logo{                                              /* LOGO BOOKI */
     display: flex;
     flex-direction: row;
     flex: 2;
@@ -39,52 +40,55 @@ header{
 }
 
 .logo img{
-    width: 85px;
-    height: 40px;    
+    width: 100px;
+    height: 60px;
+    padding-top: 20px;    
 }
 
-nav{
+.menu{                                               /*BAR Du MENU*/
     width: 300px;
-    height: 40px;
+    height: 20px;
     flex: 1;
-
+    color: black;
 }
 
-nav ul{    
+.menu ul{    
     display: flex;
     align-content: flex-end;
-    justify-content: center;
-    align-items: center;
-    align-self: flex-start;
+    justify-content: flex-end;
+    
 }
 
-nav li{
+.menu li{
     list-style: none;
     margin-right: 20px;
-    font-size: 18px;
+    font-size: 15px;
 }
 
-nav a{
+.menu a{
     text-decoration: none;        
     font-weight: normal;
     padding-bottom: 3px;
+    display: inline-block;
+    position: relative;
+    padding:  40px 10px;
 }
 
-nav a:hover{
+.menu a:hover{
     color: #0065FC;               /* couleur bleu */
-    text-decoration: #0065FC;
-    text-decoration-line: overline;
+    border-top: 1px solid #0065FC;
 }
 
-.search{
+.search{                                                 /* DEUXIEME PARTIE DE HEADER */
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin: 40px 20px;
+    float: left;
 }
 
-h1{
+h1{                                                      /* LES DEUX PARAGRAPHES D'OUVERTURE */
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
   }
 
 h2{
@@ -92,46 +96,41 @@ h2{
     font-size: 15px;
 }
 
-.search{
-    float: left;
-    margin-left: 20px;
-}
-
-.search_area{
+.search_area{                                           /* PARTIE DE RECHERCHE */
     display: flex;
     margin: 10px 0px;
-    font-size: 18px;
-    max-width: 400px;
+    max-width: 485px;
     justify-content: flex-start;
 }
 
-#map_marker{
+#map_marker{                                           /* ICON MAP */
     display: flex;
-    flex: 1;
+    flex: 2;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
     justify-content: center;
     align-items: center;
 }
 
-
-.srch{
+.srch{                                                  /* CHAMP DE RECHERCHE */
     flex: 10;
     border: 2px solid #f2f2f2;    
     font-weight: bold;
     padding: 5px;     
 }
 
-.btn{
+.btn{                                                   /* BUTTON DE RECHERCHE */
     flex: 6;
     height: 30px;
     background: #0065FC;
-    color: white;
+    color: #DEEBFF;
+    font-weight: bold;
     border: 1px solid;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
     cursor: pointer;    
     transition: 0.5s ease;
+    font-size: 16px;
 }
 
 .btn:hover{
@@ -142,8 +141,7 @@ h2{
     outline: none;
 }
 
-
-.filter{
+.filter{                                                /* PARTIE FILTRES */
     display: flex;
     align-content: flex-start;
     justify-content: flex-start;
@@ -151,9 +149,16 @@ h2{
     align-self: flex-start;
     width: auto;
     font-size: 16px;
+    padding-top: 20px;
+ }
+
+.filter_item:hover{
+    background-color: #DEEBFF;
+    transition: 0.1s ease;
+    cursor: pointer; 
 }
 
-#money, #child, #heart, #dog{
+#money, #child, #heart, #dog{                           /* ICONS DE FILTRES */
     display: flex;
     flex: 1;
     border: 1px solid;
@@ -181,10 +186,11 @@ h2{
     margin: 0px 10px;
 }
 
-.information{
+.information{                                               /* PARTIE INFO */
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding-top: 25px;
 }
 
 #info{
