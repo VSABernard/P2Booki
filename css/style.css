@@ -12,7 +12,9 @@
 .main{
     display: flex;
     flex-direction: column;
-    margin: 5px -40px 5px 40px;
+    margin: 0px;
+    min-height: 100vh;
+    flex: 1;
 }
 
 /* HEADER */
@@ -22,6 +24,8 @@ header{
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
+    margin-left: 40px;
+    margin-right: 10px;
 }
 
 .title{                                             /* PREMIERE PARTIE DE HEADER */
@@ -79,12 +83,14 @@ header{
 }
 
 
-/* SECTION 1 */
-.section_recherche{                                                 
+/* SECTION */
+
+.section_recherche{                                     /* SECTION DE RECHERCHE GLOBAL */                               
     display: flex;
     flex-direction: column;
-    margin: 40px 20px;
+    margin: 40px 40px;
     float: left;
+    padding-left: 25px;
 }
 
 h1{                                                      /* LES DEUX PARAGRAPHES D'OUVERTURE */
@@ -233,19 +239,15 @@ h5{
 /* FOOTER */
 
 footer{
-    margin-left: -50px;
     background-color: #F2F2F2;
-    background-position: center;
-    background-size: cover;
+    padding-left: 40px;
 }
 
-.footer_container{                                      /* FOOTER BLOCKS */
+.footer_container{                                      /* FOOTER BLOCKS GLOBAL */
     display: flex;
     justify-content: space-around;
     width: 100%;
-    padding-top: 40px;   
     font-size: 15px;
-    margin-left: 40px;
 }
 
 footer ul{   
@@ -264,7 +266,6 @@ footer li{
 footer a{
     text-decoration: none;        
     font-weight: normal;
-    margin: 0px 20px 20px 0px ;
     color: black;
 }
 
