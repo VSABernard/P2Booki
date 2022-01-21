@@ -239,7 +239,7 @@ footer{
     background-size: cover;
 }
 
-.footer_container{
+.footer_container{                                      /* FOOTER BLOCKS */
     display: flex;
     justify-content: space-around;
     width: 100%;
