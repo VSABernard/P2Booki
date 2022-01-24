@@ -8,11 +8,11 @@
     font-family: 'Raleway', 'Comic Sans MS';   
   }
 
-body{
+body {
     margin: 0;
 }
 
-.main{
+.main {
     display: flex;
     flex-direction: column;
     margin: 0px;
@@ -21,7 +21,7 @@ body{
 
 /* HEADER */
 
-header{
+header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -30,7 +30,7 @@ header{
     margin-right: 10px;
 }
 
-.title{                                             /* PREMIERE PARTIE DE HEADER */
+.title {                                             /* PREMIERE PARTIE DE HEADER */
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -38,7 +38,7 @@ header{
     margin: auto;
 }
 
-.logo{                                              /* LOGO BOOKI */
+.logo {                                              /* LOGO BOOKI */
     display: flex;
     flex-direction: row;
     flex: 2;
@@ -46,31 +46,31 @@ header{
     margin-left: 20px;
 }
 
-.logo img{
+.logo img {
     width: 100px;
     height: 60px;
     padding-top: 20px;    
 }
 
-.menu{                                               /*BAR DU MENU*/
+.menu {                                               /*BAR DU MENU*/
     width: 300px;
     height: 20px;
 }
 
-.menu ul{    
+.menu ul {    
     display: flex;
     align-content: flex-end;
     justify-content: flex-end;
     margin-right: 30px;
 }
 
-.menu li{
+.menu li {
     list-style: none;
     margin-right: 50px;
     font-size: 15px;
 }
 
-.menu a{
+.menu a {
     text-decoration: none;        
     font-weight: normal;   
     display: inline-block;
@@ -79,17 +79,15 @@ header{
     color: black;
 }
 
-.menu a:hover{      
+.menu a:hover {      
     color: #0065FC;             /* couleur bleu */
     border-top: 1px solid #0065FC;
 }
 
 
-/* SECTION */
+/* SECTION 1 */
 
-
-
-.section_recherche{                                     /* SECTION DE RECHERCHE GLOBAL */                               
+.section_recherche {                                     /* SECTION DE RECHERCHE GLOBAL */                               
     display: flex;
     flex-direction: column;
     margin: 40px 40px;
@@ -97,24 +95,24 @@ header{
     padding-left: 25px;
 }
 
-h1{                                                      /* LES DEUX PARAGRAPHES D'OUVERTURE */
+h1 {                                                      /* LES DEUX PARAGRAPHES D'OUVERTURE */
     font-weight: bold;
     font-size: 25px;
   }
 
-h2{
+h2 {
     font-weight: normal;
     font-size: 15px;
 }
 
-.search_area{                                           /* PARTIE DE RECHERCHE */
+.search_area {                                           /* PARTIE DE RECHERCHE */
     display: flex;
     margin: 10px 0px;
     max-width: 485px;
     justify-content: flex-start;
 }
 
-#map_marker{                                           /* ICON MAP */
+#map_marker {                                           /* ICON MAP */
     display: flex;
     flex: 1;
     border-bottom-left-radius: 10px;
@@ -124,7 +122,7 @@ h2{
     font-size: 15px;
 }
 
-.srch{                                                  /* CHAMP DE RECHERCHE */
+.srch {                                                  /* CHAMP DE RECHERCHE */
     flex: 10;
     border: 2px solid #f2f2f2;    
     font-weight: bold;
@@ -132,7 +130,7 @@ h2{
     font-size: 15px;  
 }
 
-button{                                                   /* BUTTON DE RECHERCHE */
+button {                                                   /* BUTTON DE RECHERCHE */
     flex: 6;
     height: 30px;
     background: #0065FC;
@@ -146,15 +144,15 @@ button{                                                   /* BUTTON DE RECHERCHE
     font-size: 16px;
 }
 
-button:hover{
+button:hover {
     color: black;
 }
 
-button:focus, .src:focus{
+button:focus, .src:focus {
     outline: none;
 }
 
-.filter{                                                /* PARTIE FILTRES */
+.filter {                                                /* PARTIE FILTRES */
     display: flex;
     align-content: flex-start;
     justify-content: flex-start;
@@ -165,7 +163,7 @@ button:focus, .src:focus{
     padding-top: 20px;
  }
 
-.filter_item:hover{
+.filter_item:hover {
     color: #0065FC;
     transition: 0.1s ease;
     cursor: pointer; 
@@ -175,7 +173,7 @@ button:focus, .src:focus{
     border-left: none;
 }
 
-#money, #child, #heart, #dog{                           /* ICONS DE FILTRES */
+#money, #child, #heart, #dog {                           /* ICONS DE FILTRES */
     display: flex;
     border: 1px solid;
     border-radius: 50%;
@@ -188,13 +186,13 @@ button:focus, .src:focus{
     font-size: 12px;
 }
 
-.filter h3{
+.filter h3 {
     display: flex;
     width: 80px;
     font-weight: bold;
 }
 
-.filter_item{
+.filter_item {
     display: flex;
     font-weight: bold;
     border: 2px solid #f2f2f2;
@@ -207,14 +205,14 @@ button:focus, .src:focus{
     padding: 1px 15px;
 }
 
-.information{                                               /* PARTIE INFO */
+.information {                                               /* PARTIE INFO */
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding-top: 25px;
 }
 
-#info{
+#info {
     display: flex;
     border: 0.5px solid;
     border-radius: 50%;
@@ -225,16 +223,103 @@ button:focus, .src:focus{
     font-size: 7px;
 }
 
-h5{
+h5 {
     display: flex;
     font-size: 15px;
     font-weight: normal;
     margin: 0px 10px;
 }
 
-.block_hebergements, .block_activites{
+.block_hebergements, .block_activites {
     flex-grow: 1;
 }
+
+/* SECTION 2 */
+
+.hebergement_marseille {                                           /* PARTIE HEBERGEMENTS */
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px 40px 20px 60px;
+    float: left;
+    padding : 25px 25px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card {                                                         /* CHAQUE HEBERGEMENT */
+    width: 350px;
+    height: 250px;
+    background-color: white;
+    border: 15px solid white;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card:hover .card_image img {
+    width: 112%;
+    filter: grayscale(0);
+}
+
+.card_image {                                                       /* IMAGE */
+    padding: auto;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card_image img {
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+.card_body {                                                        /* PARTIE TITRE, PRIX, ETOILE */
+    text-align: left;
+    padding: 15px 20px;
+}
+
+.card_title {
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+h6 {
+    font-size: 15px;
+}
+
+.card_price {
+    font-size: 15px;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
