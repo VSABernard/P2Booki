@@ -116,11 +116,12 @@ h2{
 
 #map_marker{                                           /* ICON MAP */
     display: flex;
-    flex: 2;
+    flex: 1;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
     justify-content: center;
     align-items: center;
+    font-size: 15px;
 }
 
 .srch{                                                  /* CHAMP DE RECHERCHE */
@@ -131,7 +132,7 @@ h2{
     font-size: 15px;  
 }
 
-.btn{                                                   /* BUTTON DE RECHERCHE */
+button{                                                   /* BUTTON DE RECHERCHE */
     flex: 6;
     height: 30px;
     background: #0065FC;
@@ -145,11 +146,11 @@ h2{
     font-size: 16px;
 }
 
-.btn:hover{
+button:hover{
     color: black;
 }
 
-.btn:focus, .src:focus{
+button:focus, .src:focus{
     outline: none;
 }
 
@@ -184,6 +185,7 @@ h2{
     justify-content: center;
     align-items: center;
     margin-left: 10px;
+    font-size: 12px;
 }
 
 .filter h3{
@@ -220,6 +222,7 @@ h2{
     height: 20px;
     justify-content: center;
     align-items: center;
+    font-size: 7px;
 }
 
 h5{
@@ -296,3 +299,21 @@ footer a:hover{
 .assistance{
     flex: 6;
 }
+
+
+/* MEDIA QUERIES */
+
+/* sur le periphérique mobile */
+@media screen (max-width: 768px){                             
+
+}
+
+/* sur la version mobile */
+@media all and {min-width: 768px) and (max-width: 992px){       
+
+}
+
+/* sur tous types d'ecran orientes verticalements */ 
+@media all (orientation: portrait){                             
+
+}                              
