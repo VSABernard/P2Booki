@@ -225,30 +225,36 @@ button:focus, .src:focus {
 
 h5 {
     display: flex;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: normal;
     margin: 0px 10px;
 }
 
-.block_hebergements, .block_activites {
+.block_hebergements {
     display: flex;
-    flex-grow: 1;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
 }
 
 /* SECTION 2 */
 
 .hebergement_marseille {                                              /* PARTIE HEBERGEMENTS */
-    margin: 20px 40px 20px 60px;
-    float: left;
-    padding : 25px 25px;
+    display: flex;
+    flex-direction: column;
+    flex: 2;
     background-color: #F2F2F2;
     border: 15px solid #F2F2F2;
     border-radius: 10px;
-    margin: 0px auto;
+    margin: 5px;
     padding: 0px;
 }
+
+.block_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 
 .card {
     width: 200px;
@@ -265,11 +271,18 @@ h5 {
     filter: grayscale(0);
 }*/
 
-h5 {
-    height: 150px;
+h6 {
+    font-size: 20px;
+    font-weight: bold;
+    /*height: 150px;
     position: relative;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 10px;*/
+}
+
+.titre_h6 {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .card-image {
@@ -316,8 +329,11 @@ h6 {
 
 
 
-
-
+.populaires {                                              /* PARTIE HEBERGEMENTS */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
 
 
 
