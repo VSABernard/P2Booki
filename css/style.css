@@ -239,81 +239,72 @@ h5 {
 
 /* SECTION 2 */
 
-.hebergement_marseille {                                             /* PARTIE HEBERGEMENTS */
-    
+.hebergement_marseille {                                              /* PARTIE HEBERGEMENTS */
     margin: 20px 40px 20px 60px;
     float: left;
     padding : 25px 25px;
     background-color: #F2F2F2;
-    border-radius: 15px;
-}
-
-h5 {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.card {                                                         /* CHAQUE HEBERGEMENT */
-    width: 350px;
-    height: 250px;
-    background-color: white;
-    border: 15px solid white;
+    border: 15px solid #F2F2F2;
     border-radius: 10px;
     margin: 0px auto;
     padding: 0px;
 }
 
-.card a {
+.card {
+    width: 200px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+/*.card a {
     text-decoration: none;
 }
 
 .card:hover .card_image img {
     width: 100%;
     filter: grayscale(0);
-}
+}*/
 
-.card_image {                                                       /* IMAGE */
-    padding: auto;
+h5 {
     height: 150px;
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    image-size: 100%
+}
+
+.card-image {
+    height: 250px;
+    position: relative;
+    overflow: hidden;
 }
 
 .card_image img {
-    position: absolute;
-    top: 60%;
-    left: 60%;
+    width: 100%;
+    position: relative;
+    /*top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     transition-duration: 0.5s;
-    transition-timing-function: ease;
+    transition-timing-function: ease;*/
 }
 
 .card_body {                                                        /* PARTIE TITRE, PRIX, ETOILE */
     text-align: left;
     padding: 15px 20px;
 }
-
 .card_title {
     text-align: left;
     font-weight: bold;
     font-size: 20px;
     color: black;
 }
-
 h6 {
     font-size: 15px;
 }
-
 .card_price {
     font-size: 15px;
     color: black;
 }
-
-
-
-
 
 
 
