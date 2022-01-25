@@ -260,7 +260,7 @@ h6 {
     margin: 0px;
 }
 
-.titre_h6 {
+.title_h6 {
     display: flex;
     flex-wrap: wrap;      
     height: 40px;
@@ -284,11 +284,11 @@ h6 {
 
 }
 
-.card a, .afficher a {
+.card a, .display a {
     text-decoration: none;
 }
 
-.card:hover, .card_title:hover, .afficher:hover {
+.card:hover, .card_title:hover, .display:hover {
     filter: grayscale(0);
     transition: 0.1s ease;
     cursor: pointer;
@@ -334,7 +334,7 @@ h6 {
     font-size: 12px;
 }
 
-.afficher {
+.display {
     font-size: 15px;
     font-weight: bold;
     margin-top: 30px;    
@@ -354,8 +354,25 @@ h7 {
     margin: 0px 40px 40px 40px;
 }
 
+.title_h8 {
+    display: flex;     
+    flex-direction: row;
+    align-items: flex-start;
+    height: 40px;
+    text-align: justify;
 
+}
 
+h8, #chart {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#chart {
+    display: flex;
+    font-weight: bold;
+    padding-left: 15px;
+}
 
 
 
