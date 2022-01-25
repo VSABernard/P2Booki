@@ -246,6 +246,7 @@ h5 {
     display: flex;
     flex: 2;
     flex-direction: column;
+    flex-wrap: wrap;
     background-color: #F2F2F2;
     border: 15px solid #F2F2F2;
     border-radius: 10px;
@@ -283,11 +284,11 @@ h6 {
 
 }
 
-.card a {
+.card a, .afficher a {
     text-decoration: none;
 }
 
-.card:hover, .card_title:hover {
+.card:hover, .card_title:hover, .afficher:hover {
     filter: grayscale(0);
     transition: 0.1s ease;
     cursor: pointer;
@@ -333,13 +334,25 @@ h6 {
     font-size: 12px;
 }
 
-.populaires {                                              /* PARTIE HEBERGEMENTS */
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+.afficher {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 30px;    
 }
 
+h7 {
+    color: black;
+}
 
+.populaires {                                               /* PARTIE POPULAIRES */
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    border: 15px solid #F2F2F2;
+    border-radius: 10px;
+    margin: 0px 40px 40px 40px;
+}
 
 
 
