@@ -16,6 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0px;
+    padding: 0px;
     min-height: 100vh;
 }
 
@@ -90,6 +91,7 @@ header {
 .section_recherche {                                     /* SECTION DE RECHERCHE GLOBAL */                               
     display: flex;
     flex-direction: column;
+    flex: 1;
     margin: 40px 40px;
     float: left;
     padding-left: 25px;
@@ -209,7 +211,7 @@ button:focus, .src:focus {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 25px;
+    padding-top: 15px;
 }
 
 #info {
@@ -230,110 +232,136 @@ h5 {
     margin: 0px 10px;
 }
 
+/* SECTION 2 */
+
 .block_hebergements {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
-
-/* SECTION 2 */
+    flex: 3;
+ }
 
 .hebergement_marseille {                                              /* PARTIE HEBERGEMENTS */
     display: flex;
     flex-direction: column;
-    flex: 2;
     background-color: #F2F2F2;
     border: 15px solid #F2F2F2;
     border-radius: 10px;
-    margin: 5px;
+    margin-left: 40px;
+    margin-bottom: 40px;
     padding: 0px;
+}
+
+h6 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.titre_h6 {
+    display: flex;
+    flex-wrap: wrap;      
+    height: 40px;
 }
 
 .block_card {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    width: 250px;
+    height: 190px;
 }
 
-
-.card {
-    width: 200px;
+.card {    
     border-radius: 10px;
-    background-color: white;
+    background-color: white;    
+    padding: 0px;
+    box-shadow: 5px 5px 5px gray;
 }
 
-/*.card a {
+.card a {
     text-decoration: none;
 }
 
-.card:hover .card_image img {
-    width: 100%;
+.card:hover, .card_title:hover {
     filter: grayscale(0);
-}*/
-
-h6 {
-    font-size: 20px;
-    font-weight: bold;
-    /*height: 150px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;*/
+    transition: 0.1s ease;
+    cursor: pointer;
+    color: #0065FC;
 }
 
-.titre_h6 {
+.card_image {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-}
-
-.card-image {
-    height: 250px;
+    align-items: flex-start;    
     position: relative;
     overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .card_image img {
-    width: 100%;
-    position: relative;
-    /*top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition-duration: 0.5s;
-    transition-timing-function: ease;*/
+    height: 110px;
+    width: 250px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
-.card_body {                                                        /* PARTIE TITRE, PRIX, ETOILE */
-    text-align: left;
-    padding: 15px 20px;
+.card_body {
+    padding: 1px 5px;
+    margin: 0px;
 }
-.card_title {
+
+.card_title {                                               /* PARTIE TITRE, PRIX, ETOILE */
     text-align: left;
     font-weight: bold;
-    font-size: 20px;
-    color: black;
+    font-size: 16px;
+    color: black;    
 }
-h6 {
-    font-size: 15px;
-}
+
 .card_price {
-    font-size: 15px;
-    color: black;
+    color: black;   
 }
 
-
-
-
-
-
-
-
-
-
+.card_note, .card_price {
+    font-size: 12px;
+}
 
 .populaires {                                              /* PARTIE HEBERGEMENTS */
     display: flex;
     flex-direction: column;
     flex: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
