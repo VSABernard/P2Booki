@@ -238,25 +238,23 @@ h5 {
 .block_hebergements {
     display: flex;
     flex-direction: row;
-    flex: 5;
-    justify-content: space-around;
-    flex: 3;
-    margin: 10px 20px 10px 20px;
+    margin: 10px 50px 10px 0px;
     padding: 0px;
     height: 700px;
+    width: auto;
  }
 
 .hebergement_marseille {                                              /* PARTIE HEBERGEMENTS */
     display: flex;
-    flex: 2;
     flex-direction: column;
+    flex: 2;
     background-color: #F2F2F2;
     border: 15px solid #F2F2F2;
     border-radius: 10px;
-    margin-left: 60px;
+    margin-left: 50px;
+    margin-right: 20px;
     margin-bottom: 40px;
     padding: 0px;
-    width: fit-content;
     height: fit-content;
 }
 
@@ -279,7 +277,7 @@ h5 {
     align-self: flex-start;
     justify-content: space-around;
     align-content: space-around;
-    margin: 10px 10px 20px 0px;
+    margin: 10px 0px 20px 0px;
     padding: 0px;
 }
 
@@ -292,8 +290,8 @@ h5 {
     padding: 0px;
     margin: 0px 20px;
     box-shadow: 5px 5px 5px gray;
-    height: auto;
-    width: auto;
+    height: 210px;
+    width: 280px;
 }
 
 .card a, .display a {
@@ -304,7 +302,11 @@ h5 {
     filter: grayscale(0);
     transition: 0.1s ease;
     cursor: pointer;
-    color: #0065FC;    
+    color: #0065FC;  
+}
+
+.card:hover, .card_title:hover {     
+    background-color: #DEEBFF; 
 }
 
 .card_image {
@@ -319,9 +321,10 @@ h5 {
 }
 
 .card_image img {
-    height: 150px;
-    width: 300px;
-    object-fit: cover;
+    height: 120px;
+    width: 270px;
+    margin: 5px 5px;
+    object-fit: fill;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -347,39 +350,40 @@ h5 {
 }
 
 h6 {    
-    font-size: 15px;
+    font-size: 17px;
     color: black;
     margin: 15px 0px 5px 0px;
 }
 
 .display {
     font-weight: bold;
-    margin: 20px 100px 20px 20px;
+    margin: 26px 100px 15px 20px;
 }
-
 
 .populaires {                                               /* PARTIE POPULAIRES */
     display: flex;
-    flex: 1;
     flex-direction: column;
+    flex: 1;
     background-color: #F2F2F2;
     border: 15px solid #F2F2F2;
     border-radius: 10px;
-    margin: 0px 40px 40px 40px;
-    padding: auto;
+    margin: 0px 40px 5px 20px;
+    padding: 0px;
+    height: fit-content;
+    width: auto;
 }
 
 .title_populaires {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;    
-    height: fit-content    
+    justify-content: space-between;    
+        
 }
 
 .title_populaires h3 {
     font-size: 20px;
     font-weight: bold;
-    margin: 0px;
+    margin: 0% 1%;
 }
 
 #chart {
@@ -390,10 +394,11 @@ h6 {
 .card_populaires {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     border-radius: 10px;
     background-color: white;    
     padding: 0px;
-    margin: 20px 20px;
+    margin: 20px 0px;
     box-shadow: 5px 5px 5px gray;
     height: 150px;
     width: 350px;
@@ -410,16 +415,77 @@ h6 {
 }
 
 .card_image_populaires img {
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
+    height: 140px;
+    width: 140px;
+    margin: 5px 5px;
+    object-fit: fill;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px; 
 }
 
+.card_image_populaires, .card_image_populaires {
+    overflow: hidden;
+    position: relative;
+}
 
+.card_image_populaires, .card_image_populaires img{
+    max-width: 100%;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
 
+.card_image_populaires {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 0;
+}
 
+.card_image_populaires:hover, .card_image_populaires img{
+    -moz-transform: scale(1.06);
+    -webkit-transform: scale(1.06);
+    transform: scale(1.06);
+}
+
+.block_card_populaires {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+}
+
+.block_info {
+    padding: 5px 10px;
+    margin: 0px;
+    width: 200px;
+}
+
+.card_title_populaires h3 {    
+    word-wrap: break-word;
+    text-align: left;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;    
+}
+
+.card_title_populaires a {
+    text-decoration: none;
+    color: black;
+}
+
+.card_title_populaires h3:hover {
+    filter: grayscale(0);
+    transition: 0.1s ease;
+    cursor: pointer;
+    color: #0065FC;    
+}
+
+.card_note_populaires {
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 7px;
+}
 
 
 
