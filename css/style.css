@@ -244,7 +244,7 @@ h5 {
     flex-direction: row;
     margin: 10px 50px 10px 0px;
     padding: 0px;
-    height: 700px;
+    height: auto;
     width: auto;
  }
 
@@ -257,7 +257,6 @@ h5 {
     border-radius: 10px;
     margin-left: 60px;
     margin-right: 20px;
-    margin-bottom: 40px;
     padding: 0px;
     height: fit-content;
 }
@@ -361,7 +360,7 @@ h6 {
 
 .display {
     font-weight: bold;    
-    margin: 26px 0px 15px 20px;
+    margin: 26px 0px 0px 20px;
     width: 150px;
 }
 
@@ -372,9 +371,9 @@ h6 {
     background-color: #F2F2F2;
     border: 15px solid #F2F2F2;
     border-radius: 10px;
-    margin: 0px 40px 5px 20px;
+    margin: 0px 40px 0px 20px;
     padding: 0px;
-    height: fit-content;
+    height: auto;
     width: auto;
 }
 
@@ -404,10 +403,10 @@ h6 {
     border-radius: 10px;
     background-color: white;    
     padding: 0px;
-    margin: 20px 0px;
+    margin: 17px 10px;
     box-shadow: 5px 5px 5px gray;
     height: 150px;
-    width: 350px;
+    width: 320px;
 }
 
 .card_popular:hover {
@@ -457,7 +456,7 @@ h6 {
 }
 
 .block_info {                                                       /* PARTIE TITRE ET PRIX */
-    padding: 5px 10px;
+    padding: 0px 10px;
     margin: 0px;
     width: 200px;
 }
@@ -494,68 +493,77 @@ h6 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0px 20px 40px 0px;
-    padding: 20px;
-    height: 350px;
-    width: fit-content;
+    margin: 50px 15px;
+    padding: 0px;
+    height: 450px;
+    width: auto;
  }
 
 .title_activities {
-    display: flex;    
-    height: 30px;    
-    margin: 0px 0px 0px 20px;
+    display: flex;   
+    margin-left: 45px;
 }
 
 .title_activities h3 {
     font-size: 20px;
     font-weight: bold;
-    margin: 0px 0px 10px 0px;
+    margin: 10px 0px 5px 0px;
 }    
 
 .activities {                                              
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    background-color: #F2F2F2;
-    border: 15px solid #F2F2F2;
-    border-radius: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 40px;
+    justify-content: space-around;    
+    margin: 0px 10px 40px 20px;
     padding: 0px;
     height: 350px;
+    
 }
 
+.activity_1, .activity_3 {
+    border-radius: 10px;  
+    width: 280px;
+    height: fit-content;
+    padding: 5px;
+    background-color: whitesmoke;
+}
 
-figure {
+.activity_2 {
     display: flex;
-    flex-direction: column;  
-    position: relative;
-    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;    
+    width: fit-content;
+    height: 320px;
+    background-color: whitesmoke;
 }
 
-.activity_1 img, figure img {
+.activity_1 img, .activity_3 img {
     height: 300px;
     width: 270px;
-    margin: 5px 5px;
-    object-fit: fill;
+    margin: 0px;
+    object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
 figure img {
-    height: 120px;
     width: 270px;
+    margin: 0px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
+.fort img {
+    height: 160px;
+}
 
-
-
-
-
-
+.island img {
+    height: 80px;
+}
 
 
 
