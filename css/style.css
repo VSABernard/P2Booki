@@ -514,63 +514,83 @@ h6 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;    
-    margin: 0px 10px 40px 20px;
+    margin: 0px 0px 40px 0px;
     padding: 0px;
-    height: 350px;
-    
+    height: 350px;    
 }
 
-.activity_1, .activity_3 {
-    border-radius: 10px;  
-    width: 280px;
-    height: fit-content;
-    padding: 5px;
-    background-color: whitesmoke;
-}
-
-.activity_2 {
+/*.activity_1, .activity_2, .activity_3, .activity_4 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 0px;
+    border-radius: 10px;  
+    width: 280px;
+    /*height: fit-content;*
+    padding: 5px;
+    background-color: white;
+}
+
+.activity_1 img, .activity_3 img, figure img, figure {    
+    margin: 0px;
+    object-fit: cover;
     border-top-left-radius: 10px;
-    border-top-right-radius: 10px;    
-    width: fit-content;
-    height: 320px;
-    background-color: whitesmoke;
+    border-top-right-radius: 10px;
 }
 
 .activity_1 img, .activity_3 img {
-    height: 300px;
     width: 270px;
-    margin: 0px;
-    object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    height: 300px;
+}
+
+.activity_2, .activity_4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+    max-height: 350px;
+}
+
+figure {
+    height: 100%;
 }
 
 figure img {
-    width: 270px;
-    margin: 0px;
-    object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    width: 100%;
 }
 
 .fort img {
-    height: 160px;
+    flex: 1;
 }
 
 .island img {
-    height: 80px;
+    flex: 0.25;
 }
 
+.church img {
+    height: 110px;
+}
 
+.park img {
+    height: 120px;
+}
 
+.activities h3, figcaption {
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    margin: 5px 0px 5px 10px;
+    padding-bottom: 10px;
+}
 
+.activities h3 a, figcaption a {
+    text-decoration: none;
+    color: black;
+}
 
-
-
+.activities h3:hover, figcaption:hover {
+    filter: grayscale(0);
+    transition: 0.1s ease;
+    cursor: pointer;
+    color: #0065FC;    
+}*/
 
 
 
