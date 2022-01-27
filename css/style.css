@@ -493,9 +493,10 @@ h6 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 50px 15px;
-    padding: 0px;
-    height: 450px;
+    align-content: space-between;
+    margin: 0px 15px;
+    padding: 20px;
+    height: 500px;
     width: auto;
  }
 
@@ -513,84 +514,74 @@ h6 {
 .activities {                                              
     display: flex;
     flex-direction: row;
-    justify-content: space-around;    
-    margin: 0px 0px 40px 0px;
-    padding: 0px;
-    height: 350px;    
+    justify-content: space-between;    
+    margin: 0px;
+    margin-top: -30px;
+    height: 300px;    
 }
 
-/*.activity_1, .activity_2, .activity_3, .activity_4 {
+.activity_1, .activity_2, .activity_3, .activity_4 {
     display: flex;
     flex-direction: column;
     border-radius: 10px;  
-    width: 280px;
-    /*height: fit-content;*
     padding: 5px;
     background-color: white;
+    width: 300px;
+    height: max-content;
 }
 
-.activity_1 img, .activity_3 img, figure img, figure {    
+.activity_1 img, .activity_3 img, figure img {    
     margin: 0px;
     object-fit: cover;
+    width: 300px;
+    height: 350px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.activity_1 img, .activity_3 img {
-    width: 270px;
-    height: 300px;
-}
-
-.activity_2, .activity_4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;   
-    max-height: 350px;
-}
-
 figure {
-    height: 100%;
+    height: max-content;
+    margin-top: 0;
+    margin-left: -3px;
 }
 
-figure img {
-    width: 100%;
+#fort img {
+    height: 50%;
 }
 
-.fort img {
-    flex: 1;
+#island img {
+    height: 60%;
 }
 
-.island img {
-    flex: 0.25;
+#church {
+    height: 30%;
 }
 
-.church img {
-    height: 110px;
+#park{
+    height: 50%;
 }
 
-.park img {
-    height: 120px;
-}
-
-.activities h3, figcaption {
-    font-size: 15px;
+.activity_title, figcaption
+{   font-size: 15px;
     font-weight: bold;
-    color: black;
-    margin: 5px 0px 5px 10px;
-    padding-bottom: 10px;
-}
+    padding-top: 25px;
+    padding-left: 15px;
+    color: black; }
 
-.activities h3 a, figcaption a {
-    text-decoration: none;
-    color: black;
-}
+.activity_title a, figcaption a
+{   text-decoration-line: none;
+    color: black;  }
 
-.activities h3:hover, figcaption:hover {
-    filter: grayscale(0);
+.activity_title a:hover, figcaption a:hover
+{   filter: grayscale(0);
     transition: 0.1s ease;
     cursor: pointer;
-    color: #0065FC;    
-}*/
+    color: #0065FC; }
+
+
+
+
+
 
 
 
