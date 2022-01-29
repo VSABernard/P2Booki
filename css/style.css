@@ -16,6 +16,23 @@ body
     padding: 0px;
     min-height: 100vh;  }
 
+/* regroupement des codes pour l'effet d'animation */
+
+.menu a, .card_title a, .display a, .card_title_popular a, .activity_title a, footer a
+{   text-decoration: none;  
+    color: black;   }
+
+.menu a:hover, .filter_item:hover, .card_title:hover, h6:hover, .card_title_popular h3:hover, .activity_title h3:hover, footer a:hover
+{   color: #0065FC; }
+
+.filter_item:hover, .card_title:hover, h6:hover, .card_popular:hover, .card_title_popular h3:hover, .activity_1:hover, #fort:hover, #island:hover, .activity_3:hover, #church:hover, #park:hover, .activity_title a:hover
+{   transition: 0.1s ease;
+    cursor: pointer; }
+
+#money, #child, #heart, #dog, .card:hover, .card_title:hover, .card_popular:hover, .activity_1:hover, #fort:hover, #island:hover, .activity_3:hover, #church:hover, #park:hover 
+{   background-color: #DEEBFF;  }
+
+
 /* HEADER */
 
 header 
@@ -62,21 +79,16 @@ header
     font-size: 15px;    }
 
 .menu a 
-{   text-decoration: none;        
-    font-weight: normal;   
-    display: inline-block;
+{   display: inline-block;
     position: relative;
-    padding: 35px 10px;
-    color: black;   }
+    padding: 35px 10px; }
 
-.menu a:hover {      
-    color: #0065FC;             /* couleur bleu */
-    border-top: 1px solid #0065FC;  }
+.menu a:hover 
+{   border-top: 1px solid #0065FC;  }
 
 .section_all {
     display: flex;
     flex-direction: column; }
-
 
 /* SECTION 1 */
 
@@ -148,10 +160,7 @@ button:focus, .src:focus
     padding-top: 20px;  }
 
 .filter_item:hover 
-{   color: #0065FC;
-    transition: 0.1s ease;
-    cursor: pointer; 
-    border: 1px solid;
+{   border: 1px solid;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     border-left: none;  }
@@ -161,7 +170,6 @@ button:focus, .src:focus
     border-radius: 50%;
     width: 37px;
     height: 37px;
-    background-color: #DEEBFF;
     justify-content: center;
     align-items: center;
     margin-left: 10px;
@@ -256,21 +264,9 @@ h5
     background-color: white;    
     padding: 0px;
     margin: 0px 20px;
-    /*box-shadow: 5px 5px 5px #F2F2F2;*/
+    /*box-shadow: 25px 25px 25px #F2F2F2;*/
     height: 210px;
     width: 280px;   }
-
-.card_title a, .display a 
-{   text-decoration: none;  }
-
-.card_title:hover, h6:hover 
-{   filter: grayscale(0);
-    transition: 0.1s ease;
-    cursor: pointer;
-    color: #0065FC; }
-
-.card:hover, .card_title:hover      
-{   background-color: #DEEBFF;  }
 
 .card_image 
 {   display: flex;
@@ -323,7 +319,7 @@ h6
     background-color: #F2F2F2;
     border: 15px solid #F2F2F2;
     border-radius: 10px;
-    margin: 0px 40px 0px 20px;
+    margin: 0px 20px 0px 20px;
     padding: 0px;
     height: auto;
     width: auto;    }
@@ -350,15 +346,10 @@ h6
     border-radius: 10px;
     background-color: white;    
     padding: 0px;
-    margin: 17px 0px;
+    margin: 20px 0px;
     /*box-shadow: 0px 0px 5px grey;*/
     height: 140px;
     width: auto;   }
-
-.card_popular:hover 
-{   transition: 0.1s ease;
-    cursor: pointer;
-    background-color: #DEEBFF; }
 
 .card_image_popular 
 {   display: flex;
@@ -372,8 +363,8 @@ h6
 .card_image_popular img 
 {   height: 140px;
     width: 140px;
-    margin: 5px 5px;
-    object-fit: fill;
+    margin: 0px;
+    object-fit: cover;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px; }
 
@@ -381,13 +372,12 @@ h6
 {   max-width: 100%;
     transition: all 0.5s;   }
 
-
 .card_image_popular 
 {   box-sizing: border-box;
     margin: 5px;
     padding: 0; }
 
-.card_image_popular:hover, .card_image_popular img 
+.card_image_popular:hover, .card_image_popular img:hover 
 {   transform: scale(1.06); }
 
 .block_card_popular 
@@ -407,16 +397,6 @@ h6
     font-size: 16px;
     color: black;   }
 
-.card_title_popular a 
-{   text-decoration: none;
-    color: black;   }
-
-.card_title_popular h3:hover 
-{   filter: grayscale(0);
-    transition: 0.1s ease;
-    cursor: pointer;
-    color: #0065FC;  }
-
 .card_note_popular                                                 /* PARTIE ETOILES */
 {   font-size: 12px;
     margin-left: 10px;
@@ -428,7 +408,7 @@ h6
 {   display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 50px;
     padding: 20px;
     height: 550px;
@@ -449,29 +429,31 @@ h6
     margin: 0px 40px;
     height: 450px;  }
 
-.activity_1, .activity_2, .activity_3, .activity_4 
+.activity_1, #fort, #island, .activity_3,  #church, #park
 {   display: flex;
     flex-direction: column;
-    border-radius: 10px;  
-    /*box-shadow: 5px 5px 5px #F2F2F2;*/
+    justify-content: space-around;
+    border-radius: 10px;      
     padding: 5px;
     background-color: white;
     width: 320px;
     height: max-content;    }
 
-.activity_1:hover, .activity_2:hover, .activity_3:hover, .activity_4:hover 
-{   transition: 0.1s ease;
-    cursor: pointer;
-    background-color: #DEEBFF; }
+.activity_1, #fort, #island, .activity_3, #church, #park
+{   box-shadow: 2px 2px 5px #F2F2F2;    }
 
-figure 
+.activity_2, .activity_4
 {   display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: fit-content;
-    margin: 5px;    }
+    height: max-content;    }
 
-.activity_1 img, .activity_3 img, figure img     
+#fort
+{  margin-bottom: 25px;}
+
+#church
+{   margin-bottom: 35px;}
+
+.activity_1 img, .activity_3 img, .activity_2 img, .activity_4 img     
 {   margin: 0px;
     width: 310px;
     object-fit: cover;
@@ -481,17 +463,11 @@ figure
 .activity_1 img, .activity_3 img    
 {   height: 400px;  }
 
-figure img 
-{   max-height: 400px;
-    margin-left: -5px;
-    margin-top: -5px;   }
-
 #fort img 
 {   height: 175px;  }
 
 #island img 
 {   height: 125px;
-    margin-top: 55px;
     object-position: 50% 20%;   }
 
 #church img 
@@ -500,25 +476,14 @@ figure img
 
 #park img 
 {   height: 155px;
-    margin-top: 58px;
     object-position: 50% 10%;   }
 
-.activity_title, figcaption
+.activity_title h3
 {   font-size: 15px;
     font-weight: bold;
     padding-top: 10px;
     padding-left: 15px;
     color: black; }
-
-.activity_title a, figcaption a
-{   text-decoration-line: none;
-    color: black;  }
-
-.activity_title a:hover, figcaption a:hover
-{   filter: grayscale(0);
-    transition: 0.1s ease;
-    cursor: pointer;
-    color: #0065FC; }
 
 /* FOOTER */
 
@@ -543,14 +508,6 @@ footer li
     text-align: left;
     min-height: 40px;   }
 
-footer a
-{   text-decoration: none;        
-    font-weight: normal;
-    color: black;   }
-
-footer a:hover
-{   color: #0065FC;  }
-
 .foot
 {   margin-left: 20px;
     font-weight: bold;
@@ -561,6 +518,11 @@ footer a:hover
 
 .assistance
 {   flex: 6;    }
+
+
+
+
+
 
 
 /* MEDIA QUERIES 
