@@ -18,14 +18,14 @@ body
 
 /* regroupement des codes pour l'effet d'animation */
 
-.menu a, .card_title a, .display a, .card_title_popular a, .activity_title a, footer a
+.menu a, .card a, .display a, .card_title_popular a, .activity_title a, footer a
 {   text-decoration: none;  
     color: black;   }
 
-.menu a:hover, .filter_item:hover, .card_title:hover, h6:hover, .card_title_popular h3:hover, .activity_title h3:hover, footer a:hover
+.menu a:hover, .filter_item:hover, .card:hover, h6:hover, .card_title_popular h3:hover, .activity_title h3:hover, footer a:hover
 {   color: #0065FC; }
 
-.filter_item:hover, .card_title:hover, h6:hover, .card_popular:hover, .card_title_popular h3:hover, .activity_1:hover, #fort:hover, #island:hover, .activity_3:hover, #church:hover, #park:hover, .activity_title a:hover
+.filter_item:hover, .card:hover, h6:hover, .card_popular:hover, .card_title_popular h3:hover, .activity_1:hover, #fort:hover, #island:hover, .activity_3:hover, #church:hover, #park:hover, .activity_title a:hover
 {   transition: 0.1s ease;
     cursor: pointer; }
 
@@ -520,24 +520,19 @@ footer li
 {   flex: 6;    }
 
 
-
-
-
-
-
 /* MEDIA QUERIES 
 
 /* sur le periphérique mobile 
-@media screen (max-width: 768px){                             
+@media screen and (max-width: 768px){                             
 
 }
 
 /* sur la version mobile 
-@media all and {min-width: 768px) and (max-width: 992px){       
+@media screen and {min-width: 768px) and (max-width: 992px){       
 
 }
 
-/* sur tous types d'ecran orientes verticalements 
-@media all (orientation: portrait){                             
+/* sur la version desktop 
+@media screen all (min-width: 992px){                             
 
 }          */                    
