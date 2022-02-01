@@ -7,26 +7,26 @@
     font-family: 'Raleway', 'Comic Sans MS';    }
 
 body 
-{   margin: 0px; 
+{   margin: 0px 40px 0px 0px; 
     width: 100%;   }
 
 .main 
 {   display: flex;
     flex-direction: column;
-    margin-right: 40px;
-    padding: 40px;
+    padding-left: 40px;
+    padding-right: 50px;
     width: 100%;  }
 
 /* regroupement des codes pour l'effet d'animation */
 
-.menu a, .card a, .display a, .card_title_popular a, .activity_title a, footer a
+a
 {   text-decoration: none;  
     color: black;   }
 
-.menu a:hover, .filter_item:hover, .card:hover, .card_title:hover, h6:hover, .card_title_popular h3:hover, .activity_title h3:hover, footer a:hover
+.menu a:hover, .filter_item:hover, .card:hover, .card_title:hover, h4:hover, .card_title_popular h3:hover, .activity_title h3:hover, footer a:hover
 {   color: #0065FC; }
 
-.filter_item:hover, .card:hover, .card_title:hover, h6:hover, .card_popular:hover, .card_title_popular h3:hover, .activity_1:hover, #fort:hover, #island:hover, .activity_3:hover, #church:hover, #park:hover, .activity_title a:hover
+.filter_item:hover, .card:hover, .card_title:hover, h4:hover, .card_popular:hover, .card_title_popular h3:hover, .activity_1:hover, #fort:hover, #island:hover, .activity_3:hover, #church:hover, #park:hover, .activity_title a:hover
 {   transition: 0.1s ease;
     cursor: pointer; }
 
@@ -221,7 +221,6 @@ h5
 {   display: flex;
     flex-direction: row;
     justify-content: space-around;
-    flex-wrap: wrap;
     row-gap: 20px;
     margin: 10px 20px;
     padding: 0px;   }
@@ -229,28 +228,31 @@ h5
 .accomodation_marseille                                               /* PARTIE HEBERGEMENTS */
 {   display: flex;
     flex-direction: column;
+    flex: 3;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #F2F2F2;
     border: 15px solid #F2F2F2;
     border-radius: 10px;
     margin-left: 40px;
-    margin-right: 20px;
-    width: 65%; }
+    margin-right: 20px; 
+    padding-right: 20px;
+    width: max-content;}
 
-.title_accomodation h3
-{   display: flex;    
-    height: fit-content;    
+.title_accomodation
+{   display: flex;   
     width: 100%;
-    margin: 0px 0px 0px 20px;
+    margin-left: 20px;
     font-size: 20px;
     font-weight: bold;   }
 
 .block_card
 {   display: flex;
+    flex: 3;
     flex-direction: row;  
     flex-wrap: wrap; 
-    justify-content: space-between;}
+    justify-content: space-between;
+    width: auto;}
 
 .card     
 {   display: flex;
@@ -258,32 +260,29 @@ h5
     border-radius: 10px;
     background-color: white;  
     width: calc((100% - 40px * 2) / 3);
-    margin: 20px 0px;
+    height: 230px;
+    margin: 5px;
      }
 
 .card_image 
-{   display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;    
-    position: relative;
-    overflow: hidden;
+{   overflow: hidden;
     width: 100%;
-    object-position: center;
+    object-position: 50% 50%;
     object-fit: cover;
     aspect-ratio: 16 / 8;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;  }
 
 .card_image img 
-{   
-    margin: 5px 5px;
+{   height: 100%;
+    width: 100%;
+    object-position: 50% 50%;
     object-fit: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;  }
 
 .card_body 
-{   padding-bottom: 25px;
+{   padding: 10px;
     margin-left: 10px;  }
 
 .card_title                                                /* PARTIE TITRE, PRIX, ETOILE */
@@ -298,58 +297,50 @@ h5
 .card_note, .card_price 
 {   font-size: 12px;    }
 
-h6     
-{   font-size: 17px;
-    color: black;
-    margin: 15px 10px 5px 0px;  }
-
-.display 
-{   font-weight: bold;    
+h4
+{   font-weight: bold;  
+    font-size: 17px;    
     margin: 26px 0px 0px 20px;
-    width: 150px;   }
+    width: 30%;   }
 
 .popular                                                   /* PARTIE POPULAIRES */
 {   display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 1.5;
     background-color: #F2F2F2;
     border: 15px solid #F2F2F2;
     border-radius: 10px;
     margin: 0px 20px 0px 20px;
     padding: 0px;
-    height: auto;
     width: 30%;    }
 
 .title_popular 
 {   display: flex;
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-between;}
 
 .title_popular h3 
 {   font-size: 20px;
-    font-weight: bold;
-    margin: 0% 1%;  }
+    font-weight: bold;  }
 
 #chart 
 {   font-size: 20px;
     font-weight: bold;
-    width: 15px;    }
+    margin-top: 20px;   }
 
 .card_popular 
 {   display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     border-radius: 10px;
-    background-color: white;    
-    padding: 0px;
-    margin: 20px 0px;
+    background-color: white;  
+    margin: 30px 0px;
     /*box-shadow: 0px 0px 5px grey;*/
-    height: 100%;
     width: 100%;   }
 
 .card_image_popular 
 {   display: flex;
-    flex: 1;  
+    flex: 1;
     position: relative;
     overflow: hidden;
     aspect-ratio: 1 / 1;
@@ -359,7 +350,7 @@ h6
 .card_image_popular img 
 {   height: 100%;
     width: 100%;
-    margin: 0px;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px; }
@@ -378,8 +369,8 @@ h6
 
 .block_card_popular 
 {   display: flex;
-    flex-direction: column;
-    height: 150px;  }
+    flex: 2;
+    flex-direction: column; }
 
 .block_info                                                        /* PARTIE TITRE ET PRIX */
 {   padding: 0px 10px;
@@ -396,19 +387,20 @@ h6
 .card_note_popular                                                 /* PARTIE ETOILES */
 {   font-size: 12px;
     margin-left: 10px;
-    margin-top: 20px;   }
+    margin-top: 30px;
+    margin-bottom: 10px;   }
 
 /* SECTION 3 */
 
 .block_activities                                                  /* PARTIES ACTIVITES */
 {   display: flex;
     flex-direction: column;
+    flex: 3;
     justify-content: space-between;
     margin-top: 10px;
     margin-bottom: 50px;
     padding: 20px;
-    height: 550px;
-    width: auto;    }
+    width: 100%;    }
 
 .title_activities 
 {   display: flex;   
