@@ -228,8 +228,8 @@ h5
     background-color: #F2F2F2;
     border: 15px solid #F2F2F2;
     border-radius: 10px;
-    margin-left: 40px;
-    margin-right: 20px;
+    margin-left: 60px;
+    margin-right: 30px;
     height: fit-content;    }
 
 .title_accomodation
@@ -271,10 +271,11 @@ h5
     font-size: 12px;  }
 
 .card_title                                                /* PARTIE TITRE, PRIX, ETOILE */
-{   text-align: left;
+{   word-wrap: break-word;
+    text-align: left;
     font-weight: bold;
     font-size: 16px;
-    color: black;  }
+    color: black;   }
 
 p
 {   color: black;
@@ -282,8 +283,8 @@ p
 
 h4
 {   font-weight: bold;  
-    font-size: 17px;    
-    margin: 30px 0px 0px 20px;
+    font-size: 15px;    
+    margin: 40px 0px 0px 20px;
     width: 30%;   }
 
 .popular                                                   /* PARTIE POPULAIRES */
@@ -359,13 +360,6 @@ h4
     margin: 0px;
     width: 200px;   }
 
-/*.card_title_popular h3     
-{   word-wrap: break-word;
-    text-align: left;
-    font-weight: bold;
-    font-size: 16px;
-    color: black;   }*/
-
 .card_note_popular                                                 /* PARTIE ETOILES */
 {   font-size: 12px;
     margin-left: 10px;
@@ -375,17 +369,16 @@ h4
 
 .block_activities                                                  /* PARTIES ACTIVITES */
 {   display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    flex: 3;
-    justify-content: space-between;
+    margin-left: 30px;
     margin-top: 10px;
     margin-bottom: 50px;
-    padding: 20px;
-    width: 100%;    }
+    padding-right: 30px; }
 
 .title_activities 
 {   display: flex;   
-    margin-left: 45px;  }
+    margin-left: 35px;  }
 
 .title_activities h3 
 {   font-size: 20px;
@@ -394,27 +387,47 @@ h4
 .activities                                               
 {   display: flex;
     flex-direction: row;
-    justify-content: space-between;    
-    margin: 0px 40px;
-    height: 450px;  }
+    justify-content: space-around; 
+    align-content: center;  
+    width: 100%;
+    height: 50%;
+    background-color: wheat;
+    margin: 0px 20px;
+    }
 
-.activity_1, #fort, #island, .activity_3,  #church, #park
-{   display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    border-radius: 10px;      
-    padding: 5px;
+.port, .group_activities, .park
+{   display: flex;    
+    justify-content: flex-start;
+    border-radius: 10px;    
+    width: 20%;
+    max-height: 50%;
     background-color: white;
-    width: 320px;
-    height: max-content;    }
+    box-shadow: 2px 2px 5px #F2F2F2;  }
 
-.activity_1, #fort, #island, .activity_3, #church, #park
-{   box-shadow: 2px 2px 5px #F2F2F2;    }
+.port, .park
+{   flex-direction: column;}
 
-.activity_2, .activity_4
-{   display: flex;
-    flex-direction: column;
-    height: max-content;    }
+.group_activities    
+{    flex-direction: row;   }
+
+.activity_image
+{   flex: 1;
+    object-position: 50% 50%;
+    object-fit: cover;
+    width: 90%;  }
+
+.activity_image img 
+{   margin: 5px;
+    width: 107%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;  }
+
+
+
+
+
 
 #fort
 {  margin-bottom: 25px;}
@@ -422,29 +435,24 @@ h4
 #church
 {   margin-bottom: 35px;}
 
-.activity_1 img, .activity_3 img, .activity_2 img, .activity_4 img     
-{   margin: 0px;
-    width: 310px;
-    object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;  }
 
-.activity_1 img, .activity_3 img    
-{   height: 400px;  }
 
-#fort img 
-{   height: 175px;  }
 
-#island img 
-{   height: 125px;
+.fort img 
+{   height: 50%;
+    width: 95%;
+    aspect-ratio: 4/3;  }
+
+.island img 
+{   height: 30%;
     object-position: 50% 20%;   }
 
-#church img 
-{   height: 140px;
+.church img 
+{   height: 40%;
     object-position: 50% 10%;   }
 
-#park img 
-{   height: 155px;
+.park img 
+{   height: 50%;
     object-position: 50% 10%;   }
 
 .activity_title h3
