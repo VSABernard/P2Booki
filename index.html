@@ -2,8 +2,9 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/normalize.css" />
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
         </style>
@@ -11,7 +12,7 @@
         <title>>Booki</title>
         <link rel="shortcut icon" href="images/logo/favicon.ico" type="image/x-icon">
         <!-- <link rel="stylesheet" media="screen and (max-width: 1280px)" href="style.css" /> -->
-        </head>
+    </head>
 
     <body>
         <div class="main">
@@ -29,8 +30,8 @@
                 </div>            
             </header>
             <section class="content">
-                <section class="section_search">                        <!-- SECTION 1 -->
-                    
+
+                <section class="section_search">                        <!-- SECTION 1 -->               
                     <div class="search">                                   <!-- button de recherche -->
                         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                         <p>En plein centre ville ou en pleine nature</p>
@@ -39,15 +40,38 @@
                     <div class="search_area">
                         <i id="map_marker" class="fas fa-map-marker-alt" aria-hidden="true" style="background-color: #f2f2f2"></i>
                         <input class="srch" type="search" placeholder="Marseille,France">
-                        <button>Rechercher</button>
+                        <button type="submit" class="button_1"><span>Rechercher</span></button>
+                        <button type="submit" class="button_2"><i class="fas fa-search"></i></button>   
                     </div>
                     
                     <nav class="filter">                                   <!-- filtres -->
                         <h2>Filtres</h2>
-                        <i id="money" class="fas fa-money-bill-wave" aria-hidden="true" style="color: #0065fc"></i><p class="filter_item">Economique</p>
-                        <i id="child" class="fas fa-child" aria-hidden="true" style="color: #0065fc"></i><p class="filter_item">Familial</p>
-                        <i id="heart" class="fas fa-heart" aria-hidden="true" style="color: #0065fc"></i><p class="filter_item">Romantique</p>
-                        <i id="dog" class="fas fa-dog" aria-hidden="true" style="color: #0065fc"></i><p class="filter_item">Animaux autorisés</p>
+                        <ul class="filter_buttons">
+                            <li>
+                                <button class="filter_item">
+                                <span class="icon"><i id="money" class="fas fa-money-bill-wave" aria-hidden="true" style="color: #0065fc"></i></span>
+                                <span class="text">Economique</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="filter_item">
+                                    <span class="icon"><i id="child" class="fas fa-child" aria-hidden="true" style="color: #0065fc"></i></span>
+                                    <span class="text">Familial</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="filter_item">
+                                    <span class="icon"><i id="heart" class="fas fa-heart" aria-hidden="true" style="color: #0065fc"></i></span>
+                                    <span class="text">Romantique</span>
+                                </button>
+                            </li>
+                            <li>    
+                                <button class="filter_item">    
+                                    <span class="icon"><i id="dog" class="fas fa-dog" aria-hidden="true" style="color: #0065fc"></i></span>
+                                    <span class="text">Animaux autorisés</span>
+                                </button> 
+                            </li> 
+                        </ul>  
                     </nav> 
 
                     <div class="information">
@@ -56,7 +80,6 @@
                 </section>
 
                 <section class="block_accomodation">                        <!-- SECTION 2 -->
-                    
                     <div class="accomodation_marseille">                     <!-- liste hebergements Marseille -->
                         <div class="title_accomodation">
                             <h1>Hébergements à Marseille</h1> 
@@ -188,7 +211,7 @@
                         </div>                             
                     </div>                                                     
                             
-                    <div class="popular">                                    <!-- liste les plus POPULAIRES -->
+                    <aside class="popular">                                    <!-- liste les plus POPULAIRES -->
                         <div class="title_popular">
                             <h1>Les plus populaires</h1> <i id="chart" class="fas fa-chart-line" aria-hidden="true" style="color: black"></i>
                         </div> 
@@ -261,33 +284,26 @@
                                 </div>
                             </a>
                         </div>    
-                    </div>
+                    </aside>
                 </section> 
 
                 <section class="block_activities">                          <!-- liste activités Marseille  -->    
-                                            
                     <div class="main_title_activities">
                         <h1>Activités à Marseille</h1>  
                     </div>     
                     <div class="activities">
                         <div class="single_activity">
                             <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" />
-                            <a href="#"><div class="title_activity">
-                                    <h2>Vieux Port</h2>
-                                </div></a>  
+                            <h2>Vieux Port</h2>
                         </div>
                         <div class="group_activities">
                             <div class="big">
                                 <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomégues" /></a>
-                                <a href="#"><div class="title_activity">
-                                    <h2>Fort de Pomégues</h2>
-                                </div></a>
+                                <a href="#"><h2>Fort de Pomégues</h2></a>
                             </div>
                             <div class="small">
                                 <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul" /></a>
-                                <a href="#"><div class="title_activity">
-                                    <h2>Îles du Frioul</h2>
-                                </div></a>
+                                <a href="#"><h2>Îles du Frioul</h2></a>
                             </div>
                         </div>        
                         <div class="single_activity">
@@ -295,9 +311,7 @@
                                 <div class="image_single">
                                     <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques" /></a>
                                 </div>    
-                                <a href="#"><div class="title_activity">
-                                    <h2>Parc National des Calanques</h2>
-                                </div></a>
+                                <a href="#"><h2>Parc National des Calanques</h2></a>
                             </a>
                         </div>
                         <div class="group_activities">
@@ -310,7 +324,7 @@
                             <div class="middle_2">
                                 <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" /></a>
                                 <a href="#"><div class="title_activity">
-                                    <h2>Parc Longchamp></h2>
+                                    <h2>Parc Longchamp</h2>
                                 </div></a>
                             </div>
                         </div>
@@ -319,32 +333,29 @@
             </section>
 
             <footer>
-                <div class="footer_container"> 
-                    <div class="about">
-                        <p class="foot">A propos</p>
-                        <ul>
-                            <li><a href="#">Fonctionnement du site</a></li>
-                            <li><a href="#">Conditions générales de vente</a></li>
-                            <li><a href="#">Données et confidentialité</a></li>
-                        </ul>
-                    </div>
+                <div class="about">
+                    <h2 class="foot">A propos</h2>
+                    <ul>
+                        <li><a href="#">Fonctionnement du site</a></li>
+                        <li><a href="#">Conditions générales de vente</a></li>
+                        <li><a href="#">Données et confidentialité</a></li>
+                    </ul>
+                </div>
 
-                    <div class="accomodations">
-                        <p class="foot">Nos hébergements</p>
-                        <ul>
-                            <li><a href="#">Charte qualité</a></li>
-                            <li><a href="#">Soumettre votre hôtel</a></li>
-                        </ul>
-                    </div>
+                <div class="accomodations">
+                    <h2 class="foot">Nos hébergements</h2>
+                    <ul>
+                        <li><a href="#">Charte qualité</a></li>
+                        <li><a href="#">Soumettre votre hôtel</a></li>
+                    </ul>
+                </div>
 
-
-                    <div class="assistance">
-                        <p class="foot">Assistance</p>
-                        <ul>
-                            <li><a href="#">Centre d'aide</a></li>
-                            <li><a href="#">Nous contacter</a></li>
-                        </ul>
-                    </div>
+                <div class="assistance">
+                    <h2 class="foot">Assistance</h2>
+                    <ul>
+                        <li><a href="#">Centre d'aide</a></li>
+                        <li><a href="#">Nous contacter</a></li>
+                    </ul>
                 </div>
             </footer>
         </div>
