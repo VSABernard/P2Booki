@@ -87,17 +87,18 @@ header
 .section_search                                      /* SECTION DE RECHERCHE GLOBAL */                               
 {   display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     flex: 1;
     margin: 40px 30px;
     float: left;
     padding-left: 25px; }
 
-h1                                                       /* LES DEUX PARAGRAPHES D'OUVERTURE */
+.search h1                                                       /* LES DEUX PARAGRAPHES D'OUVERTURE */
 {   font-weight: bold;
     font-size: 25px; 
     width: 100%;
     position: relative;
-    flex-wrap: wrap;   }
+       }
 
 .search p 
 {   display: flex;
@@ -169,7 +170,7 @@ h1                                                       /* LES DEUX PARAGRAPHES
 {   display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 50px;
+    gap: 40px;
     margin-bottom: 25px;
     padding-right: 10px;}
 
@@ -185,7 +186,8 @@ h1                                                       /* LES DEUX PARAGRAPHES
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
     border-left: none;
-    height: 37px;    }
+    height: 37px; 
+    width: max-content;   }
 
 .filter_item:hover 
 {   border: 1px solid;
@@ -209,11 +211,12 @@ h1                                                       /* LES DEUX PARAGRAPHES
 
 .text
 {   display: flex;
+    flex-wrap: nowrap;
     font-size: 16px;
     font-weight: bold;
     color: black;
     padding-bottom: 5px;
-    padding-left: 15px;}
+    padding-left: 15px; }
 
 .information                                                /* PARTIE INFO */
 {   display: flex;
@@ -313,13 +316,11 @@ h1                                                       /* LES DEUX PARAGRAPHES
 
 p
 {   color: black;
-    font-size: 12px; 
-    margin-left: 15px; }
+    font-size: 12px; }
 
 .card_note
 {   font-size: 12px;
     margin-bottom: 5px;
-    margin-left: 15px;
     height: 25px;    }
 
 .show_more
@@ -408,8 +409,7 @@ p
 
 .card_note_popular                                                 /* PARTIE ETOILES */
 {   font-size: 12px;
-    padding-top: 30px;
-    padding-left: 15px;  }
+    padding-top: 30px; }
 
 /* SECTION 3 */
 
@@ -581,7 +581,7 @@ a
 {   transition: 0.1s ease;
     cursor: pointer; }
 
-#money, #child, #heart, #dog, .card:hover, .card_title:hover, .card_popular:hover, .single_activity:hover, .group_activities .big:hover, .group_activities .middle_1:hover, .group_activities .middle_2:hover, .group_activities .small:hover 
+.filter_item:hover, .card:hover, .card_title:hover, .card_popular:hover, .single_activity:hover, .group_activities .big:hover, .group_activities .middle_1:hover, .group_activities .middle_2:hover, .group_activities .small:hover 
 {   background-color: #DEEBFF;  }
 
 
