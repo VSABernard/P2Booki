@@ -7,17 +7,18 @@
     font-family: 'Raleway', 'Arial';    }
 
 
-.main 
+main 
 {   display: flex;
     flex-direction: column;    
     width: 100%; 
     min-height: 100vh;
-    margin: 0px 20px 0px 0px; }
+    margin: 0px 40px 0px 0px; }
 
 .content
 {   display: flex;
     flex-direction: column;
-    flex-grow: 1;}
+    flex-grow: 1;
+    padding-right: 40px; }
 
 /*.header, .content
 {   padding-left: 40px; }*/
@@ -28,7 +29,7 @@
 header 
 {   display: flex;
     flex: 1;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
     margin-left: 60px;
@@ -37,23 +38,22 @@ header
 hr
 {   display: none;}
 
-.title                                              /* PREMIERE PARTIE DE HEADER */
+/*.title                                              /* PREMIERE PARTIE DE HEADER 
 {   display: flex;
     flex-direction: row;
     width: 100%;
     height: 50px;
-    margin: auto;   }
+    margin: auto;   } */
 
-.logo                                               /* LOGO BOOKI */
+.booki                                             /* LOGO BOOKI */
 {   display: flex;
     flex-direction: row;
-    flex: 2;
     align-items: baseline;
-    margin-left: 20px;  }
+    height: 50%; }
 
-.logo img 
-{   width: 100px;
-    height: 60px;
+.booki img 
+{   width: 30px;
+    height: 20px;
     padding-top: 20px;  }
 
 .menu                                                /*BAR DU MENU*/
@@ -63,8 +63,7 @@ hr
 .menu ul     
 {   display: flex;
     align-content: flex-end;
-    justify-content: flex-end;
-    margin-right: 30px;  }
+    justify-content: flex-end; }
 
 .menu li 
 {   list-style: none;
@@ -74,7 +73,7 @@ hr
 .menu a 
 {   display: inline-block;
     position: relative;
-    padding: 35px 10px;     }
+    padding: 35px 0px;     }
 
 .menu a:hover 
 {   border-top: 1px solid #0065FC;  }
@@ -95,19 +94,20 @@ hr
     float: left;
     padding-left: 25px; }
 
-.search h1                                                       /* LES DEUX PARAGRAPHES D'OUVERTURE */
+.title_search                                                     /* LES DEUX PARAGRAPHES D'OUVERTURE */
 {   font-weight: bold;
     font-size: 25px; 
     width: 100%;
     position: relative;    }
 
-.search p 
+.sentence_search 
 {   display: flex;
     flex-wrap: nowrap;
     font-weight: normal;
     font-size: 15px; 
     width: 100%; 
     position: relative;
+    margin-top: -10px;
     margin-left: 0px;  }
 
 .search_area                                            /* PARTIE DE RECHERCHE */
@@ -116,25 +116,28 @@ hr
     width: 485px;
     justify-content: flex-start;    }
 
+.search_area, .button_1
+{   height: 50px;   }
+
 #map_marker                                            /* ICON MAP */
 {   display: flex;
-    flex: 1.5;
-    border-bottom-left-radius: 20px;
-    border-top-left-radius: 20px;
+    flex: 2;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
     justify-content: center;
     align-items: center;
-    font-size: 15px;    }
+    font-size: 20px;    }
 
 .srch                                                   /* CHAMP DE RECHERCHE */
 {   flex: 10;
     border: 2px solid #f2f2f2;    
     font-weight: bold;
-    padding: 5px;   
-    font-size: 15px;    }
+    align-items: center;
+    padding-left: 20px;
+    font-size: 20px;    }
 
 .button_1, .button_2                                                    /* BUTTON DE RECHERCHE */
 {   flex: 6;
-    height: 35px;
     background: #0065FC;
     color: #DEEBFF;
     font-weight: bold;
@@ -143,7 +146,7 @@ hr
     border-top-right-radius: 15px;
     cursor: pointer;    
     transition: 0.5s ease;
-    font-size: 16px;    }
+    font-size: 20px;    }
 
 .button_1:hover, .button_2:hover 
 {   color: black;   }
@@ -165,7 +168,7 @@ hr
     margin-left: -10px;}
 
 .filter h2
-{   font-size: 16px;
+{   font-size: 20px;
     padding-top: 10px;
     padding-left: 10px;}
 
@@ -222,6 +225,7 @@ hr
 
 .information                                                /* PARTIE INFO */
 {   display: flex;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     padding-top: 15px;
@@ -235,13 +239,13 @@ hr
     height: 20px;
     justify-content: center;
     align-items: center;
-    font-size: 7px; }
+    font-size: 10px; }
 
-.information p 
+.information p
 {   display: flex;
     font-size: 13px;
     font-weight: normal;
-    margin: 0px 10px;   }
+    margin: 0px 15px;   }
 
 /* SECTION 2 */
 
@@ -249,26 +253,25 @@ hr
 {   display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 30px;    }
+    margin-left: -10px;    }
 
 .accomodation_marseille                                               /* PARTIE HEBERGEMENTS */
 {   display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 2;
+    flex: 3;
     gap: 20px;
     background-color: #F2F2F2;
     border: 15px solid #F2F2F2;
     border-radius: 15px;
     margin-left: 60px;
-    margin-right: 15px;
-    width: 70%;
-    height: 120%;   }
+    margin-right: 40px;
+    height: auto;   }
 
-.title_accomodation h1
+.title_accomodation
 {   display: flex;   
     width: 100%;
-    margin-left: 10px;
+    margin-left: 30px;
     font-size: 22px;
     font-weight: bold;   }
 
@@ -278,20 +281,22 @@ hr
     flex-wrap: wrap; 
     justify-content: space-between;
     align-content: center;
-    height: auto;    }
+    height: auto; 
+    margin-top: -10px;   }
 
 .card     
 {   display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 150px;
-    height: auto;
+    width: 280px;
+    height: 220px;
     object-fit: cover;
     flex-basis: 30%;
     border-radius: 15px;
     background-color: white;  
-    margin: 5px;
+    box-shadow: 5px 5px 5px gainsboro;
+    margin: 10px 10px 10px -20px;
     padding: 5px;  }
 
 .card_image img 
@@ -302,38 +307,35 @@ hr
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;  }
 
-.card_title                                                /* PARTIE TITRE, PRIX, ETOILE */
-{   display: flex;  
-    flex-direction: column; }
-
-.card_title h2
+.card h2                                                            /* PARTIE TITRE, PRIX, ETOILE */
 {   word-wrap: break-word;
     text-align: left;
     font-weight: bold;
     font-size: 18px;
     color: black; 
-    margin-bottom: -10px;  }
+    margin: 0px 0px -5px 15px; }
 
-.card_title p, .block_info p
+.card p, .block_info p
 {   color: black;
-    font-size: 12px; }
+    font-size: 14px;
+    margin-left: 15px; }
 
 .euros_1
 {   font-weight: bold;  }
 
 .card_note
-{   font-size: 12px;
-    margin-bottom: 5px;
+{   display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-size: 12px;
+    margin: -5px 0px 5px -25px;
     height: 25px;    }
 
 .show_more
-{   height: max-content;    }
-
-.show_more h3
 {   display: flex;
     font-weight: bold;  
     font-size: 15px;    
-    margin: 40px 0px 0px 20px;
+    margin: -20px 0px 0px 20px;
     width: 40%;   }
 
 .popular                                                   /* PARTIE POPULAIRES */
@@ -548,7 +550,7 @@ footer
     margin-left: -20px;
     margin-bottom: -10px;
     height: 100%;
-    width: 120%; }
+    width: auto; }
 
 footer ul   
 {   margin-left: 20px;
