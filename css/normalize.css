@@ -162,7 +162,7 @@
 
     .block_accomodation
     {   flex-direction: column;
-        margin-right: 30px;}
+        margin-left: 40px;}
 
     .accomodation_marseille     
     {   flex-direction: column;
@@ -170,8 +170,8 @@
         order: 2; 
         background-color: white;
         border: none;
-        margin: 0px 15px 0px 10px;
-        max-width: 85%;
+        margin: 0px 0px 0px 10px;
+        width: max-content;
         height: auto;}
 
     .title_accomodation h1
@@ -182,13 +182,12 @@
         margin-bottom: 15px;}
     
     .card 
-    {   width: 100%;
+    {   width: fit-content
         height: fit-content;
         box-shadow: 5px 5px 3px #f2f2f2;
         border-radius: 20px;
         margin-bottom: 40px;        
-        padding-top: -10px;
-         }
+        padding-top: -10px; }
 
     .card_title h2
     {   font-size: 30px;
