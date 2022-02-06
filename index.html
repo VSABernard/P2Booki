@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" media="screen and (min-width: 992px)" href="css/style.css" />
         <link rel="stylesheet" href="css/normalize.css" />
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
@@ -11,7 +11,6 @@
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <title>>Booki</title>
         <link rel="shortcut icon" href="images/logo/favicon.ico" type="image/x-icon">
-        <!-- <link rel="stylesheet" media="screen and (max-width: 1280px)" href="style.css" /> -->
     </head>
 
     <body>
@@ -95,6 +94,7 @@
                                     <li><i class="fas fa-star" style="color: #f2f2f2"></i></li>
                                 </ul> 
                             </li>
+
                             <li class="card">                                                        
                                 <picture class="card_image">                          
                                     <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du Port" />
@@ -109,6 +109,7 @@
                                     <li><i class="fas fa-star" style="color: #0065fc"></i></li>
                                 </ul>                            
                             </li>
+
                             <li class="card">                                                        
                                 <picture class="card_image">
                                     <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes" />
@@ -123,6 +124,7 @@
                                     <li><i class="fas fa-star" style="color: #f2f2f2"></i></li>
                                 </ul>                            
                             </li>
+
                             <li class="card">                                                        
                                 <picture class="card_image">
                                     <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer" />
@@ -137,6 +139,7 @@
                                     <li><i class="fas fa-star" style="color: #f2f2f2"></i></li>
                                 </ul>                            
                             </li>
+
                             <li class="card">                                                        
                                 <picture class="card_image">
                                     <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier" />
@@ -151,6 +154,7 @@
                                     <li><i class="fas fa-star" style="color: #f2f2f2"></i></li>
                                 </ul>                            
                             </li>
+                            
                             <li class="card">                                                        
                                 <picture class="card_image">
                                     <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina" />
@@ -169,11 +173,11 @@
                         <a href="#"><h3 class="show_more">Afficher plus</h3></a>    
                     </article>                                                     
                             
-                    <aside class="popular">                                    <!-- liste les plus POPULAIRES -->
+                    <article class="popular">                                    <!-- liste les plus POPULAIRES -->
                         <h2>Les plus populaires</h2> 
                         <i id="chart" class="fas fa-chart-line" aria-hidden="true" style="color: black"></i>
                          
-                        <ul class="group_card">
+                        <aside class="group_card">                                         <!-- liste populaires -->
                             <article class="card_popular">
                                 <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin" />
                                 <ul class="block_info_popular">
@@ -224,45 +228,45 @@
                                     </li>
                                 </ul>
                             </article>
-                        </ul>    
-                    </aside>
+                        </aside>    
+                    </article>
                 </section> 
 
                 <section class="block_activities">                          <!-- liste activités Marseille  -->    
                     <h2>Activités à Marseille</h2>
-                    <article class="activities">
-                        <figure class="single_activity">
+                    <section class="activities">                                       <!-- single activites -->
+                        <article class="single_activity">
                             <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port" />
-                            <figcaption>Vieux Port</figcaption>
-                        </figure>
+                            <h3>Vieux Port</h3>
+                        </article>
 
-                        <div class="group_activities">
-                            <figure class="big">
+                        <section class="group_activities">                             <!-- double activites -->
+                            <article class="big">
                                 <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomégues" /> 
-                                <a href="#"><figcaption>Fort de Pomégues</figcaption></a>
-                            </figure>
-                            <figure class="small">
+                                <h3>Fort de Pomégues</h3>
+                            </article>
+                            <article class="small">
                                 <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul" /> 
-                                <a href="#"><figcaption>Îles du Frioul</figcaption></a>
-                            </figure>
-                        </div>      
+                                <h3>Îles du Frioul</h3>
+                            </article>
+                        </section>      
 
-                        <figure class="single_activity">
+                        <article class="single_activity">
                             <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques" /> 
-                            <a href="#"><figcaption>Parc National des Calanques</figcaption></a>
-                        </figure>
+                            <h3>Parc National des Calanques</h3>
+                        </article>
 
-                        <div class="group_activities">
-                            <figure class="middle_1">
+                        <section class="group_activities">
+                            <article class="middle_1">
                                 <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" />
-                                <a href="#"><figcaption>Notre-Dame-de-la-Garde</figcaption></a>
-                            </figure>
-                            <figure class="middle_2">
+                                <h3>Notre-Dame-de-la-Garde</h3>
+                            </article>
+                            <article class="middle_2">
                                 <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" /> 
-                                <a href="#"><figcaption>Parc Longchamp</figcaption></a>
-                            </figure>
-                        </div>
-                    </article>
+                                <h3>Parc Longchamp</h3>
+                            </article>
+                        </section>
+                    </section> 
                 </section>
             </section>
 
