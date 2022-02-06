@@ -9,7 +9,8 @@
 
 main 
 {   display: flex;
-    flex-direction: column;    
+    flex-direction: column;  
+    flex-wrap: wrap;  
     width: 100%; 
     min-height: 100vh;   }
 
@@ -38,12 +39,7 @@ header
 hr
 {   display: none;}
 
-/*.title                                              /* PREMIERE PARTIE DE HEADER 
-{   display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 50px;
-    margin: auto;   } */
+/*  HEADER  */
 
 .booki                                             /* LOGO BOOKI */
 {   display: flex;
@@ -433,67 +429,56 @@ hr
     flex-wrap: wrap;
     flex-direction: column;
     flex: 3;
-    margin: 40px 20px 40px 40px;
+    margin: 40px 20px 40px 30px;
     padding-bottom: 60px;    }
 
-.main_title_activities
+.title_activities
 {   display: flex;   
-    margin-left: 35px;  }
-
-.main_title_activities h3 
-{   font-size: 20px;
-    font-weight: bold;  }    
+    margin: 30px 0px 0px 20px;
+    font-size: 22px;
+    font-weight: bold;  }
 
 .activities
 {   display: flex;
-    /*flex-direction: row;*/
-    flex-flow: row wrap;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    height: 450px;  
+    justify-content: flex-start;
+    height: 100%;  
     width: 100%;
-    margin: 0px 20px;   }
+    margin: 0px 30px;
+    gap: 50px;  }
 
 .single_activity h2, .group_activities h2
-{   display: flex;
-    flex-direction: column;
-    flex-flow: row wrap;
-    font-weight: bold;
-    font-size: 16px;
+{   font-weight: bold;
+    font-size: 15px;
     color: black; 
     text-align: left;
     padding: 0px 10px;
+    height: 10px;
     word-wrap: break-word  }
     
 .single_activity
 {   display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-content: stretch;
-    flex-wrap: wrap;
-    overflow: hidden;
     border-radius: 15px;
-    height: 460px;
-    width: 23%;
-    margin-top: 30px;
+    height: 375px;
+    width: 250px; 
     box-shadow: 5px 5px 5px 2px #F2F2F2;    }
 
 .group_activities
 {   display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-content: space-between;
     flex-wrap: wrap;
-    height: 460px;
-    width: 23%;
-    margin-top: 30px;   }
+    height: 375px;
+    width: 350px; }
 
 .big, .middle_1, .middle_2, .small
 {   display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    flex-wrap: wrap;
     object-fit: cover;
     width: 100%;
     border-radius: 15px;
@@ -501,27 +486,28 @@ hr
 
 .big
 {   height: 50%;
-    margin-bottom: 90px;}
+    margin-bottom: 75px;}
 
 .middle_1, .middle_2
 {   height: 45%;   }
 
 .middle_1
-{   margin-bottom: 45px;}
+{   margin-bottom: 35px;}
 
 .small
 {   height: 30%;}
 
 .single_activity img
 {   width: 100%;
-    height: 400px;
+    height: 330px;
     object-fit: cover;
+    object-position: 50% 0%;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;   }
 
 .big img
 {   width: 100%;
-    height: 75%;
+    height: 70%;
     object-fit: cover;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;  }
@@ -536,7 +522,7 @@ hr
 .small img
 {   width: 100%;
     object-fit: cover;
-    height: 65%;
+    height: 55%;
     object-position: 50% 30%;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;   }
@@ -548,7 +534,7 @@ footer
     justify-content: space-around;
     flex-wrap: wrap;
     background-color: #F2F2F2;    
-    padding-left: 60px;
+    padding-left: 90px;
     margin-left: -20px;
     margin-bottom: -10px;
     height: 100%;
