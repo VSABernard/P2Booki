@@ -8,7 +8,7 @@
             list-style: none;   }
 
     body 
-    {   max-width: 750px;
+   {   max-width: 750px; 
         /*margin: 20px;
         padding: 20px; */}
 
@@ -24,35 +24,49 @@
         align-content: center;
         align-items: center;
         width: max-content;
-        margin: auto; 
-        padding: auto;  }
+        margin: auto; }
     
     .booki
-    {   height: 50%;
+    {   display: flex;
+        align-content: center;
+        height: 50%;
         width: 50%;
         align-content: center;
-        text-align: center;
-        margin-left: 60px; }
+        text-align: center; }
 
     .menu 
-    {   flex-direction: row;
-        align-content: center;
-        width: auto; 
+    {   display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+        /* width: auto;  */
         text-align: left;
-        padding-left: 0px;
-        margin-left: 0px;   }
+        padding: 0px;
+        margin-left: 0px;  
+        flex: 1; }
 
     .menu ul 
-    {   padding-inline-start: 0px;
-        text-decoration: none;}
+    {   display: flex;
+        flex: 1;
+        padding-inline-start: 0px;
+        text-decoration: none;
+        width: 100%;
+        padding: 0px;}
 
     .menu li 
-    {   width: 50%;
+    {   width: 100%;
         font-size: 18px;
         font-weight: 600;
-        padding-bottom: 20px;
+        justify-content: center;
+        padding: 0px 70px 20px 75px;
         border-bottom: 3px solid #f2f2f2;}
-    
+
+    /*.accomodation_menu, .activity_menu
+     {   flex: 0.5;} */
+
+
+    .menu li::marker
+    {   display: none;}
+
     .menu a:hover
     {   border-top: none;
         border-bottom: 3px solid #0065FC;
@@ -78,13 +92,15 @@
     {   font-size: 18px;
         font-weight: normal;
         margin-top: 0px;
-        margin-bottom: 30px;    }
+        margin-bottom: 30px;   
+        flex: ; }
 
     .search_area
     {   justify-content: center;
         height: auto;
-        width: 100%;
-        margin-bottom: 30px;    }
+        width: auto;
+        margin-bottom: 30px;
+        margin-right: 0px;    }
 
     #map_marker
     {   border-bottom-left-radius: 15px;
@@ -95,7 +111,8 @@
     {   font-size: 20px;   }
 
     .srch
-    {   margin-left: -5px;
+    {   width: 75%;
+        margin-left: -5px;
         padding: 12px;
         border: 2px solid #f2f2f2; }
 
@@ -115,6 +132,12 @@
         color: white;
         background-color: #0065FC;   }
 
+    .button_2:hover
+    {   color: black;   }
+
+    .button_2:focus
+    {   outline: none;  }
+
     /* FILTRES */
 
    .filter
@@ -128,11 +151,11 @@
         font-size: 20px;    }  
 
     .filter_buttons
-    {   flex-wrap: wrap;
-        flex-direction: row;
+    {   flex-direction: row;
         justify-content: space-between;
-        width: max-content;
-        padding: 20px;
+        width: 100%;
+        margin-left: -40px;
+        margin-right: -40px;
          }
 
    .filter_item
@@ -140,18 +163,19 @@
         justify-content: flex-start;
         flex-wrap: wrap;
         width: auto;
-        padding: 12px 15px 12px 30px;
+        padding: 5px 15px 5px 30px;
+        margin: 10px;
         background-color: white;
         border: 2px solid #f2f2f2;
-        border-radius: 20px; } 
+        border-radius: 15px; } 
 
     .icon 
-    {   width: 20px;
-        height: 20px;
+    {   width: 15px;
+        height: 15px;
         font-size: 20px;
-        padding: 15px;
+        padding: 10px;
         margin-left: -35px;
-        border-radius: 25px;
+        border-radius: 20px;
         background-color: #deebff; }
 
     .text
@@ -173,9 +197,9 @@
 
     .information p
     {   width: 80%;
-        font-size: 15px;
+        font-size: 17px;
         margin-top: 10px;
-        overflow-wrap: break-word; }
+        hyphens: auto; }
 
 
 
@@ -318,7 +342,7 @@
         width: max-content;
         height: auto;}
 
-    .title_accomodation h1
+    /*.title_accomodation h1
     {   font-size: 35px;}
 
     .block_card
@@ -366,7 +390,7 @@
 
 
 
-    /* section populaires */
+    /* section populaires 
 
     .popular
     {   width: 90%;
@@ -376,7 +400,7 @@
         border-radius: 0px;
         order: 1;   }
 
-    .title_popular h1, #chart
+    /*.title_popular h1, #chart
     {   font-size: 35px;}
 
     #chart
@@ -402,15 +426,13 @@
     #euros
     {   font-weight: bold;  }
 
-    .card_note_popular                                                 /* PARTIE ETOILES */
+    .card_note_popular                                                 /* PARTIE ETOILES *
     {   font-size: 20px;
         padding-top: 40px;
         padding-left: 20px; }
 
 
-
-
-
+*/
 
 
 
