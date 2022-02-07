@@ -163,6 +163,7 @@ main h1                                                     /* PARAGRAPHE D'OUVE
 
 .filter ul
 {   display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
     gap: 40px;
@@ -212,12 +213,17 @@ main h1                                                     /* PARAGRAPHE D'OUVE
     padding-bottom: 5px;
     padding-left: 15px; }
 
-.information                                                /* PARTIE INFO */
+.information                                                                            /* PARTIE INFO */
+{   display: flex;
+    flex-direction: row;    }
+
+.information p                                               
 {   display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     padding-top: 15px;
+    margin-top: 0px;
     margin-left: 5px;  }
 
 #info 
@@ -230,13 +236,8 @@ main h1                                                     /* PARAGRAPHE D'OUVE
     align-items: center;
     font-size: 10px;
     margin-right: 20px;
-    margin-left: -15px; }
+    margin-top: 15px; }
 
-.information 
-{   display: flex;
-    font-size: 15px;
-    font-weight: normal;
-    margin: 0px 15px;   }
 
 /* SECTION 2 */
 
@@ -549,13 +550,15 @@ main h1                                                     /* PARAGRAPHE D'OUVE
 
 footer 
 {   display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: flex-start;
     flex-wrap: wrap;
     background-color: #F2F2F2;    
+    padding-top: 30px;
     padding-left: 90px;
-    margin-left: -20px;
+    /*margin-left: -10px; */   
     margin-bottom: -10px;
-    height: 100%;
+    height: min-content;
     width: auto; }
 
 footer ul   

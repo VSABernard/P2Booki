@@ -8,9 +8,9 @@
             list-style: none;   }
 
     body 
-    {   width: 700px;
-        margin: 40px;
-        padding: 20px; }
+    {   max-width: 750px;
+        /*margin: 20px;
+        padding: 20px; */}
 
     header, .content
     {   padding: 0px;
@@ -48,10 +48,9 @@
 
     .menu li 
     {   width: 50%;
-        font-size: 25px;
+        font-size: 18px;
         font-weight: 600;
         padding-bottom: 20px;
-        padding-left: 10px;
         border-bottom: 3px solid #f2f2f2;}
     
     .menu a:hover
@@ -67,9 +66,11 @@
         margin: auto; }
 
    h1
-    {   font-size: 30px;
-        font-weight: 900;
-        margin-top: 30px;   }
+    {   font-size: 25px;
+        font-weight: 700;
+        margin-top: 30px;
+        width: 90%;
+        overflow-wrap: break-word;   }
 
     /* SECTION 1 */
 
@@ -83,13 +84,12 @@
     {   justify-content: center;
         height: auto;
         width: 100%;
-        margin-bottom: 30px;}
+        margin-bottom: 30px;    }
 
     #map_marker
     {   border-bottom-left-radius: 15px;
         border-top-left-radius: 15px;
-        padding: 15px}
-    
+        padding: 15px}    
     
     #map_marker, .srch, .button_2
     {   font-size: 20px;   }
@@ -100,20 +100,82 @@
         border: 2px solid #f2f2f2; }
 
     ::placeholder 
-    {   color: black; 
+    {   color: black;
+        font-weight: bold; 
         padding: 10px;   }
 
     .button_1
     {   display: none;  }
 
     .button_2
-    {   padding: 12px;
-        margin-left: -40px;
+    {   padding: 15px;
+        margin-left: -20px;
         border-radius: 20px; 
         border: #0065FC;
         color: white;
         background-color: #0065FC;   }
 
+    /* FILTRES */
+
+   .filter
+    {   flex-direction: column;
+        justify-content: space-between;
+        width: auto; }    
+   
+    .filter h2
+    {   margin-top: 30px;
+        margin-left: 10px;
+        font-size: 20px;    }  
+
+    .filter_buttons
+    {   flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        width: max-content;
+        padding: 20px;
+         }
+
+   .filter_item
+    {   flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: auto;
+        padding: 12px 15px 12px 30px;
+        background-color: white;
+        border: 2px solid #f2f2f2;
+        border-radius: 20px; } 
+
+    .icon 
+    {   width: 20px;
+        height: 20px;
+        font-size: 20px;
+        padding: 15px;
+        margin-left: -35px;
+        border-radius: 25px;
+        background-color: #deebff; }
+
+    .text
+    {   font-size: 18px;
+        font-weight: bold;    }
+
+    .information
+    {   display: flex;
+        }
+
+    #info
+    {   font-size: 15px;
+        width: 10px;
+        height: 10px;
+        padding: 10px 10px 10px 15px;
+        margin-right: 20px;
+        border: 2px solid #f2f2f2;
+        border-radius: 20px;   }
+
+    .information p
+    {   width: 80%;
+        font-size: 15px;
+        margin-top: 10px;
+        overflow-wrap: break-word; }
 
 
 
@@ -181,47 +243,7 @@
     {   border-top: none;
         border-bottom: 1px solid #0065FC; }
     
-    /* section de recherche 
-
-    .section_search
-    {   padding-left: 10px;
-        padding-top: 30px;
-        margin-left: 10px;
-        margin-right: 20px;
-        height: max-content;    }
     
-    .search h1
-    {   padding-top: 20px;
-        padding-right: 120px;
-        font-size: 37px;   }
-
-    .search p
-    {   margin-top: -20px;
-        font-size: 28px;
-        margin-bottom: 60px;    }
-
-    .search_area
-    {   width: 80%; }
-
-    #map_marker, .srch, .button_2
-    {   font-size: 30px;
-        padding: 20px;  }
-
-    ::placeholder 
-    {   color: black;
-        padding-left: 20px; }
-
-    .button_1
-    {   display: none;  }
-
-    .button_2
-    {   display: flex;
-        justify-content: center;
-        align-items: center;
-        flex: 1.25;
-        height: auto;
-        margin-left: -40px;
-        border-radius: 20px;    }
 
     /* partie filtres 
 
