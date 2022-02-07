@@ -7,25 +7,21 @@
     font-family: 'Raleway', 'Arial';    }
 
 
-main 
+body 
 {   display: flex;
     flex-direction: column;  
     flex-wrap: wrap;  
     width: 100%; 
     min-height: 100vh;   }
 
-.content
+main
 {   display: flex;
     flex-direction: column;
     flex-grow: 1;
     margin-left: 30px;
     margin-right: 40px; }
 
-/*.header, .content
-{   padding-left: 40px; }*/
-
-
-/* HEADER */
+/*  HEADER  */
 
 header 
 {   display: flex;
@@ -33,25 +29,13 @@ header
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
-    margin-left: 60px;
+    margin-left: 100px;
     margin-right: 10px;     }
 
-hr
-{   display: none;}
-
-/*  HEADER  */
-
-.booki                                             /* LOGO BOOKI */
-{   display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    height: 50%;
-    margin-left: 40px; }
-
-.booki img 
+.booki img                                              /* LOGO BOOKI */
 {   width: 30px;
     height: 20px;
-    padding-top: 20px;  }
+    padding-top: 20px; }
 
 .menu                                                /*BAR DU MENU*/
 {   width: 300px;
@@ -77,14 +61,7 @@ hr
 .menu a:hover 
 {   border-top: 3px solid #0065FC;  }
 
-.section {
-    display: flex;
-    flex-direction: column;
-    max-height: 70%;    }
-
-/* SECTION 1 */
-
-.content h1                                                     /* LES DEUX PARAGRAPHES D'OUVERTURE */
+main h1                                                     /* PARAGRAPHE D'OUVERTURE */
 {   display: flex;
     flex-wrap: wrap;
     font-weight: bold;
@@ -94,6 +71,13 @@ hr
     margin-bottom: 0px; 
     margin-left: 50px;
     padding: 0px;}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    max-height: 70%;    }
+
+/* SECTION 1 */
 
 .section_search                                      /* SECTION DE RECHERCHE GLOBAL */                               
 {   display: flex;
