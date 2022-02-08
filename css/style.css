@@ -154,7 +154,7 @@ main h1                                                     /* PARAGRAPHE D'OUVE
     flex-wrap: wrap;
     width: auto;
     margin-top: 15px;
-    margin-left: -10px;}
+    margin-left: -10px; }
 
 .filter h2
 {   font-size: 20px;
@@ -168,10 +168,11 @@ main h1                                                     /* PARAGRAPHE D'OUVE
     justify-content: flex-start;
     gap: 40px;
     margin-bottom: 25px;
-    padding-right: 10px;}
+    margin-left: 30px; }
 
-.filter li
-{   list-style: none;    }
+.filter_buttons li
+{   display: flex;
+    list-style: none;    }
 
 .filter_item 
 {   display: flex;
@@ -182,6 +183,8 @@ main h1                                                     /* PARAGRAPHE D'OUVE
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
     border-left: none;
+    margin-left: 20px;
+    padding-right: 20px;
     height: 37px; 
     width: max-content;   }
 
@@ -248,7 +251,7 @@ main h1                                                     /* PARAGRAPHE D'OUVE
     margin-left: -10px;
     height: 100%;    }
 
-.accomodation_marseille                                               /* PARTIE HEBERGEMENTS */
+#accomodation_marseille                                               /* PARTIE HEBERGEMENTS */
 {   display: flex;
     flex-direction: column;
     flex: 2;
@@ -263,7 +266,7 @@ main h1                                                     /* PARAGRAPHE D'OUVE
     height: 100%;
     min-width: 60%; }
 
-.accomodation_marseille h2
+#accomodation_marseille h2
 {   display: flex;   
     width: 100%;
     margin: 10px 10px;
@@ -276,7 +279,7 @@ main h1                                                     /* PARAGRAPHE D'OUVE
     flex-wrap: wrap; 
     justify-content: space-between;
     width: 100%;
-    margin-top: -10px;
+    margin-top: 0px;
     padding: 0px 10px; }
 
 .card     
@@ -284,13 +287,13 @@ main h1                                                     /* PARAGRAPHE D'OUVE
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 200px;
+    max-width: 330px;
     object-fit: cover;
     overflow: hidden;
     border-radius: 15px;
     background-color: white;  
     box-shadow: 5px 5px 5px gainsboro; 
-    margin: 20px 15px; }
+    margin: 20px 5px; }
 
 .card_image
 {   height: 120px; 
@@ -298,7 +301,7 @@ main h1                                                     /* PARAGRAPHE D'OUVE
     overflow: hidden;   }
 
 .card_image img 
-{   width: 94%;
+{   width: 93%;
     height: 100%;
     padding: 5px;
     object-position: center;
@@ -345,10 +348,9 @@ main h1                                                     /* PARAGRAPHE D'OUVE
     flex: 1;
     justify-content: space-between;
     height: 100%;
-    margin-bottom: 20px;
     margin-left: 30px;
     margin-right: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
     background-color: #F2F2F2;
     border: 15px solid #F2F2F2;
     border-radius: 15px; }
@@ -365,7 +367,7 @@ main h1                                                     /* PARAGRAPHE D'OUVE
     justify-content: flex-end;
     font-size: 22px;
     font-weight: bold;
-    margin-top: -45px;
+    margin-top: -55px;
     margin-right: 10px; }
 
 .group_card
@@ -377,8 +379,8 @@ main h1                                                     /* PARAGRAPHE D'OUVE
     height: 70%; 
     width: 100%;
     list-style-type: none;
-    margin: 0px;
-    padding: 0px 20px;  }
+    margin: -5px 0px -10px;
+    padding: 10px 20px 25px 20px;  }
 
 .card_popular    
 {   display: flex;
@@ -388,7 +390,7 @@ main h1                                                     /* PARAGRAPHE D'OUVE
     height: 150px;
     width: 100%;
     padding: 5px;
-    margin: 20px;
+    margin: 30px 20px;
     border-radius: 15px;
     background-color: white;
     box-shadow: 5px 5px 5px gainsboro; }
@@ -439,7 +441,7 @@ main h1                                                     /* PARAGRAPHE D'OUVE
 
 /* SECTION 3 */
 
-.block_activities                                                  /* PARTIES ACTIVITES */
+#block_activities                                                  /* PARTIES ACTIVITES */
 {   display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -450,7 +452,7 @@ main h1                                                     /* PARAGRAPHE D'OUVE
     margin: 40px;
     padding-bottom: 60px;  }
 
-.block_activities h2
+#block_activities h2
 {   margin: 10px 0px 30px 20px;
     font-size: 22px;
     font-weight: bold;  }

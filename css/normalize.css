@@ -4,7 +4,8 @@
 
 @media screen and (max-width: 767px){                             
 
-    *   {   text-decoration: none;
+    *   {   font-family: 'Raleway', 'Arial';
+            text-decoration: none;
             list-style: none;   }
 
     body 
@@ -31,23 +32,20 @@
         align-content: center;
         height: 50%;
         width: 50%;
-        align-content: center;
+        padding-left: 160px;
         text-align: center; }
 
     .menu 
     {   display: flex;
         flex-direction: row;
         align-content: flex-start;
-        /* width: auto;  */
         text-align: left;
-        padding: 0px;
-        margin-left: 0px;  
+        padding: 0px;  
         flex: 1; }
 
     .menu ul 
     {   display: flex;
         flex: 1;
-        padding-inline-start: 0px;
         text-decoration: none;
         width: 100%;
         padding: 0px;}
@@ -59,10 +57,6 @@
         justify-content: center;
         padding: 0px 70px 20px 75px;
         border-bottom: 3px solid #f2f2f2;}
-
-    /*.accomodation_menu, .activity_menu
-     {   flex: 0.5;} */
-
 
     .menu li::marker
     {   display: none;}
@@ -77,41 +71,43 @@
 
     main 
     {   width: 80%;
-        margin: auto; }
+        margin: 10px; }
 
    h1
-    {   font-size: 25px;
+    {   font-size: 28px;
         font-weight: 700;
         margin-top: 30px;
-        width: 90%;
+        width: 100%;
         overflow-wrap: break-word;   }
 
     /* SECTION 1 */
 
     #search_sentence
-    {   font-size: 18px;
+    {   width: max-content;
+        font-size: 21px;
         font-weight: normal;
-        margin-top: 0px;
-        margin-bottom: 30px;   
-        flex: ; }
+        margin: 0px 00px 30px 0px; 
+        padding: 0px;  }
 
     .search_area
-    {   justify-content: center;
-        height: auto;
-        width: auto;
-        margin-bottom: 30px;
-        margin-right: 0px;    }
+    {   display: flex;
+        justify-content: flex-start;
+        height: 65px;
+        width: max-content;
+        margin-bottom: 30px; }
 
     #map_marker
-    {   border-bottom-left-radius: 15px;
+    {   display: flex;
+        justify-content: center;
+        border-bottom-left-radius: 15px;
         border-top-left-radius: 15px;
-        padding: 15px}    
+        padding: 20px 25px; }    
     
     #map_marker, .srch, .button_2
-    {   font-size: 20px;   }
+    {   font-size: 25px;   }
 
     .srch
-    {   width: 75%;
+    {   display: flex;
         margin-left: -5px;
         padding: 12px;
         border: 2px solid #f2f2f2; }
@@ -119,13 +115,14 @@
     ::placeholder 
     {   color: black;
         font-weight: bold; 
-        padding: 10px;   }
-
+        padding: 10px;  }
+        
     .button_1
     {   display: none;  }
 
     .button_2
-    {   padding: 15px;
+    {   display: flex;
+        padding: 20px ;
         margin-left: -20px;
         border-radius: 20px; 
         border: #0065FC;
@@ -148,23 +145,28 @@
     .filter h2
     {   margin-top: 30px;
         margin-left: 10px;
-        font-size: 20px;    }  
+        font-size: 26px;    }  
 
     .filter_buttons
     {   flex-direction: row;
         justify-content: space-between;
         width: 100%;
-        margin-left: -40px;
-        margin-right: -40px;
-         }
+        padding: 0px;
+        margin: 10px; }
+
+    .filter_buttons li 
+    {   display: flex;
+        flex-direction: row;
+        justify-content: space-between;        
+        margin: 0px;}
 
    .filter_item
     {   flex-direction: row;
         justify-content: flex-start;
         flex-wrap: wrap;
         width: auto;
-        padding: 5px 15px 5px 30px;
-        margin: 10px;
+        padding: 5px 15px 5px 20px;
+        margin: 10px -20px 10px 10px;
         background-color: white;
         border: 2px solid #f2f2f2;
         border-radius: 15px; } 
@@ -174,17 +176,17 @@
         height: 15px;
         font-size: 20px;
         padding: 10px;
-        margin-left: -35px;
+        margin-left: -30px;
         border-radius: 20px;
         background-color: #deebff; }
 
     .text
-    {   font-size: 18px;
-        font-weight: bold;    }
+    {   font-size: 22px;
+        font-weight: bold;
+        padding-left: 15px;    }
 
     .information
-    {   display: flex;
-        }
+    {   display: flex;        }
 
     #info
     {   font-size: 15px;
@@ -196,12 +198,122 @@
         border-radius: 20px;   }
 
     .information p
-    {   width: 80%;
+    {   width: 90%;
         font-size: 17px;
         margin-top: 10px;
         hyphens: auto; }
 
+    /* PARTIE HEBERGEMENTS */
+    
+    .block_accomodation
+    {   display: flex;
+        flex-direction: column;
+        max-width: 750px; }
 
+    #accomodation_marseille     
+    {   display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        order: 2; 
+        background-color: white;
+        border: none;
+        margin: 0px;
+        width: max-content;
+        height: auto;}
+
+
+
+
+
+
+
+    /* PARTIE POPULAR */
+
+    .popular
+    {   display: flex;
+        flex-direction: column;
+        order: 1;  
+        width: fit-content;
+        margin: 40px 0px;
+        padding: 2px 20px 5px 0px;
+        background-color: #F2F2F2;
+        border: 15px solid #F2F2F2;
+        border-radius: 0px; } 
+
+    .popular h2
+    {   display: flex;
+        margin: 30px 10px;  
+        font-size: 30px; }
+
+    #chart 
+    {   display: flex;
+        justify-content: flex-end;
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: -65px;
+        margin-right: 10px; }
+
+    .group_card
+    {   display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        height: 90%; 
+        width: 100%;
+        list-style-type: none;
+        margin-right: 20px;
+        padding: 10px;  }
+
+    .card_popular    
+    {   display: flex;
+        height: 180px;
+        width: 100%;
+        padding: 5px;
+        margin: 20px 20px;
+        border-radius: 15px;
+        background-color: white;
+        box-shadow: 5px 5px 5px gainsboro; }
+
+    .card_popular img
+    {   display: flex;
+        max-width: 150px;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;    }   
+    
+    .card_popular img:hover 
+    {   transform: scale(1.06); }
+
+    .block_info_popular 
+    {   display: flex;
+       flex-direction: column;
+        margin-top: -20px;
+        margin-left: -20px;
+        width: 100%; }
+
+    .block_info_popular h2
+    {   font-size: 22px;
+        color: black; }
+
+    .block_info_popular p
+    {   font-size: 18px;
+        margin-top: -10px;
+        padding-left: 10px; }
+
+    .card_note_popular                                                 /* PARTIE ETOILES */
+    {   display: flex;
+        align-items: baseline;
+        font-size: 12px;    
+        margin: 40px 10px 5px; }
+
+
+
+
+
+
+    /* PARTIE ACTIVITES */
 
 
 
