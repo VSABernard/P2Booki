@@ -248,7 +248,7 @@ main h1                                                     /* PARAGRAPHE D'OUVE
 {   display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-left: -10px;
+    /* margin-left: -10px; */
     height: 100%;    }
 
 #accomodation_marseille                                               /* PARTIE HEBERGEMENTS */
@@ -369,7 +369,7 @@ main h1                                                     /* PARAGRAPHE D'OUVE
     justify-content: flex-end;
     font-size: 22px;
     font-weight: bold;
-    margin-top: -55px;
+    margin-top: -65px;
     margin-right: 10px; }
 
 .group_card
@@ -381,8 +381,7 @@ main h1                                                     /* PARAGRAPHE D'OUVE
     height: 70%; 
     width: 100%;
     list-style-type: none;
-    margin: -5px 0px -10px;
-    padding: 20px 10px 25px 10px;  }
+    padding: 20px 10px;  }
 
 .card_popular    
 {   display: flex;
@@ -426,7 +425,8 @@ main h1                                                     /* PARAGRAPHE D'OUVE
     text-align: left;
     font-weight: bold;
     font-size: 18px;
-    color: black; }
+    color: black; 
+    padding-left: 15px;}
 
 .block_info_popular p
 {   font-size: 14px; }
@@ -561,10 +561,16 @@ footer
     padding-top: 30px;
     padding-left: 90px; 
     margin-bottom: -10px;
-    margin-left: -5px;
-    margin-right: 0px;
     height: auto;
     width: 100%; }
+
+.foot
+{   display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 20px;    }
 
 footer ul   
 {   margin-left: 20px;
@@ -581,14 +587,6 @@ footer li
     font-size: 15px;
     text-align: left;
     min-height: 40px;   }
-
-.foot
-{   display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: 20px;
-    font-weight: bold;
-    font-size: 20px;    }
 
 .about, .accomodations
 {   flex: 5;    }
