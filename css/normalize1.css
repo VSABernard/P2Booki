@@ -1,0 +1,40 @@
+/* MEDIA QUERIES */
+
+/* sur le periphérique mobile */
+
+@media screen and (max-width: 768px)
+
+{   *   {   box-sizing: border-box;   
+            font-family: 'Raleway', 'Arial';
+            text-decoration: none;
+            list-style: none;
+            font-size: 22px;
+            max-width: 100%;   }
+
+    body, header, main
+   {    max-width: 100%;
+        margin: 20px 0px; }
+
+    main 
+    {   display: flex;
+        flex-direction: column;}
+
+    h1, h2, h3
+    {   font-size: 150%; }
+
+    /* Logo et menu */
+
+    header 
+    {   width: 100%;
+        flex-direction: column;
+        justify-content: normal;
+        align-items: center;
+        height: auto;
+        margin: 0;  }
+
+    .booki
+    {   width: 20%;
+        text-align: center;
+        margin: 0px;    }
+
+    
