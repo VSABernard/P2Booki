@@ -19,9 +19,6 @@
     {   display: flex;
         flex-direction: column;}
 
-    h1, h2, h3
-    {   font-size: 150%; }
-
     /* Logo et menu */
 
     header 
@@ -33,8 +30,160 @@
         margin: 0;  }
 
     .booki
-    {   width: 20%;
-        text-align: center;
+    {   width: 25%;
+        justify-content: center;
         margin: 0px;    }
 
+    .menu ul 
+    {   justify-content: space-between;
+        padding: 0px 20px;
+        gap: 250px; }
+
+    .menu li 
+    {   font-size: 200%;    }
+
+    .menu a:hover 
+    {   border-top: none;
+        border-bottom: 4px solid #0065FC;
+        margin-bottom: 5px;  }
     
+    hr 
+    {   display: inline;
+        width: 100%;
+        border-bottom: 3px solid #f2f2f2;
+        border-top: none;
+        margin-top: -30px;  }
+
+    main h1 
+    {   max-width: 70%;
+        font-size: 175%;
+        font-weight: 800;
+        margin-top: 0px;    }
+
+    /* SECTION 1 - SEARCH ET FILTRES */
+
+    #search_sentence
+    {   font-size: 120%;}
+
+    .search_area
+    {   width: 100%;
+        height: 90px;}
+
+    #map_marker
+    {   font-size: 40px;}
+
+    ::placeholder 
+    {   color: black;
+        font-size: 34px;
+        font-weight: 800; 
+        padding: 10px;  }   
+
+    .button_1
+    {   display: none;  }
+
+    .button_2
+    {   display: flex;
+        flex: 1;
+        justify-content: center;
+        padding: 30px 25px 30px 20px;
+        margin-left: -20px;
+        border-radius: 20px; 
+        border: #0065FC;
+        color: white;
+        background-color: #0065FC; 
+        cursor: pointer; }
+
+    .button_2:hover
+    {   color: black;   }
+
+    .button_2:focus
+    {   outline: none;  }
+
+    .button_2 i 
+    {   font-size: 32px;    }
+
+    .filter h2
+    {   font-size: 150%;
+        font-weight: 800;   }
+
+    .filter ul
+    {   margin-left: -30px;
+        margin-right: 60px;
+        gap: 50px;}
+
+    .filter_item
+    {   height: 75px;
+        border: 5px solid #f2f2f2;
+        border-bottom-right-radius: 40px;
+        border-top-right-radius: 40px;
+        border-left: none;}
+
+    .icon
+    {   width: 75px;
+        height: 75px;
+        font-size: 50px;}
+            
+    .text
+    {   font-size: 130%;
+        font-weight: 800;}
+
+    #info
+    {   width: 50px;
+        height: 50px;
+        font-size: 25px;
+        border: 5px solid #f2f2f2;  }
+
+    .information p 
+    {   width: 90%;
+        font-size: 30px;
+        font-weight: 500;
+        margin-top: 10px;   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* REGROUPEMENT DES CODES POUR ANIMATION */
+
+a
+{   text-decoration: none;  
+    color: black;   }
+
+.menu a:hover, .filter_item:hover, .card:hover, /*.card h3:hover,*/ h3:hover, /*.block_info_popular h3:hover,*/ .title_activity h2:hover, footer a:hover
+{   color: #0065FC; }
+
+.filter_item:hover, .card:hover, /*.card h2:hover,*/ h3:hover, /*.card_popular:hover,*/ .block_info_popular h2:hover, .title_activity h2:hover
+{   transition: 0.1s ease;
+    cursor: pointer; }
+
+.filter_item:hover, .card:hover, .card_title:hover, .card_popular:hover, .single_activity:hover, .group_activities .big:hover, .group_activities .middle_1:hover, .group_activities .middle_2:hover, .group_activities .small:hover 
+{   background-color: #DEEBFF;  }
+

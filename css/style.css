@@ -81,7 +81,7 @@ main h1                                                     /* PARAGRAPHE D'OUVE
     margin-left: 50px;
     padding: 0px;}
 
-.section {
+main {
     display: flex;
     flex-direction: column;
     max-height: 70%;    }
@@ -134,7 +134,7 @@ main h1                                                     /* PARAGRAPHE D'OUVE
     padding-left: 20px;
     font-size: 20px;    }
 
-.button_1, .button_2                                                    /* BUTTON DE RECHERCHE */
+.button_1                                                     /* BUTTON DE RECHERCHE */
 {   flex: 6;
     background: #0065FC;
     color: #DEEBFF;
@@ -146,10 +146,10 @@ main h1                                                     /* PARAGRAPHE D'OUVE
     transition: 0.5s ease;
     font-size: 20px;    }
 
-.button_1:hover, .button_2:hover 
+.button_1:hover 
 {   color: black;   }
 
-.button_1:focus, .button_2:focus, .src:focus 
+.button_1:focus, .src:focus 
 {   outline: none;  }
 
 .button_2
