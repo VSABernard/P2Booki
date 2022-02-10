@@ -27,31 +27,37 @@ header
 {   display: flex;
     flex: 1;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
-    margin-left: 100px;
-    margin-right: 10px;     }
+    justify-content: flex-start;
+    margin-left: 60px;
+    margin-right: 20px;     }
 
 .booki img                                              /* LOGO BOOKI */
-{   width: 30px;
+{   display: flex;
+    flex: 2;
+    width: 30px;
     height: 20px;
     padding-top: 20px; }
 
 .menu                                                /*BAR DU MENU*/
-{   width: 300px;
-    height: 20px;   }
+{   display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    height: 20px; }
 
 .menu ul     
 {   display: flex;
-    align-content: flex-end;
     justify-content: flex-end; }
 
 .menu li 
 {   list-style: none;
-    margin-right: 50px;
     font-size: 20px;
     font-weight: 700; 
-    margin-top: -20px;   }
+    margin-top: -20px;
+    margin-left: 30px;   }
+
+.activity_menu
+{   padding-left: 40px;
+    padding-right: 40px; }    
 
 .menu a 
 {   display: inline-block;
@@ -280,7 +286,7 @@ main h1                                                     /* PARAGRAPHE D'OUVE
     justify-content: space-between;
     width: 100%;
     height: fit-content;
-    margin-top: 0px 30px;
+    margin-top: 15px;
     padding: 0px 10px; }
 
 .card     
