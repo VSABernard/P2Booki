@@ -139,6 +139,17 @@
         font-weight: 500;
         margin-top: 10px;   }
 
+/* SECTION 2 - HEBERGEMENTS ET POPULAIRES */
+
+.block_accomodation
+{   flex-direction: column; }
+
+#accomodation_marseille
+{   order: 2;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+    background-color: white; }
 
 
 
@@ -149,6 +160,48 @@
 
 
 
+
+
+
+
+
+
+.popular 
+{   order: 1;
+    width: 100%;
+    margin: 0px;
+    padding: 20px;
+    border-radius: 0px; }
+
+.popular h2, #chart
+{   font-size: 200%;
+    font-weight: 800;   }
+
+#chart
+{   margin-top: -85px;}
+
+.card_popular 
+{   max-width: 100%;
+    height: 250px;
+    padding: 10px; }
+
+.card_popular img 
+{   max-width: 250px;   }
+
+.block_info_popular 
+{   max-width: 70%;
+    padding-left: 20px;
+    margin-top: -20px; }
+
+.block_info h3 
+{   font-size: 150%;    }
+
+.block_info p
+{   font-size: 120%;
+    margin-top: -20px;}
+
+.card_note_popular
+{   margin-top: 25px;}
 
 
 

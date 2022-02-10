@@ -429,7 +429,7 @@ main {
     margin: 0px;
     list-style-type: none;  }
 
-.block_info_popular h3
+.block_info h3
 {   word-wrap: break-word;
     text-align: left;
     font-weight: bold;
@@ -437,11 +437,11 @@ main {
     color: black; 
     padding-left: 15px;}
 
-.block_info_popular p
+.block_info p
 {   font-size: 14px; }
 
 #euros
-{   font-weight: normal;  }
+{   font-weight: 600;  }
 
 .card_note_popular                                                 /* PARTIE ETOILES */
 {   display: flex;
