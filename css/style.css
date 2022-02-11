@@ -564,46 +564,46 @@ main h1                                                     /* PARAGRAPHE D'OUVE
 /* FOOTER */
 
 footer 
-    {   display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        background-color: #F2F2F2;    
-        padding-top: 30px;
-        padding-left: 90px; 
-        margin-bottom: -10px;
-        height: auto;
-        width: 100%; }
+{   display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: #F2F2F2;    
+    padding-top: 30px;
+    padding-left: 90px; 
+    margin-bottom: -10px;
+    height: auto;
+    width: 100%; }
 
 .foot
-    {   display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-left: 20px;
-        font-weight: bold;
-        font-size: 20px;    }
+{   display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 20px;    }
 
 footer ul   
-    {   margin-left: 20px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding-left: 0px;  }
+{   margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 0px;  }
 
 footer li    
-    {   display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        list-style: none;
-        font-size: 15px;
-        text-align: left;
-        min-height: 40px;   }
+{   display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
+    font-size: 15px;
+    text-align: left;
+    min-height: 40px;   }
 
 .about, .accomodations
-    {   flex: 5;    }
+{   flex: 5;    }
 
 .assistance
-    {   flex: 6;    }
+{   flex: 6;    }
 
 
 /* REGROUPEMENT DES CODES POUR ANIMATION */
