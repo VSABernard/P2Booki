@@ -1,6 +1,6 @@
 /* MEDIA QUERIES */
 
-/* sur le periphérique mobile */
+/* sur le periphérique mobile 
 
 @media screen and (max-width: 768px)
 
@@ -19,7 +19,7 @@
         flex-direction: column;
         margin: 20px;}
 
-    /* Logo et menu */
+    /* Logo et menu 
 
     header 
     {   max-width: 100%;
@@ -76,13 +76,13 @@
     h1
      {/*   display: flex;
         justify-content: flex-start;
-        font-size: 30px; */
+        font-size: 30px; 
         font-weight: 800;
         margin-top: 170px;
         max-width: 50%;
         overflow-wrap: break-word; }
 
-    /* SECTION 1 */
+    /* SECTION 1 
 
     #search_sentence
      {  max-width: 100%;
@@ -93,21 +93,21 @@
 
     .search_area
       {/*   display: flex; */
-        /* justify-content: flex-start;  */
+        /* justify-content: flex-start;  
         height: 65px;
         width: 100%;
         margin: 40px -10px; }
 
     #map_marker
      {/*   display: flex;
-        justify-content: center; */
+        justify-content: center; 
         flex: 1;
         border-bottom-left-radius: 15px;
         border-top-left-radius: 15px;
         padding: 15px; }    
     
     /* #map_marker, .srch, .button_2
-    {   font-size: 28px;   } */
+    {   font-size: 28px;   } 
 
     .srch
     {   display: flex;
@@ -139,7 +139,7 @@
     .button_2:focus
     {   outline: none;  }
 
-    /* FILTRES */
+    /* FILTRES *
 
    .filter
     {   flex-direction: column;
@@ -161,7 +161,7 @@
 
     /* .filter_buttons li 
     {   display: flex;     
-        margin: 0px;    } */
+        margin: 0px;    } *
 
    .filter_item
     {   width: max-content;
@@ -174,8 +174,8 @@
     .icon 
     {   max-width: 25px;
         max-height: 25px;
-        /* font-size: 22px; */
-        padding: 20px;
+        /* font-size: 22px; 
+        /* padding: 20px;
         margin-left: -20px;
         border-radius: 40px;
         background-color: #deebff; }
@@ -200,33 +200,33 @@
         border-radius: 30px;   }
 
     .information p
-    {   width: 90%;
-        /* font-size: 20px; */
+    {   width: 90%; */
+        /* font-size: 20px;  
         margin-top: 10px;
         overflow-wrap: break-word; }
 
-    /* PARTIE HEBERGEMENTS */
+    /* PARTIE HEBERGEMENTS  
     
     .block_accomodation
      {  display: flex;
         flex-direction: column;
         /*   flex-wrap: wrap; */
-        width: 100%;   
+        /* width: 100%;   
         margin: 20px 0px; }
 
-    #accomodation_marseille                                               /* PARTIE HEBERGEMENTS */
+    #accomodation_marseille                                               /* PARTIE HEBERGEMENTS  
       {  display: flex;
         flex-direction: column;  
-        order: 2;
+        order: 2; */
          /* justify-content: center;    
-        flex-wrap: wrap;   */
+        flex-wrap: wrap;   
         background-color: white;
         margin: 20px 0px;
         width: 100%; }
 
     #accomodation_marseille h2
-     {/*   display: flex;    */
-        margin: 15px; 
+     {   display: flex;    */
+        /* margin: 15px; 
         font-weight: 800; }
 
     .block_card
@@ -236,18 +236,18 @@
         justify-content: space-between;
         width: max-content; }  
 
-    .card     
+    .card      */
      {/*   display: flex; */
-        flex-direction: column;
+        /* flex-direction: column;
         max-width: 100%;
-        height: auto;
+        height: auto; */
         /*aspect-ratio: 4 / 2; 
         object-fit: cover;*/
-        border-radius: 15px;
+        /* border-radius: 15px;
         background-color: white;  
         box-shadow: 5px 5px 5px 5px gainsboro; 
         margin: 20px 10px 10px -30px;
-        padding: 5px; } 
+        padding: 5px; }  */
 
     /* .card_image
     {   height: 70%; 
@@ -256,14 +256,14 @@
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;   } */
 
-    .card_image img 
+    /* .card_image img 
     {   width: 100%;
         height: 80%;
         object-position: center;
         object-fit: cover;
         aspect-ratio: 16 / 8;
         border-top-left-radius: 15px;
-        border-top-right-radius: 15px;  }
+        border-top-right-radius: 15px;  } */
 
     /*.card h3                                                            /* PARTIE TITRE, PRIX, ETOILE 
     {   overflow-wrap: break-word;
@@ -280,7 +280,7 @@
     .euros_1
     {   font-weight: bold;  }*/
 
-    .card_note
+    /* .card_note
     {   display: flex;
         flex-direction: row;
         list-style-type: none;
@@ -292,10 +292,10 @@
         font-weight: 700; 
         color: black;  
         margin: 25px 10px;
-        width: 40%;   }
+        width: 40%;   } */
 
     /* PARTIE POPULAR */
-
+/* 
     .popular
     {   display: flex;
         flex-direction: column;
@@ -377,21 +377,21 @@
     .block_info_popular p
     {   font-size: 20px;
         margin-top: -10px;
-        margin-left: 10px; }
+        margin-left: 10px; } */
 
-    .card_note_popular                                                 /* PARTIE ETOILES */
+    .card_note_popular                                                 /* PARTIE ETOILES 
     {   display: flex;
         align-items: baseline;
         font-size: 18px;    
         padding: 30px 10px 10px; }
 
-    /* PARTIE ACTIVITES */
+    /* PARTIE ACTIVITES 
 
     #block_activities                                                  
     {   display: flex;
         /* flex-direction: column; */
         /* justify-content: space-between;
-        flex-wrap: wrap; */
+        flex-wrap: wrap; 
         order: 3;
         width: 100%;
         margin: 0px 10px 70px -15px;
@@ -404,7 +404,7 @@
     .activities
     {   display: flex;
         flex-direction: column;
-        /* justify-content: space-between; */
+        /* justify-content: space-between; 
         aspect-ratio: 16 / 8;
         height: auto;  
         width: 100%;
@@ -451,7 +451,7 @@
     .small img
     {   object-position: 0% 30%; } */
 
-    /* FOOTER */
+    /* FOOTER 
 
     footer 
     {   display: flex;
@@ -494,16 +494,16 @@
     {   color: black;
         letter-spacing: 1.5px;  }
 
-    /* REGROUPEMENT DES CODES POUR ANIMATION */
+    /* REGROUPEMENT DES CODES POUR ANIMATION 
 
     a
     {   text-decoration: none;  
         color: black;   }
 
-    .menu a:hover, .filter_item:hover, .card:hover, /*.card h3:hover,*/ h3:hover, /*.block_info_popular h3:hover,*/ .title_activity h2:hover, footer a:hover
+    .menu a:hover, .filter_item:hover, .card:hover, /*.card h3:hover,* h3:hover, *.block_info_popular h3:hover,* .title_activity h2:hover, footer a:hover
     {   color: #0065FC; }
-
-    .filter_item:hover, .card:hover, /*.card h2:hover,*/ h3:hover, /*.card_popular:hover,*/ .block_info_popular h2:hover, .title_activity h2:hover
+/* 
+    .filter_item:hover, .card:hover, /*.card h2:hover,* h3:hover,*.card_popular:hover,* .block_info_popular h2:hover, .title_activity h2:hover
     {   transition: 0.1s ease;
         cursor: pointer; }
 
@@ -511,7 +511,7 @@
     {   background-color: #DEEBFF;  }
     
 }
-
+ */
 
 /* -------------------------------------------------------------------------------------------------------------------------------------------------------------
 sur la version tablette ----------------------------------------------------------------------------------------------------------------------------------------*/
