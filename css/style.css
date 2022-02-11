@@ -11,7 +11,7 @@ body
 {   display: flex;
     flex-direction: column;  
     flex-wrap: wrap;  
-    width: auto; 
+    width: 100%; 
     min-height: 100vh;   }
 
 main
@@ -258,7 +258,7 @@ main {
     flex-wrap: wrap;
     flex-direction: row;
     /* margin-left: -10px; */
-    height: 100%;    }
+    height: auto;    }
 
 #accomodation_marseille                                               /* PARTIE HEBERGEMENTS */
 {   display: flex;
@@ -272,7 +272,7 @@ main {
     margin-left: 60px;
     margin-right: 20px;
     padding-right: 20px;
-    height: 100%;
+    height: auto;
     width: auto; }
 
 #accomodation_marseille h2
@@ -297,7 +297,7 @@ main {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 330px;
+    width: 30%;
     object-fit: cover;
     overflow: hidden;
     border-radius: 15px;
@@ -346,6 +346,8 @@ main {
 
 .show_more
 {   display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     font-weight: bold;  
     font-size: 15px;   
     padding-top: 20px; 
