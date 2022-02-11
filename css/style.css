@@ -619,6 +619,7 @@ a
 {   transition: 0.1s ease;
     cursor: pointer; }
 
-.filter_item:hover, .card:hover, .card_title:hover, .card_popular:hover, .single_activity:hover, .group_activities .big:hover, .group_activities .middle_1:hover, .group_activities .middle_2:hover, .group_activities .small:hover 
+.filter_item:hover, .card:hover, .card_title:hover, .card_popular:hover, .single_activity:hover, .group_activities .big:hover, 
+.group_activities .middle_1:hover, .group_activities .middle_2:hover, .group_activities .small:hover 
 {   background-color: #DEEBFF;  }
 
