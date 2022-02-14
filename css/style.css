@@ -597,6 +597,7 @@ footer
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
+    overflow-x: hidden;
     background-color: #F2F2F2;  
     padding-left: 40px; 
     height: auto;
