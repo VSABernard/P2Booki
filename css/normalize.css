@@ -8,9 +8,12 @@
             font-family: 'Raleway', 'Arial'; } 
 
     body 
-    {   display: flex;
+    {   max-width: 100%;
+        display: flex;
         flex-direction: column;
-        overflow-x: hidden; }
+        overflow-x: hidden; 
+        margin: 0px;
+        padding: 0px;   }
 
     /* LOGO ET MENU */
 
@@ -35,7 +38,7 @@
 
     .menu li 
     {   width: 50%;
-        font-size: 26px;
+        font-size: 20px;
         gap: 40px;
         border-top: none; 
         padding-bottom: 0px;
@@ -64,18 +67,18 @@
     main h1 
     {   width: 90%;
         text-align: inherit;
-        font-size: 26px;
+        font-size: 22px;
         font-weight: 800; 
         margin-left: 20px;   }
 
-    /* SECTION 1 - SEARCH ET FILTRES */
+    /* SECTION 1 - RECHERCHE ET FILTRES */
 
     .section_search
     {   margin: 0px;
         padding: 10px; }
     
     #search_sentence
-     {  font-size: 20px;
+     {  font-size: 17px;
         margin-left: 10px;}
 
     .search_area
@@ -86,7 +89,8 @@
     #map_marker
     {   flex: 2;
         width: 100%;
-        font-size: 30px;}
+        font-size: 22px;
+        padding: 10px;}
 
     ::placeholder 
     {   width: auto;
@@ -102,8 +106,9 @@
     {   display: flex;
         flex: 1;
         justify-content: center;
-        padding: 20px 25px 30px 20px;
-        margin-left: -20px;
+        font-size: 20px;
+        padding: 20px 20px 30px;
+        margin-left: -40px;
         border-radius: 20px; 
         border: #0065FC;
         color: white;
@@ -125,7 +130,7 @@
 
     .filter h2
     {   flex: 1;
-        font-size: 28px;
+        font-size: 22px;
         font-weight: 800; 
         margin-bottom: 10px;  }
 
@@ -155,7 +160,7 @@
     .text
     {   width: 100%;
         position: inherit;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 800;
         padding-left: 35px; }
 
@@ -174,7 +179,7 @@
     .information p 
     {   max-width: 100%;
         text-align: inherit;
-        font-size: 21px;
+        font-size: 18px;
         font-weight: 500;
         margin-top: 5px; }
 
@@ -197,8 +202,9 @@
         border: none; }
 
     #accomodation_marseille h2
-    {   font-size: 28px;
-        font-weight: 800;   }
+    {   font-size: 22px;
+        font-weight: 800;
+        margin-left: 5px; }
 
     .block_card
     {   flex-direction: column;
@@ -227,20 +233,23 @@
         border-top-left-radius: 25px;
         border-top-right-radius: 25px; }
 
+    .show_more
+    {   font-size: 16px;    }
+
     /* POPULAIRES */
 
     .popular
     {   flex-direction: column;
         order: 1;
-        width: 100%;
+        min-width: 100%;
         margin-left: 0px;      
-        margin-right: 0px;  
+        margin-right: -20px;  
         padding: 10px 30px 20px 10px;
         border-radius: 0px; 
         border: 0px; }
 
     .popular h2, #chart
-    {   font-size:28px;
+    {   font-size:22px;
         font-weight: 800;   }
 
     #chart
@@ -250,7 +259,8 @@
 
     .group_card
     {   width: 100%;
-        padding: 0px; }
+        padding: 0px;
+        margin-left: 10px; }
 
     .card_popular 
     {   width: 100%;
@@ -285,13 +295,13 @@
     #block_activities, .activities
     {   width: 100%;
         flex-direction: column;
-        margin: 0px;
+        margin: 0px 10px;
         padding: 0px; }
 
     #block_activities h2
-    {   font-size:28px;
+    {   font-size:22px;
         font-weight: 800;
-        margin: 20px 10px 0px;}
+        margin: 20px;   }
 
     .activities
     {   justify-content: space-between;
@@ -334,11 +344,11 @@
         background-color: #F2F2F2; 
         height: 100%;
         width: 100%;
-        margin: 0px;
-        padding: 0px;}
+        margin-right: -20px;
+        padding: 0px;   }
     
     .foot
-    {   margin-left: 20px;
+    {   margin-left: 30px;
         font-weight: 700;
         font-size: 22px;
         height: 100%; }
