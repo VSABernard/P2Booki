@@ -25,21 +25,21 @@
         margin: 0px; }
 
     .booki
-    {   width: 25%; }
+    {   width: 25%;
+        padding-left: 20px; }
 
     .menu 
     {   width: 100%;
         justify-content: space-around;
-        padding-bottom: 0px;
-        margin-left: -60px; } 
+        padding-bottom: 0px; } 
 
     .menu ul 
-    {   padding-left: 0px;  }
+    {   padding-left: 0px;
+        gap: 50px;  }
 
     .menu li 
     {   width: 50%;
-        font-size: 20px;
-        gap: 40px;
+        font-size: 16px;
         border-top: none; 
         padding-bottom: 0px;
         margin-bottom: 0px; } 
@@ -123,7 +123,7 @@
     {   outline: none;  }
 
     .button_2 i 
-    {   font-size: 24px;    }
+    {   font-size: 20px;    }
 
     .filter
     {   flex-direction: column;
@@ -132,7 +132,7 @@
 
     .filter h2
     {   flex: 1;
-        font-size: 22px;
+        font-size: 20px;
         font-weight: 800; 
         margin-bottom: 10px;  }
 
@@ -140,11 +140,10 @@
     {   margin-left: 10px; }
 
     .filter ul
-    {   margin-left: 10px;
-        padding-right: 100px;
-        padding-left: 0px;
-        gap: 40px;
-        width: 100%;}
+    {   margin: 0px;
+        padding: 0px;
+        gap: 30px;
+        width: 90%;}
 
     .filter_item
     {   height: 50px;
@@ -162,9 +161,9 @@
     .text
     {   width: 100%;
         position: inherit;
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 800;
-        padding-left: 35px; }
+        padding-left: 30px; }
 
     .information
     {   margin-left: 5px;
@@ -190,15 +189,16 @@
     .block_accomodation
     {   flex-direction: column;
         width: 100%;
-        gap: 15px; } 
+        gap: 15px;
+        margin-top: 20px; } 
 
     #accomodation_marseille
     {   flex-direction: column;
         order: 2;
         width: 100%;
         height: auto;
-        margin: 20px -10px 0px 10px;
-        padding: 10px;
+        margin: 10px -10px 0px 10px;
+        padding: 0px 10px;
         background-color: white;
         border-radius: 25px;
         border: none; }
@@ -217,7 +217,13 @@
     {   height: 300px;
         width: 90%;
         padding: 5px;
-        border-radius: 25px;}
+        border-radius: 25px;    }
+    
+    .card h3 
+    {   font-size: 20px;    }
+
+    .card p, .block_info p, .card_note, .card_note_popular
+    {   font-size: 16px;    }
 
     .card_image
     {   flex: 1;
@@ -268,10 +274,10 @@
     {   width: 100%;
         height: 200px;
         margin: 10px;
-        padding: 5px; }
+        padding: 10px; }
 
     .card_popular img 
-    {   max-width: 200px;   }
+    {   max-width: 180px;   }
 
     .block_info_popular 
     {   width: 100%;
@@ -279,17 +285,20 @@
         padding: 0px; }
 
     .block_info h3 
-    {   width: 100%;
+    {/*   width: 50%; */
         font-size: 18px;
-        overflow-wrap: inherit;    }
+        overflow-wrap: inherit;
+        margin-left: 20px;
+        margin-top: 0px; }
 
     .block_info p
-    {   font-size: 15px;
-        margin-top: 0px;}
+    {   margin-top: 0px;
+        padding-left: 20px;}
 
     .card_note_popular
     {   position: absolute;
-        padding-top: 20px;}
+        padding-top: 70px;
+        padding-left: 30px;}
 
 
     /* SECTION ACTIVITES */
@@ -297,7 +306,7 @@
     #block_activities, .activities
     {   width: 100%;
         flex-direction: column;
-        margin: 0px 10px 0px 5px;
+        margin: 20px 10px 0px 5px;
         padding: 0px; }
 
     #block_activities h2
@@ -310,6 +319,9 @@
         width: 100%;
         margin: 0px; 
         padding: 20px 20px 20px 10px;  }
+
+    .activities h3 
+    {   font-size: 20px;}
 
     .single_activity, .group_activities
     {   max-width: none;
@@ -352,7 +364,7 @@
     .foot
     {   margin-left: 30px;
         font-weight: 700;
-        font-size: 22px;
+        font-size: 18px;
         height: 100%; }
     
     footer ul   
@@ -361,7 +373,7 @@
     
     footer li    
     {   color: black;
-        font-size: 18px;
+        font-size: 14px;
         padding: 10px;
         min-height: auto;}
     
@@ -494,8 +506,7 @@ main h1
 
 #chart
 {   font-size: 18px;
-    margin-top: 0px;
-    margin-left: 0px;    }
+    margin-top: -10px; }
 
 .group_card
 {   padding: 20px 5px;
@@ -507,15 +518,18 @@ main h1
     height: 220px; }
 
 .card_popular img 
-{   max-width: 100%;
+{   min-width: 100%;
     height: 110px;
+    object-position: center;
+    object-fit: cover;
+    aspect-ratio: 16 / 8;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 0px; }
 
 .block_info h3 
 {   font-size: 14px; 
-    margin: 5px;
+    margin: 10px 5px;
     padding-left: 0px;   }
 
 .block_info p
@@ -534,10 +548,25 @@ main h1
 
 #block_activities h2
 {   font-size: 18px;
-    margin: 10px 0px;}
+    margin: 10px 0px;   }
 
 .activities
 {   margin-right: 50px;
-    margin-left: 0px;}
+    margin-left: 0px;   }
+
+.single_activity, .group_activities
+{   flex-basis: 23%;    }
+
+.activities h3 
+{   font-size: 12px; }
 
 }
+
+
+
+
+
+
+
+
+

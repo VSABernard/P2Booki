@@ -18,7 +18,7 @@ body
 main
 {   display: flex;
     flex-direction: column;
-    /* flex-grow: 1; */} 
+    flex-grow: 1; } 
 
 /*  HEADER  */
 
@@ -56,7 +56,7 @@ hr
 
 .menu li 
 {   list-style: none;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700; 
     margin-top: -20px;
     margin-left: 30px;   }
@@ -187,9 +187,9 @@ main h1
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 40px;
+    gap: 30px;
     margin-bottom: 25px;
-    margin-left: 30px; }
+    margin-left: 20px; }
 
 .filter_buttons li
 {   display: flex;
@@ -251,7 +251,7 @@ main h1
     justify-content: flex-start;
     align-items: center;
     padding-top: 15px;
-    margin-top: 0px;
+    margin-top: -10px;
     margin-left: 5px;  }
 
 #info 
@@ -264,7 +264,7 @@ main h1
     align-items: center;
     font-size: 10px;
     margin-right: 20px;
-    margin-top: 15px; }
+    margin-top: 5px; }
 
 /* SECTION 2 */
 
@@ -272,7 +272,8 @@ main h1
 {   display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    height: auto;    }
+    height: auto;    
+    margin-top: -20px;}
 
 /* PARTIE HEBERGEMENTS */ 
 
@@ -284,7 +285,7 @@ main h1
     background-color: #F2F2F2;
     border-radius: 15px;
     margin-left: 50px;
-    margin-right: 20px;
+    margin-right: 10px;
     padding-right: 40px;
     height: auto;
     width: auto; }
@@ -293,7 +294,7 @@ main h1
 {   display: flex;   
     width: 100%;
     margin: 20px;
-    padding-left: 20px;
+    padding-left: 0px;
     font-size: 22px;
     font-weight: bold;   }
 
@@ -305,7 +306,7 @@ main h1
     width: 100%;
     height: fit-content;
     margin-top: 0px;
-    padding: 0px 30px; }
+    padding: 0px 10px; }
 
 .card     
 {   display: flex;
@@ -318,10 +319,10 @@ main h1
     border-radius: 15px;
     background-color: white;  
     box-shadow: 5px 5px 5px gainsboro; 
-    margin: 20px 10px; }
+    margin: 20px 0px 0px; }
 
 .card_image
-{   height: 120px; 
+{   height: 100px; 
     position: relative;
     overflow: hidden;   }
 
@@ -341,14 +342,14 @@ main h1
 {   word-wrap: break-word;
     text-align: left;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 13px;
     color: black; 
-    margin: 10px 0px -5px 15px; }
+    margin: 10px 0px -5px 5px; }
 
 .card p, .block_info p
 {   color: black;
-    font-size: 14px;
-    margin-left: 15px; }
+    font-size: 10px;
+    margin-left: 5px; }
 
 .euros_1
 {   font-weight: bold;  }
@@ -358,7 +359,7 @@ main h1
     flex-direction: row;
     list-style-type: none;
     font-size: 12px;
-    margin: -5px 0px 5px -25px;
+    margin: -5px 0px 5px -35px;
     height: 25px;    }
 
 /* PARTIE AFFICHER PLUS */
@@ -368,8 +369,9 @@ main h1
     flex-direction: column;
     justify-content: flex-end;
     font-weight: bold;  
-    font-size: 18px;   
-    padding: 10px 30px 0px;
+    font-size: 12px;   
+    padding: 10px 10px 0px;
+    margin-bottom: -10px;
     width: 40%;   }
 
 /* PARTIE POPULAIRES */
@@ -381,7 +383,7 @@ main h1
     flex: 1;
     justify-content: space-between;
     height: 100%;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-right: 20px; 
     background-color: #F2F2F2;
     border: 15px solid #F2F2F2;
@@ -391,7 +393,7 @@ main h1
 {   display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin: 5px 0px 10px 15px;  
+    margin: 5px 0px 10px 5px;  
     font-size: 22px; }
 
 #chart 
@@ -400,8 +402,8 @@ main h1
     font-size: 22px;
     font-weight: bold;
     position: absolute;
-    margin-top: 10px;
-    margin-right: 20px; }
+    margin-top: 0px;
+    margin-left: 20px; }
 
 .group_card
 {   display: flex;
@@ -411,18 +413,18 @@ main h1
     align-items: center;
     height: 70%; 
     width: 100%;
-    list-style-type: none;
-    padding: 10px 0px;  }
+    margin-top: 15px;
+    list-style-type: none; }
 
 .card_popular    
 {   display: flex;
     flex-direction: row;
     align-content: flex-start;
     justify-content: space-between;
-    height: 160px;
+    height: 120px;
     width: 100%;
     padding: 5px;
-    margin: 20px 25px;
+    margin: 15px 10px;
     border-radius: 15px;
     background-color: white;
     box-shadow: 5px 5px 5px gainsboro; }
@@ -447,7 +449,7 @@ main h1
     justify-content: flex-start;
     flex-wrap: nowrap;
     width: 100%;
-    padding: 0px;
+    padding: 0px 5px;
     margin: 0px;
     list-style-type: none;  }
 
@@ -455,12 +457,13 @@ main h1
 {   word-wrap: break-word;
     text-align: left;
     font-weight: bold;
-    font-size: 17px;
+    font-size: 13px;
     color: black; 
     padding-left: 15px;}
 
 .block_info p
-{   font-size: 13px; }
+{   margin-top: -5px;
+    margin-left: 15px; }
 
 #euros
 {   font-weight: 600;  }
@@ -471,7 +474,7 @@ main h1
 {   display: flex;
     position: absolute;
     font-size: 12px;    
-    margin-top: 120px;
+    margin-top: 90px;
     padding-left: 15px; }
 
 /* SECTION 3 - PARTIES ACTIVITES */
@@ -484,7 +487,7 @@ main h1
     flex: 3;
     height: 100%;
     width: 100%;
-    margin: 40px 30px;
+    margin: 40px 30px 0px;
     padding-bottom: 60px;  }
 
 #block_activities h2
@@ -503,7 +506,7 @@ main h1
 
 .activities h3
 {   font-weight: bold;
-    font-size: 16px;
+    font-size: 11px;
     color: black; 
     text-align: left;
     padding: 0px 10px;
@@ -594,10 +597,8 @@ footer
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
-    background-color: #F2F2F2;    
-    padding-top: 30px;
+    background-color: #F2F2F2;  
     padding-left: 40px; 
-    margin-bottom: -10px;
     height: auto;
     width: 100%; }
 
@@ -607,7 +608,7 @@ footer
     flex-wrap: wrap;
     margin-left: 20px;
     font-weight: bold;
-    font-size: 20px;    }
+    font-size: 18px;    }
 
 footer ul   
 {   margin-left: 20px;
@@ -621,12 +622,12 @@ footer li
     flex-direction: column;
     flex-wrap: wrap;
     list-style: none;
-    font-size: 15px;
+    font-size: 13px;
     text-align: left;
     min-height: 40px;   }
 
 .about, .accomodations
-{   flex: 5;    }
+{   flex: 4;    }
 
 .assistance
 {   flex: 6;    }
