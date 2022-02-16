@@ -7,7 +7,7 @@ header, main
 {   padding-left: 0px; }
 
 body 
-{   max-width: 100%;
+{   min-width: 100%;
     display: flex;
     flex-direction: column;
     overflow-x: hidden; 
@@ -58,20 +58,21 @@ hr
     border-top: 3px solid #f2f2f2;
     border-bottom: none; 
     margin-top: -40px;
-    margin-bottom: -10px; } 
+    margin-bottom: 10px; } 
 
 main 
-{   width: 100%; 
+{   min-width: 100%; 
     display: flex;
     flex-direction: column;  
+    padding-left: 0px;
     margin: 0px; }
     
 main h1 
-{   width: 90%;
+{   width: 80%;
     text-align: inherit;
-    font-size: 270%;
+    font-size: 250%;
     font-weight: 800; 
-    margin-left: 20px;   }
+    margin-left: 0px;   }
 
 /* SECTION 1 - RECHERCHE ET FILTRES */
 
@@ -80,12 +81,13 @@ main h1
     padding: 10px; }
 
 #search_sentence
-{  font-size: 150%;
+{   font-size: 170%;
     font-weight: 600;
-    margin-left: 10px; }
+    margin-left: 10px; 
+    margin-bottom: 20px;}
 
 .search_area
-{   width: 90%;
+{   width: 100%;
     height: 70px;
     margin-left: 5px; }
 
@@ -138,16 +140,16 @@ main h1
     margin-bottom: 10px;  }
 
 .filter_buttons
-{   margin-left: 10px; }
+{   margin-bottom: 0px; } 
 
 .filter ul
-{   margin: 0px;
+{   margin-left: 0px;
     padding: 10px;
-    gap: 30px;
+    gap: 40px;
     width: 90%; }
 
 .filter_item
-{   height: 55px;
+{   height: 65px;
     border: 4px solid #f2f2f2;
     border-bottom-right-radius: 40px;
     border-top-right-radius: 40px;
@@ -155,16 +157,16 @@ main h1
 
 .icon
 {   position: absolute;
-    width: 53px;
-    height: 53px;
-    font-size: 20px; }
+    width: 70px;
+    height: 70px;
+    font-size: 26px; }
         
 .text
 {   width: 100%;
     position: inherit;
-    font-size: 170%;
+    font-size: 200%;
     font-weight: 800;
-    padding-left: 40px; }
+    padding-left: 60px; }
 
 .information
 {   margin-left: 5px;
@@ -176,15 +178,15 @@ main h1
     font-size: 100%;
     padding: 5px 10px;
     border: 3px solid #f2f2f2; 
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: 0px; }
 
 .information p 
-{   max-width: 100%;
+{   max-width: 75%;
     text-align: inherit;
-    font-size: 200%;
+    font-size: 170%;
     font-weight: 500;
-    margin-top: 20px; }
+    margin-top: 0px; }
 
 /* SECTION 2 - HEBERGEMENTS ET POPULAIRES */
 
@@ -206,7 +208,7 @@ main h1
     border: none; }
 
 #accomodation_marseille h2
-{   font-size: 270%;
+{   font-size: 250%;
     font-weight: 800;
     margin-left: 5px; }
     
@@ -216,40 +218,41 @@ main h1
     padding: 0px; }
 
 .card
-{   height: 400px;
+{   height: 450px;
     width: 90%;
     padding: 5px;
     border-radius: 25px;    }
 
 .card h3 
-{   font-size: 200%; 
+{   font-size: 220%; 
     font-weight: 800;
+    margin-top: -70px;
     padding-left: 10px; }
 
-.card p, .card_note, .block_info p, .card_note_popular
-{   font-size: 180%;    }
+.card p, .card_note
+{   font-size: 150%;    }
 
 .card p
 {   margin-top: 10px;
     padding-left: 10px; }
     
 .card_note
-{   margin-top: -20px;
+{   margin-top: -10px;
     margin-bottom: 20px;
     padding-left: 50px; }
 
 .card_image
 {   flex: 1;
     width: 100%;
-    height: 300px;
+    height: 250px;
     overflow: hidden;
     object-fit: cover; }
 
 .card_image img 
 {   width: 100%;
-    height: 100%;
+    height: 80%;
     object-fit: cover;
-    object-position: 50% 60%;
+    object-position: 50% 48%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px; }
 
@@ -262,14 +265,14 @@ main h1
 .popular
 {   flex-direction: column;
     order: 1;
-    width: 100%;
+    min-width: 100%;
     margin-left: 0px; 
-    padding: 30px 20px 50px 10px;
+    padding: 30px 0px 50px;
     border-radius: 0px; 
     border: 0px; }
 
 .popular h2, #chart
-{   font-size:270%;
+{   font-size: 250%;
     font-weight: 800;   }
 
 .popular h2
@@ -277,53 +280,56 @@ main h1
     margin-right: 30px; }
 
 #chart
-{   position: absolute;
-    margin-top: 10px;
-    margin-right: 30px; }
+{   margin-top: -10px;
+    margin-right: 20px; }
 
 .group_card
-{   width: 100%;
+{   flex-direction: column;
+    width: 100%;
     padding-left: 20px;
     padding-right: 25px; }
 
 .card_popular 
-{   width: 100%;
-    height: 300px;
+{   flex-direction: row;
+    width: 100%;
+    height: 250px;
     margin: 15px 10px;
     padding: 10px;
-    border-radius: 40px; }
+    border-radius: 30px; }
 
 .card_popular img 
-{   max-width: 270px;
-    border-top-left-radius: 40px; 
-    border-bottom-left-radius: 40px;  }
+{   max-width: 250px;
+    height: 100%;
+    border-top-left-radius: 30px; 
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 0px;  }
 
 .block_info_popular 
 {   width: 100%;
-    margin: 0px;
+    margin: 0px 20px;
     padding: 0px; }
 
-.block_info h3 
-{   width: 90%; 
+.block_info_popular h3 
+{   width: 80%; 
     font-size: 200%;
     font-weight: 800;
     overflow-wrap: inherit;
-    margin-left: 20px;
     margin-top: 20px; }
 
-.block_info p
-{   margin-top: -10px;
-    padding-left: 20px; }
+.block_info_popular p
+{   font-size: 150%;
+    margin-top: 0px; }
 
 .card_note_popular
-{   position: absolute;
-    padding-top: 100px;
-    padding-left: 30px; }
+{   font-size: 120%;
+    margin-top: 40px;
+    padding-left: 10px; }
 
 /* SECTION ACTIVITES */
 
 #block_activities, .activities
 {   width: 100%;
+    height: 100%;
     flex-direction: column;
     margin: 20px 10px 0px 5px;
     padding: 0px; }
@@ -340,8 +346,9 @@ main h1
     padding: 20px 20px 20px 10px; }
 
 .activities h3 
-{   font-size: 200%;
+{   font-size: 180%;
     font-weight: 800;
+    margin-top: 20px;
     margin-left: 20px; }
 
 .single_activity, .group_activities
@@ -379,7 +386,8 @@ footer
     background-color: #F2F2F2; 
     height: 100%;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 0px;
+    margin-left: 0px;
     padding-top: 60px;
     padding-left: 10px; 
     padding-bottom: 80px; }
@@ -387,20 +395,19 @@ footer
 .foot
 {   margin-left: 30px;
     font-weight: 800;
-    font-size: 200%;
+    font-size: 250%;
     height: 100%; 
     padding-top: 30px;  }
 
 footer ul   
-{   margin-left: 20px;
-    padding-left: 0px;   }
+{   margin-left: 20px;}
 
 footer li    
 {   color: black;
     font-size: 200%;
     font-weight: 500;
-    padding: 10px;
-    min-height: auto;}
+    margin-left: -10px;
+    padding: 20px; }
 
 footer li a
     {   color: black; }
@@ -416,7 +423,7 @@ a
 .filter_item:hover, .card:hover, h3:hover, .block_info_popular h2:hover, .title_activity h2:hover
 {   transition: 0.1s ease;
     cursor: pointer; }
-    
+
 .filter_item:hover, .card:hover, .card_title:hover, .card_popular:hover, .single_activity:hover, .group_activities .big:hover, .group_activities .middle_1:hover,
 .group_activities .middle_2:hover, .group_activities .small:hover 
 {   background-color: #DEEBFF;  }

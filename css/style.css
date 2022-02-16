@@ -20,8 +20,8 @@ main
 {   display: flex;
     flex-direction: column;
     flex-grow: 1; 
-    padding-left: 160px;
-    padding-right: 180px;} 
+    margin-left: 160px;
+    margin-right: 180px;} 
 
 /*  HEADER  */
 
@@ -412,7 +412,7 @@ main h1
     margin-left: 10px;  
     font-size: 22px; }
 
-#chart 
+#chart
 {   display: flex;
     align-content: flex-end;
     font-size: 22px;
@@ -617,8 +617,7 @@ footer
     background-color: #F2F2F2;  
     padding-left: 40px; 
     padding-bottom: 50px;
-    height: auto;
-    width: 100%; }
+    height: auto; }
 
 .foot
 {   display: flex;
