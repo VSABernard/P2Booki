@@ -299,9 +299,9 @@ main h1
 #accomodation_marseille h2
 {   display: flex;   
     width: 100%;
-    margin: 20px;
+    margin: 20px 20px 0px;
     padding-left: 0px;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;   }
 
 .block_card
@@ -352,7 +352,7 @@ main h1
     color: black; 
     margin: 10px 0px -5px 10px; }
 
-.card p, .block_info p
+.card p, .block_info_popular p
 {   color: black;
     font-size: 13px;
     margin-left: 10px; }
@@ -395,21 +395,30 @@ main h1
     border: 15px solid #F2F2F2;
     border-radius: 15px; }
 
-.popular h2
+.head_popular
 {   display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    margin: 5px 0px 30px 5px;  
-    font-size: 24px; }
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;}
+
+.popular h2
+{   display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 10px;  
+    font-size: 22px; }
 
 #chart 
 {   display: flex;
-    align-self: flex-end;
-    font-size: 24px;
-    font-weight: bold;
-    position: absolute;
-    margin-top: 5px;
-    margin-right: 5px; }
+    align-content: flex-end;
+    font-size: 22px;
+    font-weight: bold; 
+    margin-top: 10px; 
+    margin-right: 0px; }
 
 .group_card
 {   display: flex;
@@ -429,7 +438,7 @@ main h1
     height: 150px;
     width: 100%;
     padding: 5px;
-    margin: 15px 5px 20px;
+    margin: 10px 5px 20px;
     border-radius: 15px;
     background-color: white;
     box-shadow: 5px 5px 5px gainsboro; }
@@ -458,7 +467,7 @@ main h1
     margin: 0px;
     list-style-type: none;  }
 
-.block_info h3
+.block_info_popular h3
 {   word-wrap: break-word;
     text-align: left;
     font-weight: bold;
@@ -467,7 +476,7 @@ main h1
     color: black; 
     padding-left: 10px;}
 
-.block_info p
+.block_info_popular p
 {   margin-top: -5px;
     margin-left: 10px; }
 
@@ -478,6 +487,7 @@ main h1
 
 .card_note_popular                                                 
 {   display: flex;
+    list-style-type: none;
     font-size: 12px;    
     margin-top: 25px;
     padding-left: 10px; }
