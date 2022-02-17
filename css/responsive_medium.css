@@ -3,217 +3,215 @@ SUR LA TABLETTE ----------------------------------------------------------------
 
 @media screen and (min-width: 769px) and (max-width: 991px) {
 
-    body
-    {   min-width: 100%; }
+body
+{   min-width: 100%; }
 
-    main
-    {   margin: 0px;
-        padding: 0px; }
+main
+{   margin: 0px;
+    padding: 0px; }
 
-    header
-    {   padding-left: 0px;
-        padding-right: 0px;}
+header
+{   padding-left: 0px;
+    padding-right: 0px; }
 
-    .menu li
-    {   font-size: 100%;}
+.menu li
+{   font-size: 100%;    }
 
-    main h1
-    {   margin-top: 20px;
-        margin-left: 30px;    }
+main h1
+{   margin-top: 20px;
+    margin-left: 30px;    }
 
-    .section_search
-    {   margin-left: 30px;  }
+.section_search
+{   margin-left: 30px;  }
 
-    #search_sentence
-    {   margin-top: -30px;  }
+#search_sentence
+{   margin-top: -30px;  }
 
-    .filter 
-    {   margin-top: -10px;  }
+.filter 
+{   margin-top: -10px;  }
 
-    .filter_item
-    {   margin-top: 10px;
-        padding-right: 20px; }
+.filter_item
+{   margin-top: 0px;
+    padding-right: 20px; }
 
-    .filter_buttons
-    {   padding-left: 0px; }
+.filter_buttons
+{   padding-left: 0px; }
 
-    .filter ul
-    {   gap: 11px;   }
+.filter ul
+{   gap: 11px;   }
 
-    .text
-    {   padding-left: 5px;
-        padding-right: 0px; }
+.text
+{   padding-left: 5px;
+    padding-right: 0px; }
 
-    /* SECTION 2 - HEBERGEMENTS ET POPULAIRES */
+/* SECTION 2 - HEBERGEMENTS ET POPULAIRES */
 
-    .block_accomodation
-    {   flex-direction: column-reverse;
-        margin: 0px;
-        padding: 0px;}
+.block_accomodation
+{   flex-direction: column-reverse;
+    margin: 0px;
+    padding: 0px;   }
 
-    #accomodation_marseille
-    {   margin-top: 20px;
-        margin-left: 20px;
-        margin-bottom: 0px;
-        background-color: white;  }
+#accomodation_marseille
+{   margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    background-color: white;  }
 
-    #accomodation_marseille h2
-    {   font-size: 150%;
-        margin-bottom: 0px;
-        margin-top: 15px;
-        margin-left: 10px;
-        border: 0px; }
+#accomodation_marseille h2
+{   font-size: 150%;
+    margin-bottom: 0px;
+    margin-top: 15px;
+    margin-left: 10px;
+    border: 0px; }
 
-    .block_card
-    {   min-width: 100%;
-        padding-left: 10px;
-        padding-right: 40px;
-        margin-bottom: 0px; 
-        gap: 12px;  }
+.block_card
+{   min-width: 100%;
+    padding-left: 10px;
+    padding-right: 40px;
+    margin-bottom: 0px; 
+    gap: 12px;  }
 
-    .card
-    {   width: 32%;
-        height: 170px; }
+.card
+{   width: 32%;
+    height: 170px; }
 
-    .card img
-    {   min-width: 100%;
-        height: 100px;
-        object-position: 50% 60%;   }
+.card img
+{   min-width: 100%;
+    height: 100px;
+    object-position: 50% 60%;   }
 
-    .card h3
-    {   font-size: 100%;
-        margin-top: -5px; }
+.card h3
+{   font-size: 100%;
+    margin-top: -5px; }
 
-    .card p
-    {   font-size: 85%;
-        margin-top: 5px;    }
+.card p
+{   font-size: 85%;
+    margin-top: 5px;    }
 
-    .card_note
-    {   font-size: 70%;
-        margin-top: -5px;}
+.card_note
+{   font-size: 70%;
+    margin-top: -5px;   }
 
-    .show_more h3
-    {   font-size: 100%;
-        margin-top: 0px;}
+.show_more h3
+{   font-size: 100%;
+    margin-top: 0px;    }
 
-    .popular
-    {   flex-direction: row;
-        width: 100%;
-        padding-left: 0px;
-        padding-right: 40px;
-        border: 0px;
-        border-radius: 0%;}
+.popular
+{   flex-direction: row;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 40px;
+    border: 0px;
+    border-radius: 0%;  }
 
-    .popular h2
-    {   font-size: 150%;
-        padding-left: 10px; }
+.popular h2
+{   font-size: 150%;
+    padding-left: 10px; }
 
-    #chart
-    {   font-size: 180%;
-        margin-top: 20px;
-        margin-right: 20px; }
+#chart
+{   font-size: 180%;
+    margin-top: 20px;
+    margin-right: 20px; }
 
-    .group_card
-    {   flex-direction: row;
-        min-width: 100%;
-        flex-basis: 35%;
-        margin-left: 20px;
-        padding: 0px; }
+.group_card
+{   flex-direction: row;
+    min-width: 100%;
+    flex-basis: 35%;
+    margin-left: 20px;
+    padding: 0px; }
 
-    .card_popular
-    {   flex-direction: column;
-        margin-top: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
-        max-width: 100%;
-        height: 250px; }
+.card_popular
+{   flex-direction: column;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 100%;
+    height: 250px; }
 
-    .card_popular img
-    {   min-width: 100%;
-        height: 100%;
-        object-position: 50% 55%;
-        object-fit: cover;
-        aspect-ratio: 16 / 8;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-        border-bottom-left-radius: 0px; }
+.card_popular img
+{   min-width: 100%;
+    height: 100%;
+    object-position: 50% 55%;
+    object-fit: cover;
+    aspect-ratio: 16 / 8;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0px; }
 
-    .block_info_popular
-    {   margin-top: 0px;}
+.block_info_popular
+{   margin-top: 0px;    }
 
-    .block_info_popular h3
-    {   font-size: 100%;
-        width: 80%;
-        margin: 5px;
-        padding-top: 5px;
-        padding-left: 5px;   }
+.block_info_popular h3
+{   font-size: 100%;
+    width: 80%;
+    margin: 5px;
+    padding-top: 5px;
+    padding-left: 5px;   }
 
-    .block_info_popular p
-    {   margin-left: 10px;   }
+.block_info_popular p
+{   margin-left: 10px;   }
 
-    .card_note_popular
-    {   font-size: 60%;
-        margin-top: 5px;
-        padding-left: 10px;  }
+.card_note_popular
+{   font-size: 60%;
+    margin-top: 5px;
+    padding-left: 10px;  }
 
-    /* SECTION 3 - ACTIVITES */
+/* SECTION 3 - ACTIVITES */
 
-    #block_activities
-    {   margin: 10px 0px;
-        padding: 0px; }
+#block_activities
+{   margin: 10px 0px;
+    padding: 0px; }
 
-    #block_activities h2
-    {   font-size: 150%;
-        padding-top: 10px;
-        padding-left: 10px;   }
+#block_activities h2
+{   font-size: 150%;
+    padding-top: 10px;
+    padding-left: 10px;   }
 
-    .activities
-    {   margin: 0px 20px 0px 30px;
-        height: 300px; }
+.activities
+{   margin: 0px 20px 0px 30px;
+    height: 300px; }
 
-    .single_activity, .group_activities
-    {   flex-basis: 23%;
-        height: 270px; }
+.single_activity, .group_activities
+{   flex-basis: 23%;
+    height: 270px; }
 
-    .single_activity img
-    {   height: 240px;}
+.single_activity img
+{   height: 240px;  }
 
-    .group_activities
-    {   margin-left: 10px;
-        margin-right: 10px;}
+.group_activities
+{   margin-left: 10px;
+    margin-right: 10px; }
 
-    .activities h3
-    {   font-size: 55%;
-        margin-top: 0px; }
+.activities h3
+{   font-size: 55%;
+    margin-top: 0px; }
 
-    .big
-    {   height: 50%;
-        padding-bottom: 0px;}
+.big
+{   height: 50%;
+    padding-bottom: 0px;    }
 
-    .big img
-    {   object-position: 50% 30%;   }
+.big img
+{   object-position: 50% 30%;   }
 
-    .small
-    {   height: 40%;}
+.small
+{   height: 40%;    }
 
-    /* FOOTER */
+/* FOOTER */
 
-    footer
-    {   margin-left: 0px;
-        padding-left: 20px;
-        gap: 30px; }
+footer
+{   margin-left: 0px;
+    padding-left: 20px;
+    gap: 30px; }
 
-    .foot
-    {   margin-left: 30px;
-        font-size: 110%;    }
+.foot
+{   margin-left: 30px;
+    font-size: 110%;    }
 
-    footer li
-    {   font-size: 70%;
-        margin-left: 30px;
-        margin-bottom: -20px;   }
-
-    }
-
+footer li
+{   font-size: 70%;
+    margin-left: 30px;
+    margin-bottom: -20px;   }
+}
 
 /* -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 SUR L'ECRAN SUPERIEUR A 992 PX ------------------------------------------------------------------------------------------------------------------------------------*/
