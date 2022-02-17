@@ -1,7 +1,7 @@
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 SUR LE PERIPHERIQUE MOBILE------------------------------------------------------------------------------------------------------------------------------------------- */
 
-@media screen and (min-width: 480px) and (max-width: 768px)    { 
+ @media screen and (max-width: 768px)    {  /*and (min-width: 480px)*/
 
 header, main 
 {   padding-left: 0px; }
@@ -75,7 +75,8 @@ main h1
     text-align: inherit;
     font-size: 200%;
     font-weight: 800; 
-    margin-left: 40px;   }
+    margin-left: 40px;
+    padding-right: 15px;   }
 
 /* SECTION 1 - RECHERCHE ET FILTRES */
 
@@ -182,13 +183,13 @@ main h1
     font-size: 100%;
     padding: 5px 10px;
     border: 3px solid #f2f2f2; 
-    margin-top: 10px;
+    margin-top: 0px;
     margin-left: 0px; }
 
 .information p 
 {   max-width: 75%;
     text-align: inherit;
-    font-size: 170%;
+    font-size: 150%;
     font-weight: 500;
     margin-top: -20px; }
 
@@ -199,15 +200,15 @@ main h1
     width: 100%;
     gap: 15px;
     margin-top: 20px;
-    padding: 0px; } 
+    padding: 0px 20px; } 
 
 #accomodation_marseille
 {   flex-direction: column;
+    justify-content: center;
     order: 2;
     width: 100%;
     height: auto;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: -10px;
     padding-top: 60px;
     padding-right: 30px;
     background-color: white;
@@ -266,17 +267,19 @@ main h1
 
 .show_more
 {   font-size: 150%;
-    font-weight: 800;  }
+    font-weight: 800;
+    padding-left: 10px;  }
 
 /* POPULAIRES */
 
 .popular
 {   flex-direction: column;
+    justify-content: center;
+    align-content: center;
     order: 1;
     min-width: 100%;
-    margin-left: -10px; 
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-left: -20px; 
+    padding-left: 15px;
     padding-bottom: 30px;
     border-radius: 0px; 
     border: 0px; }
@@ -320,19 +323,19 @@ main h1
     padding: 0px; }
 
 .block_info_popular h3 
-{   width: 70%; 
+{   width: 60%; 
     font-size: 175%;
     font-weight: 800;
     overflow-wrap: inherit;
     margin-top: 10px; }
 
 .block_info_popular p
-{   font-size: 120%;
+{   font-size: 130%;
     margin-top: -20px; }
 
 .card_note_popular
 {   font-size: 100%;
-    margin-top: 25px;
+    margin-top: 50px;
     padding-left: 10px; }
 
 /* SECTION ACTIVITES */
@@ -341,7 +344,8 @@ main h1
 {   width: 100%;
     height: 100%;
     flex-direction: column;
-    margin: 40px 10px 0px 25px;
+    justify-content: center;
+    margin: 40px 5px 0px 15px;
     padding: 0px; }
 
 #block_activities h2
@@ -398,7 +402,8 @@ footer
     height: 100%;
     min-width: 100%;
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
     padding-top: 20px;
     padding-left: 10px; 
     padding-bottom: 80px; }
@@ -442,22 +447,105 @@ a
 }
 
 
+/* -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+SUR L'ECRAN INFERIEUR A 677 PX ------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 677px) {
+
+.block_info_popular h3 
+{   width: 100%; 
+    font-size: 145%; }
+
+.block_info_popular p
+{   font-size: 120%; }
+
+.card_note_popular
+{   margin-top: 40px; }
+
 
 /* -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-SUR L'ECRAN INFERIEUR A 479 PX ------------------------------------------------------------------------------------------------------------------------------------*/
+SUR L'ECRAN INFERIEUR A 470 PX ------------------------------------------------------------------------------------------------------------------------------------*/
 
-
-
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 470px) {
     
-    
+.block_info_popular h3 
+{   width: 100%; 
+    font-size: 120%; }
+
+.block_info_popular p
+{   font-size: 100%;
+    padding-top: 10px; }
+
+.card_note_popular
+{   margin-top: 40px; }
+
+}
 
 
+/* -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+SUR L'ECRAN INFERIEUR A 460 PX ------------------------------------------------------------------------------------------------------------------------------------*/
 
+@media screen and (max-width: 460px) {
 
+.menu ul 
+{   gap: 0px;
+    margin-top: -30px;
+    margin-left: 60px;
+    margin-right: 60px; }
 
+.menu li
+{   font-size: 120%;    }
 
+main h1 
+{   font-size: 180%;
+    padding-right: 20px; }
 
+#search_sentence
+{   min-width: 60%;
+    font-size: 120%;
+    margin-right: 50px;    }
 
+#accomodation_marseille h2, .popular h2, #chart, #block_activities h2
+{   font-size: 190%;    }
+
+#accomodation_marseille
+{   padding-top: 0px;   }
+
+.card
+{   height: 250px; }
+
+.card_image
+{   width: 100%;
+    height: 160px; }
+
+.card_image img 
+{   object-fit: cover;
+    object-position: 50% 60%; }
+
+.card h3
+{   font-size: 150%; 
+    padding-top: 10px;   }
+
+.card p.card_note 
+{   font-size: 120%;    }
+
+.card_note
+{   font-size: 100%;}
+
+.card_popular 
+{   width: 90%;
+    height: 200px; }
+
+.card_note_popular
+{   margin-top: 5px; }
+
+#block_activities
+{   margin-top: 0px;    }
+
+.single_activity img, .group_activities img 
+{   width: 100%;
+    height: 200px;
+    object-fit: cover; }
 
 }
