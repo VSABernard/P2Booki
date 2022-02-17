@@ -1,7 +1,7 @@
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 SUR LE PERIPHERIQUE MOBILE------------------------------------------------------------------------------------------------------------------------------------------- */
 
-/* @media screen and (max-width: 767px)    { */
+@media screen and (min-width: 480px) and (max-width: 768px)    { 
 
 header, main 
 {   padding-left: 0px; }
@@ -12,7 +12,7 @@ body
     flex-direction: column;
     overflow-x: hidden; 
     margin: 0px;
-    padding-left: -150px;
+    padding-left: 0px;
     padding-right: 0px;   }
 
 /* LOGO ET MENU */
@@ -22,24 +22,25 @@ header
     flex-direction: column;
     align-items: center;
     height: auto;
-    margin-left: 0px;
-    padding-left: -140px; }
+    margin-left: 10px; 
+    padding-right: 10px;}
 
 .booki
-{   width: 30%;
+{   width: 50%;
     padding-left: 60px; }
 
 .menu 
 {   width: 100%;
     justify-content: space-around;
+    padding-right: 0px;
     padding-bottom: 0px; } 
 
 .menu ul 
 {   padding-left: 0px;
-    gap: 60px;  }
+    gap: 50px;  }
 
 .menu li 
-{   width: 50%;
+{   width: 100%;
     font-size: 26px;
     border-top: none; 
     padding-bottom: 0px;
@@ -58,21 +59,23 @@ hr
     border-top: 3px solid #f2f2f2;
     border-bottom: none; 
     margin-top: -40px;
-    margin-bottom: 10px; } 
+    margin-bottom: 10px;
+    padding: 0px; } 
 
 main 
 {   min-width: 100%; 
     display: flex;
     flex-direction: column;  
     padding-left: 0px;
-    margin: 0px; }
+    margin-left: -10px;
+    margin-right: 40px; }
     
 main h1 
-{   width: 80%;
+{   width: 90%;
     text-align: inherit;
-    font-size: 250%;
+    font-size: 200%;
     font-weight: 800; 
-    margin-left: 0px;   }
+    margin-left: 40px;   }
 
 /* SECTION 1 - RECHERCHE ET FILTRES */
 
@@ -81,25 +84,25 @@ main h1
     padding: 10px; }
 
 #search_sentence
-{   font-size: 170%;
+{   font-size: 140%;
     font-weight: 600;
-    margin-left: 10px; 
+    margin-left: 30px; 
     margin-bottom: 20px;}
 
 .search_area
-{   width: 100%;
+{   width: 90%;
     height: 70px;
-    margin-left: 5px; }
+    margin-left: 30px; }
 
 #map_marker
-{   flex: 1;
+{   flex: 2;
     width: 100%;
     font-size: 180%;
     padding: 10px; }
 
 ::placeholder 
 {   color: black;
-    font-size: 170%;
+    font-size: 140%;
     font-weight: 800; 
     padding: 10px;  }   
 
@@ -130,8 +133,8 @@ main h1
 
 .filter
 {   flex-direction: column;
-    width: 83%;
-    margin-left: 10px; }
+    width: 70%;
+    margin-left: 20px; }
 
 .filter h2
 {   flex: 1;
@@ -144,9 +147,9 @@ main h1
 
 .filter ul
 {   margin-left: 0px;
-    padding: 10px;
-    gap: 40px;
-    width: 90%; }
+    padding: 0px;
+    gap: 25px;
+    width: 100%; }
 
 .filter_item
 {   height: 65px;
@@ -164,13 +167,14 @@ main h1
 .text
 {   width: 100%;
     position: inherit;
-    font-size: 200%;
+    font-size: 160%;
     font-weight: 800;
-    padding-left: 60px; }
+    padding-left: 55px; }
 
 .information
-{   margin-left: 5px;
-    padding: 5px 10px;  }
+{   margin-left: 20px;
+    margin-bottom: -40px;
+    padding: 5px;  }
 
 #info
 {   width: 40px;
@@ -186,7 +190,7 @@ main h1
     text-align: inherit;
     font-size: 170%;
     font-weight: 500;
-    margin-top: 0px; }
+    margin-top: -20px; }
 
 /* SECTION 2 - HEBERGEMENTS ET POPULAIRES */
 
@@ -194,43 +198,47 @@ main h1
 {   flex-direction: column;
     width: 100%;
     gap: 15px;
-    margin-top: 20px; } 
+    margin-top: 20px;
+    padding: 0px; } 
 
 #accomodation_marseille
 {   flex-direction: column;
     order: 2;
     width: 100%;
     height: auto;
-    margin: 10px 0px 0px 20px;
-    padding: 0px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 60px;
+    padding-right: 30px;
     background-color: white;
     border-radius: 25px;
     border: none; }
 
 #accomodation_marseille h2
-{   font-size: 250%;
+{   font-size: 200%;
     font-weight: 800;
-    margin-left: 5px; }
+    margin-left: 30px; }
     
 .block_card
 {   flex-direction: column;
-    margin-top: 0px;
-    padding: 0px; }
+    margin-top: 40px;
+    margin-right: 20px;
+    padding-right: 20px; }
 
 .card
-{   height: 450px;
-    width: 90%;
+{   height: 300px;
+    width: 100%;
     padding: 5px;
     border-radius: 25px;    }
 
 .card h3 
-{   font-size: 220%; 
+{   font-size: 180%; 
     font-weight: 800;
-    margin-top: -70px;
+    margin-top: -40px;
     padding-left: 10px; }
 
 .card p, .card_note
-{   font-size: 150%;    }
+{   font-size: 120%;    }
 
 .card p
 {   margin-top: 10px;
@@ -238,13 +246,13 @@ main h1
     
 .card_note
 {   margin-top: -10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding-left: 50px; }
 
 .card_image
 {   flex: 1;
     width: 100%;
-    height: 250px;
+    height: 270px;
     overflow: hidden;
     object-fit: cover; }
 
@@ -252,12 +260,12 @@ main h1
 {   width: 100%;
     height: 80%;
     object-fit: cover;
-    object-position: 50% 48%;
+    object-position: 50% 50%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px; }
 
 .show_more
-{   font-size: 180%;
+{   font-size: 150%;
     font-weight: 800;  }
 
 /* POPULAIRES */
@@ -266,39 +274,41 @@ main h1
 {   flex-direction: column;
     order: 1;
     min-width: 100%;
-    margin-left: 0px; 
-    padding: 30px 0px 50px;
+    margin-left: -10px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
     border-radius: 0px; 
     border: 0px; }
 
 .popular h2, #chart
-{   font-size: 250%;
+{   font-size: 200%;
     font-weight: 800;   }
 
 .popular h2
-{   margin-left: 20px; 
-    margin-right: 30px; }
+{   margin-left: 40px; 
+    margin-right: 10px; }
 
 #chart
 {   margin-top: -10px;
-    margin-right: 20px; }
+    margin-right: 50px; }
 
 .group_card
 {   flex-direction: column;
     width: 100%;
-    padding-left: 20px;
-    padding-right: 25px; }
+    padding-left: 0px; 
+    padding-right: 20px;}
 
 .card_popular 
 {   flex-direction: row;
-    width: 100%;
+    width: 90%;
     height: 250px;
     margin: 15px 10px;
     padding: 10px;
     border-radius: 30px; }
 
 .card_popular img 
-{   max-width: 250px;
+{   width: 180px;
     height: 100%;
     border-top-left-radius: 30px; 
     border-bottom-left-radius: 30px;
@@ -306,23 +316,23 @@ main h1
 
 .block_info_popular 
 {   width: 100%;
-    margin: 0px 20px;
+    margin: 0px 5px;
     padding: 0px; }
 
 .block_info_popular h3 
-{   width: 80%; 
-    font-size: 200%;
+{   width: 70%; 
+    font-size: 175%;
     font-weight: 800;
     overflow-wrap: inherit;
-    margin-top: 20px; }
+    margin-top: 10px; }
 
 .block_info_popular p
-{   font-size: 150%;
-    margin-top: 0px; }
+{   font-size: 120%;
+    margin-top: -20px; }
 
 .card_note_popular
-{   font-size: 120%;
-    margin-top: 40px;
+{   font-size: 100%;
+    margin-top: 25px;
     padding-left: 10px; }
 
 /* SECTION ACTIVITES */
@@ -331,22 +341,23 @@ main h1
 {   width: 100%;
     height: 100%;
     flex-direction: column;
-    margin: 20px 10px 0px 5px;
+    margin: 40px 10px 0px 25px;
     padding: 0px; }
 
 #block_activities h2
-{   font-size:270%;
+{   font-size: 200%;
     font-weight: 800;
-    margin: 20px;   }
+    margin: 20px 40px;   }
 
 .activities
 {   justify-content: space-between;
-    width: 100%;
+    width: 95%;
     margin: 0px; 
-    padding: 20px 20px 20px 10px; }
+    padding-left: 0px;
+    padding-right: 40px; }
 
 .activities h3 
-{   font-size: 180%;
+{   font-size: 150%;
     font-weight: 800;
     margin-top: 20px;
     margin-left: 20px; }
@@ -385,29 +396,29 @@ footer
     justify-content: space-between;
     background-color: #F2F2F2; 
     height: 100%;
-    width: 100%;
-    margin-top: 0px;
-    margin-left: 0px;
-    padding-top: 60px;
+    min-width: 100%;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding-top: 20px;
     padding-left: 10px; 
     padding-bottom: 80px; }
 
 .foot
 {   margin-left: 30px;
     font-weight: 800;
-    font-size: 250%;
+    font-size: 200%;
     height: 100%; 
-    padding-top: 30px;  }
+    padding-top: 0px;  }
 
 footer ul   
 {   margin-left: 20px;}
 
 footer li    
 {   color: black;
-    font-size: 200%;
+    font-size: 160%;
     font-weight: 500;
     margin-left: -10px;
-    padding: 20px; }
+    padding: 0px 20px; }
 
 footer li a
     {   color: black; }
@@ -428,4 +439,25 @@ a
 .group_activities .middle_2:hover, .group_activities .small:hover 
 {   background-color: #DEEBFF;  }
 
-  
+}
+
+
+
+/* -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+SUR L'ECRAN INFERIEUR A 479 PX ------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+@media screen and (max-width: 479px) {
+    
+    
+
+
+
+
+
+
+
+
+
+}
