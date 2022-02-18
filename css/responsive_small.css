@@ -58,12 +58,13 @@ header
 
 hr 
 {   display: inline;
-    width: 100%;        
+    min-width: 100%;        
     border-top: 3px solid #f2f2f2;
     border-bottom: none; 
     margin-top: -20px;
+    margin-left: -5px;
     margin-bottom: 0px;
-    padding: 0px; } 
+    padding-right: 0px; } 
 
 main 
 {   min-width: 100%; 
@@ -74,12 +75,12 @@ main
     margin-right: 40px; }
     
 main h1 
-{   width: 90%;
+{   width: 85%;
     text-align: inherit;
-    font-size: 200%;
+    font-size: 270%;
     font-weight: 800; 
     margin-left: 40px;
-    padding-right: 15px;   }
+    padding-right: 20px; }
 
 /* SECTION 1 - RECHERCHE ET FILTRES */
 
@@ -88,7 +89,7 @@ main h1
     padding: 10px; }
 
 #search_sentence
-{   font-size: 140%;
+{   font-size: 200%;
     font-weight: 600;
     margin-left: 30px; 
     margin-bottom: 20px;}
@@ -101,14 +102,14 @@ main h1
 #map_marker
 {   flex: 2;
     width: 100%;
-    font-size: 180%;
+    font-size: 170%;
     padding: 10px; }
 
 ::placeholder 
 {   color: black;
-    font-size: 140%;
+    font-size: 125%;
     font-weight: 800; 
-    padding: 10px;  }   
+    padding: 5px;  }   
 
 .button_1
 {   display: none;  }
@@ -142,7 +143,7 @@ main h1
 
 .filter h2
 {   flex: 1;
-    font-size: 170%;
+    font-size: 200%;
     font-weight: 800; 
     margin-bottom: 10px;  }
 
@@ -171,13 +172,13 @@ main h1
 .text
 {   width: 100%;
     position: inherit;
-    font-size: 160%;
+    font-size: 180%;
     font-weight: 800;
     padding-left: 55px; }
 
 .information
 {   margin-left: 20px;
-    margin-bottom: -40px;
+    margin-bottom: 0px;
     padding: 5px;  }
 
 #info
@@ -192,9 +193,9 @@ main h1
 .information p 
 {   max-width: 75%;
     text-align: inherit;
-    font-size: 150%;
+    font-size: 180%;
     font-weight: 500;
-    margin-top: -20px; }
+    margin-top: -10px; }
 
 /* SECTION 2 - HEBERGEMENTS ET POPULAIRES */
 
@@ -452,9 +453,12 @@ a
 
 
 /* -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-SUR L'ECRAN INFERIEUR A 725 PX ------------------------------------------------------------------------------------------------------------------------------------*/
+SUR L'ECRAN INFERIEUR A 740 PX ------------------------------------------------------------------------------------------------------------------------------------*/
 
-@media screen and (max-width: 725px) {
+@media screen and (max-width: 740px) {
+
+main h1
+{   width: 90%;    }
 
 .block_info_popular h3 
 {   width: 80%; 
@@ -467,6 +471,16 @@ SUR L'ECRAN INFERIEUR A 725 PX -------------------------------------------------
 SUR L'ECRAN INFERIEUR A 680 PX ------------------------------------------------------------------------------------------------------------------------------------*/
 
 @media screen and (max-width: 680px) {
+
+main h1
+{   font-size: 220%;    
+    width: 90%;    }
+
+#search_sentence
+{   font-size: 160%;}
+
+.text
+{   font-size: 160%;}
 
 .information p 
 {   font-size: 140%;    }   
@@ -541,7 +555,13 @@ SUR L'ECRAN INFERIEUR A 620 PX -------------------------------------------------
 SUR L'ECRAN INFERIEUR A 535 PX ------------------------------------------------------------------------------------------------------------------------------------*/
 
 @media screen and (max-width: 535px) {
-    
+
+main h1
+{   font-size: 200%;    } 
+
+#search_sentence
+{   font-size: 150%;    }
+
 .filter_item
 {   height: 50px; }
 
@@ -572,9 +592,9 @@ SUR L'ECRAN INFERIEUR A 535 PX -------------------------------------------------
 
 
 /* -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-SUR L'ECRAN INFERIEUR A 460 PX ------------------------------------------------------------------------------------------------------------------------------------*/
+SUR L'ECRAN INFERIEUR A 480 PX ------------------------------------------------------------------------------------------------------------------------------------*/
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 480px) {
 
 main 
 {   margin-right: 25px; }
@@ -604,7 +624,7 @@ main h1
 #search_sentence
 {   flex-wrap: wrap;
     width: 80%;
-    font-size: 120%;
+    font-size: 115%;
     margin-right: 50px;    }
 
 .search_area
@@ -746,7 +766,8 @@ hr
 {   margin-bottom: 20px;    }
 
 main h1
-{   font-size: 140%;    }
+{   font-size: 140%;
+    width: 90%;    }
 
 .search_area
 {   width: 100%;
@@ -840,6 +861,12 @@ main h1
 .activities
 {   padding-right: 30px;    }
 
+.foot
+{   margin-left: 10px;  }
+
+footer ul 
+{   margin-left: 0px;}
+
 }
 
 
@@ -854,13 +881,17 @@ main h1
     padding-right: 40px;}
 
 .section_search
-{   padding-left: 0px;}
+{   font-size: 90%;
+    padding-left: 0px;}
 
 #search_sentence
 {   font-size: 100%;}
 
 .filter h2 
 {   font-size: 115%;    }
+
+.icon
+{   margin-top: 0px; }
 
 .text
 {   font-size: 75%;
@@ -902,46 +933,71 @@ SUR L'ECRAN INFERIEUR A 320 PX -------------------------------------------------
 
 @media screen and (max-width: 320px) {
 
+.booki
+{   padding-left: 30px; }
+
 .menu li 
-{   font-size: 100%;
-    margin-top: 20px; }
+{   font-size: 85%;
+    margin-top: 5px; }
 
 .menu a
 {   margin-bottom: 0px;
     padding-bottom: 10px;   }
 
 hr 
-{   margin-top: -20px;}
+{   margin-top: -20px;  }
 
 main h1
 {   font-size: 120%;  
     width: 90%;
+    margin-left: 20px;
     margin-top: 40px;  }
 
 #search_sentence
-{   padding-right: 10px;}
+{   font-size: 90%;
+    padding-right: 10px;
+    margin-left: 20px;    }
 
 .search_area
 {   width: 100%;
     height: 30px;
+    margin-left: 20px;
     padding-right: 70px; }
+
+.filter
+{   margin-left: 20px;  }
 
 #map_marker
 {   flex: 1;
     font-size: 100%;    }
 
+.search_area
+{   width: 95%; }    
+
 .srch
 {   flex: 10;
     padding-left: 10px;
     padding-right: 20px;
-    width: 100%;    }
+    width: 90%;    }
 
 .button_2
-{   padding: 10px;  }
+{   margin-left: -10px;
+    padding: 10px;  }
 
 .button_2 i 
 {   font-size: 100%;
     padding: 0px;    }
+
+.filter ul 
+{   gap: 5px;   }
+
+.filter_item
+{   height: 28px; 
+    padding-right: 10px;    }
+
+.icon
+{   width: 30px;
+    height: 30px;   }
 
 #accomodation_marseille
 {   padding-right: 20px;}
@@ -983,4 +1039,152 @@ main h1
 
 
 /* -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-SUR L'ECRAN AVEC DENSITY 2 ------------------------------------------------------------------------------------------------------------------------------------*/
+SUR L'ECRAN INFERIEUR A 270 PX ------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 270px) {
+
+main h1
+{   font-size: 90%;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-right: 10px; }
+
+#search_sentence
+{   font-size: 80%;
+    width: 80%;
+    margin-left: 20px;  }
+
+.search_area
+{   margin-left: 20px;
+    width: 100%;  }
+
+.srch
+{   flex: 3;
+    font-size: 70%;
+    padding-left: 5px;    }
+
+#map_marker, .button_2
+{   flex: 0.5; }
+
+.button_2
+{   margin-left: -10px; }
+
+.filter
+{   margin-left: 10px;  }
+
+.filter h2
+{   font-size: 80%;
+    margin-bottom: 0px; }
+
+.filter_buttons
+{   margin-bottom: 0px; }
+
+.filter_item
+{   height: 20px; 
+    margin-left: 20px; }
+
+.icon
+{   height: 20px;
+    width: 20px;
+    font-size: 60%; 
+    margin-left: -20px; }
+
+.text
+{   font-size: 70%;
+    margin-top: 2px; }
+
+.information
+{   width: 90%;
+    margin-top: -20px;
+    margin-left: 15px;  }
+
+.information p 
+{   margin-top: -20px;
+    margin-left: -10px;   }
+
+#info
+{   width: 10px;
+    height: 10px;
+    font-size: 50%; }
+
+.block_accomodation
+{   padding: 0px;
+    margin-bottom: -40px;   }
+
+#accomodation_marseille
+{   width: 80%;
+    padding-right: 30px;    }
+
+#accomodation_marseille h2, .popular h2, #chart, #block_activities h2
+{   font-size: 90%; }
+
+#accomodation_marseille h2
+{   margin-left: 20px; }
+
+.card
+{   height: 180px; 
+    margin-left: 10px; }
+
+.card h3
+{   font-size: 90%;
+    margin-top: -10px;
+    margin-left: 0px;   }
+
+.card p 
+{   font-size: 70%;
+    margin-left: 0px;   }
+
+.card_note
+{   font-size: 60%;
+    padding-left: 40px;
+    margin-bottom: 0px;  }
+
+.show_more
+{   font-size: 70%;
+    margin-left: 10px;  }
+
+.head_popular
+{   margin-left: 20px;  }
+
+#chart
+{   margin-right: 60px; }
+
+.popular
+{   margin-top: -20px;
+    padding-right: 10px;
+    padding-left: 10px;     }
+
+.card_popular
+{   width: 80%;
+    height: 100px;
+    border-radius: 20px;  }
+
+.card_popular img 
+{   width: 100px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;   }
+
+.block_info_popular h3 
+{   font-size: 60%;
+    width: 100%;
+    margin-left: -10px; }
+
+.block_info_popular p
+{   font-size: 50%; 
+    margin-top: -10px;
+    margin-left: 0px;   }
+
+.card_note_popular
+{   font-size: 40%;
+    padding-top: 10px; 
+    margin-left: -10px; }
+
+.block_activities
+{   margin-top: -40px;  }
+
+.activities h3
+{   font-size: 80%;
+    margin-left: 10px;  }
+
+}
