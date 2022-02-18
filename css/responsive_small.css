@@ -809,7 +809,7 @@ hr
 
 main h1
 {   font-size: 130%;
-    width: 90%;    }
+    width: 85%;    }
 
 .search_area
 {   width: 100%;
@@ -936,7 +936,8 @@ SUR L'ECRAN INFERIEUR A 350 PX -------------------------------------------------
 @media screen and (max-width: 350px) {
 
 main h1
-{   font-size: 135%;
+{   width: 90%;
+    font-size: 135%;
     margin-left: 30px;
     padding-right: 40px;}
 
@@ -1008,7 +1009,7 @@ hr
 {   margin-top: -20px;  }
 
 main h1
-{   font-size: 120%;  
+{   font-size: 110%;  
     width: 90%;
     margin-left: 20px;
     margin-top: 40px;  }
