@@ -366,10 +366,11 @@ form
 #block_activities h2
 {   font-size: 200%;
     font-weight: 800;
-    margin: 20px 40px;   }
+    margin: 30px 40px;   }
 
 .activities
-{   justify-content: space-between;
+{   flex-direction: column;
+    justify-content: space-between;
     width: 95%;
     margin: 0px; 
     padding-left: 0px;
@@ -382,31 +383,47 @@ form
     margin-left: 20px; }
 
 .single_activity, .group_activities
-{   min-width: 95%;
-    height: auto;
+{   flex-direction: column;
+    min-width: 95%;
     margin: 20px;
     border-radius: 40px;  }
 
+.single_activity
+{   min-height: 330px;
+    margin-top: 0px;
+    margin-bottom: 20px;}
+
+.group_activities
+{   max-height: 100%;   }
+
+.big, .middle_1, .middle_2, .small
+{   height: 330px;
+    border-radius: 40px;
+    margin-top: 10px;
+    margin-bottom: 40px;    }
+
 .single_activity img, .group_activities img 
 {   width: 100%;
-    height: 270px;
     object-fit: cover;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px; }
 
-.big, .middle_1, .middle_2, .small
-{   border-radius: 40px;    }
-
 .single_activity img 
-{   object-position: 50% 20%;   }  
+{   max-height: 60%;
+    object-position: 50% 30%;   }  
 
 .big img 
-{   object-position: 50% 43%;   }
+{   object-position: 50% 45%;   }
 
 .small img 
-{   object-position: 50% 20%;   }
+{   height: 80%;
+    object-position: 50% 15%; }
+
+.middle_1 img, .middle_2 img 
+{   height: 80%;}
+
 .middle_2 img 
-{ object-position: 50% 30%; }
+{ object-position: 50% 40%; }
 
 /* FOOTER */
 
@@ -570,7 +587,6 @@ SUR L'ECRAN INFERIEUR A 620 PX -------------------------------------------------
 
 .single_activity img, .group_activities img 
 {   width: 100%;
-    height: 180px;
     object-fit: cover; }
 
 }
@@ -776,8 +792,7 @@ main h1
 {   font-size: 100%;    }
 
 .single_activity img, .group_activities img 
-{   height: 150px;
-    object-fit: cover; }
+{   object-fit: cover; }
 
 footer 
 {   padding-bottom: 0px;
