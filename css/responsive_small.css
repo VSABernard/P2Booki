@@ -41,11 +41,11 @@ hr
     margin-top: -20px; } 
 
 main 
-{   margin-left: 0px;
-    margin-right: 30px; }
+{   margin-left: -20px;
+    margin-right: 35px; }
     
 main h1 
-{   width: 85%;
+{   width: 80%;
     font-size: 270%;
     font-weight: 800; 
     margin-left: 40px; }
@@ -401,7 +401,7 @@ SUR L'ECRAN INFERIEUR A 680 PX -------------------------------------------------
 
 main h1
 {   font-size: 220%;    
-    width: 90%;    }
+    width: 80%;    }
 
 .srch   
 {   padding-right: 150px; }
@@ -663,7 +663,7 @@ main h1
 .popular
 {   width: 100%;
     padding-left: 30px;
-    padding-right: 25px; }
+    padding-right: 40px; }
 
 .popular h2 
 {   margin-left: 10px;  }
@@ -696,12 +696,6 @@ main h1
 
 .activities h3 
 {   font-size: 100%;    }
-
-/* .single_activity, .big, .middle_1, .middle_2, .small
-{   max-height: 250px;    } */
-
-/* .single_activity img, .group_activities img 
-{   object-fit: cover; } */
 
 footer 
 {   padding-bottom: 0px;
@@ -813,7 +807,7 @@ main h1
 {   padding: 0px; }
 
 .popular
-{   padding-right: 25px;
+{   padding-right: 40px;
     padding-left: 30px; }
 
 .card_popular 
@@ -863,11 +857,11 @@ main h1
 {   width: 90%;
     font-size: 135%;
     margin-left: 30px;
-    padding-right: 40px;}
+    padding-right: 50px;}
 
 .section_search
 {   font-size: 90%;
-    padding-left: 0px;}
+    padding-left: 10px;}
 
 #search_sentence
 {   font-size: 100%;}
@@ -932,10 +926,13 @@ SUR L'ECRAN INFERIEUR A 320 PX -------------------------------------------------
 hr 
 {   margin-top: -20px;  }
 
+main 
+{   padding-right: 20px;}
+
 main h1
 {   font-size: 110%;  
     width: 90%;
-    margin-left: 20px;
+    margin-left: 30px;
     margin-top: 40px;  }
 
 #search_sentence
@@ -985,7 +982,8 @@ main h1
     margin-left: -10px;}
 
 #accomodation_marseille
-{   padding-right: 20px;}
+{   padding-left: 20px;
+    margin-right: 0px;}
 
 #accomodation_marseille h2, .popular h2, #chart, #block_activities h2
 {   font-size: 115%;  }
