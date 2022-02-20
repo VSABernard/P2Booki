@@ -238,11 +238,11 @@ form
 .block_card
 {   flex-direction: column;
     margin-top: 40px;
-    margin-right: 20px;
-    padding-right: 20px; }
+    margin-right: 0px;
+    padding-right: 0px; }
 
 .card
-{   height: 300px;
+{   height: 370px;
     width: 100%;
     padding: 5px;
     border-radius: 25px;    }
@@ -250,7 +250,7 @@ form
 .card h3 
 {   font-size: 180%; 
     font-weight: 800;
-    margin-top: -40px;
+    margin-top: 0px;
     padding-left: 10px; }
 
 .card p 
@@ -271,13 +271,11 @@ form
 .card_image
 {   flex: 1;
     width: 100%;
-    height: 270px;
     overflow: hidden;
     object-fit: cover; }
 
 .card_image img 
 {   width: 100%;
-    height: 80%;
     object-fit: cover;
     object-position: 50% 50%;
     border-top-left-radius: 25px;
@@ -559,6 +557,9 @@ SUR L'ECRAN INFERIEUR A 620 PX -------------------------------------------------
 {   margin-right: 0px;
     margin-left: 0px;  }
 
+.card
+{   height: 320px;}
+
 .block_info_popular h3
 {   width: 100%;
     font-size: 170%; }
@@ -710,14 +711,13 @@ main h1
 
 #accomodation_marseille
 {   padding-top: 0px;
-    padding-right: 50px;   }
+    padding-right: 10px;   }
 
 .block_card
-{   padding-left: 10px;
-    padding-right: 10px; }
+{   padding-left: 10px; }
 
 .card
-{   height: 220px }
+{   height: 220px; }
 
 .card_image
 {   width: 100%; }
@@ -730,7 +730,7 @@ main h1
 
 .card h3
 {   font-size: 120%; 
-    padding-top: 50px;   }
+    padding-top: 5px;   }
 
 .card p, .card_note 
 {   font-size: 90%;    }
