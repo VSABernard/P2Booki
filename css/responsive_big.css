@@ -1,0 +1,37 @@
+/* -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+SUR L'ECRAN PLUS DE 1440PX ----------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1440px) and (max-width: 2700px) {
+
+header, main 
+{   padding-left: 70px;
+    padding-right: 70px;   }
+
+.card_image img 
+{   object-position: 50% 60%;   }
+
+.show_more
+{   margin-top: 80px;}
+
+.card_popular
+{   height: 185px;  }
+    
+.card_popular img 
+{   width: 150px;   }
+    
+.card h3, .block_info_popular h3
+{ font-size: 110%;  }
+
+.card p,.block_info_popular p   
+{   font-size: 95%;    } 
+
+.card p
+{   margin-top: 10px;   }
+
+.block_info_popular h3 
+{   margin-top: 20px;   }
+
+.card_note_popular
+{   margin-top: 35px;   }
+
+}
