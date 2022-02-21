@@ -168,9 +168,12 @@ form
 /* SECTION 2 - HEBERGEMENTS ET POPULAIRES */
 
 .block_accomodation
-{   gap: 15px;
+{   flex-direction: column;
+    width: 100%;
+    gap: 15px;
     margin-top: 20px;
-    padding: 0px 20px; } 
+    padding-left: 20px; 
+    padding-right: 20px;} 
 
 #accomodation_marseille
 {   order: 2;
@@ -224,8 +227,10 @@ form
 /* POPULAIRES */
 
 .popular
-{   min-width: 100%;
-    margin-left: -20px; 
+{   display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    margin
     padding-bottom: 30px;
     border-radius: 0px;  }
 

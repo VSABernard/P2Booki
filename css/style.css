@@ -291,7 +291,7 @@ main h1
 #accomodation_marseille                                               
 {   display: flex;
     flex-direction: column;
-    flex: 2.5;  
+    flex: 3;  
     flex-wrap: wrap;
     background-color: #F2F2F2;
     border-radius: 15px;
@@ -313,18 +313,19 @@ main h1
     flex-direction: row;
     flex-wrap: wrap; 
     justify-content: space-between;
-    width: 90%;
+    max-width: 100%;
     height: fit-content;
     gap: 10px;
     padding-top: 10px;
-    padding-left: 20px; }
+    padding-left: 20px;
+    padding-right: 20px; }
 
 .card     
 {   display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 30%;
+    width: 32%;
     object-fit: cover;
     overflow: hidden;
     border-radius: 15px;
@@ -394,7 +395,7 @@ main h1
     flex: 1.5;
     justify-content: space-between;
     height: inherit;
-    width: 80%;
+    width: 100%;
     padding-right: 0px;
     padding-left: 5px;
     background-color: #F2F2F2;
@@ -432,9 +433,7 @@ main h1
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: stretch;
-    margin-bottom: 30px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: -10px 30px 10px 20px;
     padding-top: 0px;
     height: inherit; 
     width: 100%;
@@ -445,10 +444,10 @@ main h1
     flex-direction: row;
     align-content: flex-start;
     justify-content: space-between;
-    height: 120px;
+    height: 130px;
     max-width: 100%;
     padding: 5px;
-    margin: 10px 20px 20px 10px;
+    margin: 10px 0px;
     border-radius: 15px;
     background-color: white;
     box-shadow: 5px 5px 5px gainsboro; }
@@ -484,7 +483,8 @@ main h1
     width: 100%;
     font-size: 14px;
     color: black; 
-    padding-left: 10px;}
+    margin-top: 5px;
+    padding-left: 10px; }
 
 .block_info_popular p
 {   margin-top: -5px;
@@ -499,7 +499,7 @@ main h1
 {   display: flex;
     list-style-type: none;
     font-size: 10px;    
-    margin-top: 15px;
+    margin-top: 25px;
     padding-left: 10px; }
 
 /* SECTION 3 - PARTIES ACTIVITES */
