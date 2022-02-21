@@ -169,15 +169,17 @@ form
 
 .block_accomodation
 {   flex-direction: column;
-    width: 100%;
+    min-width: 100%;
     gap: 15px;
     margin-top: 20px;
+    margin-left: 0px;
     padding-left: 20px; 
-    padding-right: 20px;} 
+    padding-right: 20px; } 
 
 #accomodation_marseille
 {   order: 2;
     padding-top: 30px;
+    padding-left: 30px;
     background-color: white; }
 
 #accomodation_marseille h2
@@ -228,11 +230,13 @@ form
 
 .popular
 {   display: flex;
+    justify-content: center;
     flex-direction: column;
     min-width: 100%;
-    margin
+    margin-left: 0px;
+    padding-left: 40px;
     padding-bottom: 30px;
-    border-radius: 0px;  }
+    border-radius: 0px; }
 
 .popular h2, #chart
 {   font-size: 200%;
@@ -250,7 +254,7 @@ form
 
 .card_popular 
 {   height: 250px;
-    padding: 10px;
+    width: 90%;
     border-radius: 30px; }
 
 .card_popular img 
@@ -546,6 +550,10 @@ main h1
 {   font-size: 100%;
     margin-top: -20px;    }
 
+.block_card
+{   margin-left: 0px;   
+    padding-right: 10px;    }
+
 .block_info_popular h3 
 {   width: 100%;
     font-size: 150%; }
@@ -624,14 +632,15 @@ main h1
     padding-top: 20px;  }
 
 .block_accomodation
-{   padding-left: 30px; }
+{   padding-left: 0px; }
 
 #accomodation_marseille h2, .popular h2, #chart, #block_activities h2
 {   font-size: 140%;    }
 
 #accomodation_marseille
-{   padding-top: 0px;
-    padding-right: 10px;   }
+{   margin-left: 20px;
+    padding-top: 0px;
+    padding-right: 0px;   }
 
 .block_card
 {   padding-left: 10px; }
@@ -661,7 +670,7 @@ main h1
 .popular
 {   width: 100%;
     padding-left: 30px;
-    padding-right: 40px; }
+    padding-right: 60px; }
 
 .popular h2 
 {   margin-left: 10px;  }
@@ -791,10 +800,13 @@ main h1
     margin-top: -15px; }
 
 #accomodation_marseille h2, .popular h2, #chart, #block_activities h2
-{   font-size: 120%;    }
+{   font-size: 120%;  }
+       
+#accomodation_marseille
+{   margin-left: 0px;   }
 
 #accomodation_marseille h2
-{   margin-left: 20px;}
+{   margin-left: 10px; }
 
 .block_card
 {   margin-right: 0px;  
@@ -804,7 +816,7 @@ main h1
 {   padding: 0px; }
 
 .popular
-{   padding-right: 40px;
+{   padding-right: 50px;
     padding-left: 30px; }
 
 .card_popular 
@@ -880,6 +892,9 @@ main h1
 .card h3 
 {   font-size: 120%;
     padding-top: 20px;  }
+
+.group_card
+{   margin: 0px; }
 
 .card_popular 
 {   height: 130px;
@@ -1114,6 +1129,9 @@ main h1
     height: 180px; 
     margin-left: 10px; }
 
+.card img 
+{   height: 60%;}
+
 .card h3
 {   font-size: 90%;
     margin-top: -10px;
@@ -1141,7 +1159,7 @@ main h1
 .popular
 {   margin-top: -20px;
     padding-right: 10px;
-    padding-left: 20px;     }
+    padding-left: 40px;     }
 
 .card_popular
 {   width: 80%;
