@@ -32,7 +32,7 @@ header
     text-align: center;
     width: 100%; 
     height: 80%;
-    font-size: 26px;  
+    font-size: 24px;  
     margin-left: 0px;
     padding: 0px;
     border-bottom: 3px solid #f2f2f2;;  } 
@@ -140,8 +140,8 @@ form
 
 .icon
 {   position: absolute;
-    width: 70px;
-    height: 70px;
+    width: 63px;
+    height: 63px;
     font-size: 26px; }
         
 .text
@@ -423,8 +423,18 @@ main h1
 #search_sentence
 {   font-size: 160%;}
 
+.filter_item
+{   margin-left: 25px;
+    padding-left: 15px;
+    padding-top: 3px;
+    border: 3px solid #f2f2f2;}
+
+.icon
+{  margin-left: -45px;  }
+
 .text
-{   font-size: 160%;}
+{   font-size: 160%;
+    padding-left: 40px;}
 
 .information p 
 {   font-size: 140%;    }   
@@ -463,7 +473,9 @@ SUR L'ECRAN INFERIEUR A 620 PX -------------------------------------------------
 
 .filter_item
 {   height: 50px;
-    margin-left: 30px; }
+    margin-left: 30px;
+    margin-right: 0px;
+    padding-right: 0px; }
 
 .filter ul 
 {   margin-left: 0px;
@@ -471,7 +483,8 @@ SUR L'ECRAN INFERIEUR A 620 PX -------------------------------------------------
 
 .text
 {   font-size: 140%;
-    padding-left: 25px;}
+    padding-left: 15px;
+    padding-right: 10px;}
 
 .icon
 {   position: absolute;
@@ -480,8 +493,8 @@ SUR L'ECRAN INFERIEUR A 620 PX -------------------------------------------------
     font-size: 130%; }
 
 #info
-{   width: 25px;
-    height: 25px; 
+{   width: 22px;
+    height: 22px; 
     font-size: 70%;  }
 
 .block_card
@@ -514,10 +527,11 @@ main h1
 
 #map_marker
 {   width: 100%;
+    height: 100%;
     font-size: 140%;
     margin-top: 0px;
     margin-bottom: 5px;
-    padding: 20px; } 
+    padding: 32px 25px; } 
 
 #map_marker i 
 {   margin-bottom: 20px;  }
@@ -537,14 +551,15 @@ main h1
     margin-top: 15px; }
 
 .filter_item
-{   height: 50px; }
+{   height: 52px;
+    margin-top: 2px; }
 
 .filter ul 
 {    gap: 10px;}
 
 .text
 {   font-size: 120%;
-    padding-left: 23px;}
+    padding-left: 15px;}
 
 .information p 
 {   font-size: 100%;
@@ -616,8 +631,10 @@ main h1
 {   gap: 20px;  }
 
 .filter_item
-{   height: 120%;
-    border: 2px solid #f2f2f2; }
+{   height: 107%;
+    border: 2px solid #f2f2f2;
+    margin-left: 20px;
+    margin-right: 10px; }
 
 .text
 {   font-size: 110%;
@@ -626,7 +643,8 @@ main h1
 .icon
 {   height: 35px;
     width: 35px;
-    font-size: 120%; }
+    font-size: 120%;
+    margin-left: -30px; }
 
 .information
 {   margin-bottom: -40px; }
@@ -784,7 +802,7 @@ main h1
 
 .text
 {   font-size: 90%; 
-    padding-left: 5px; }   
+    padding-left: 7px; }   
 
 .icon
 {   height: 35px;
@@ -871,7 +889,10 @@ main h1
 {   width: 90%;
     font-size: 135%;
     margin-left: 30px;
-    padding-right: 50px;}
+    padding-right: 50px;    }
+
+.menu li
+{   font-size: 100%;}
 
 .section_search
 {   font-size: 90%;
@@ -883,13 +904,17 @@ main h1
 .filter h2 
 {   font-size: 115%;    }
 
+.filter_item
+{   padding-left: 0px;}
+
 .icon
-{   margin-top: 0px; }
+{   margin-top: 0px;
+    margin-left: -25px; }
 
 .text
-{   font-size: 75%;
-    margin-top: 5px;
-    padding-left: 5px;    }
+{   font-size: 85%;
+    margin-top: 3px;
+    padding-left: 12px;    }
 
 .block_accomodation
 {   padding-left: 15px;}
@@ -983,21 +1008,31 @@ main h1
     padding: 10px 15px 7px;    }
 
 .filter
-{   margin-left: 20px;  }
+{   margin-left: 10px; }
 
 .filter ul 
-{   gap: 5px;   }
+{   gap: 3px;   }
 
 .filter_item
-{   height: 28px; 
-    padding-right: 10px;    }
+{   height: 30px; 
+    padding-right: 0px;
+    margin-left: 25px;
+    margin-right: 0px;    }
 
 .icon
-{   width: 25px;
-    height: 25px;   }
+{   width: 30px;
+    height: 30px;
+    margin-top: -2px;
+    margin-left: -20px;   }
+
+.text
+{   font-size: 80%;  }
+
+.information
+{   margin-left: 15px;   }
 
 .information p 
-{   width: 70%; 
+{   width: 80%; 
     margin-left: -10px;}
 
 #accomodation_marseille
@@ -1050,25 +1085,27 @@ main h1
 {   font-size: 90%;
     width: 80%;
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 30px;
     padding-right: 10px; }
 
 #search_sentence
-{   font-size: 80%;
+{   font-size: 75%;
     width: 80%;
     margin-left: 20px;
     margin-bottom: 0px;  }
 
 .search_area
 {   margin-left: 20px;
+    margin-right: 0px;
     width: 100%;  }
 
 #map_marker
 {   margin-top: 0px;
-    padding: 15px 15px; }
+    padding: 15px 10px; }
 
 .srch
-{   height: 30px; }
+{   height: 30px;
+    font-size: 70%; }
 
 .button_2
     {   font-size: 90%;
@@ -1096,11 +1133,12 @@ main h1
 {   height: 20px;
     width: 20px;
     font-size: 60%; 
-    margin-left: -20px; }
+    margin-left: -10px; }
 
 .text
-{   font-size: 70%;
-    margin-top: 2px; }
+{   font-size: 70%; 
+    margin-top: -1px;
+    padding-left: 11px}
 
 .information
 {   width: 90%;
@@ -1108,14 +1146,17 @@ main h1
     margin-left: 15px;  }
 
 .information p 
-{   font-size: 70%;
-    margin-top: -20px;
-    margin-left: -10px;   }
+{   font-size: 65%;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: 0px;   }
 
 #info
-{   width: 10px;
+{   width: 12px;
     height: 12px;
-    font-size: 60%; }
+    font-size: 50%; 
+    padding-top: 10px;
+    padding-bottom: 10px;   }
 
 .block_accomodation
 {   padding: 0px;
@@ -1124,13 +1165,14 @@ main h1
 #accomodation_marseille
 {   width: 90%;
     margin-right: 0px;
+    margin-left: 5px;
     padding-right: 0px; }
 
 #accomodation_marseille h2, .popular h2, #chart, #block_activities h2
 {   font-size: 90%; }
 
 #accomodation_marseille h2
-{   margin-left: 20px; }
+{   margin-left: 15px; }
 
 .card
 {   width: 85%;
@@ -1141,7 +1183,7 @@ main h1
 {   height: 60%;}
 
 .card h3
-{   font-size: 90%;
+{   font-size: 80%;
     margin-top: -10px;
     margin-left: 0px;   }
 
@@ -1150,7 +1192,7 @@ main h1
     margin-left: 0px;   }
 
 .card_note
-{   font-size: 60%;
+{   font-size: 50%;
     padding-left: 40px;
     margin-bottom: 0px;  }
 
@@ -1166,8 +1208,8 @@ main h1
 
 .popular
 {   margin-top: -20px;
-    padding-right: 10px;
-    padding-left: 40px;     }
+    padding-right: 0px;
+    padding-left: 10px;     }
 
 .card_popular
 {   width: 80%;
@@ -1199,7 +1241,7 @@ main h1
 {   margin-top: -40px; }
 
 .activities h3
-{   font-size: 80%;
-    margin-left: 10px;  }
+{   font-size: 70%;
+    margin-left: 0px;  }
 
 }
