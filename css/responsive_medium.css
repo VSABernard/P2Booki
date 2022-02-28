@@ -12,14 +12,19 @@ main
     padding: 0px; }
 
 header
-{   padding-left: 0px;
+{   margin-left: 40px;
+    margin-right: 0px;
+    padding-left: 0px;
     padding-right: 0px; }
+
+.booki 
+{   margin-top: 30px;}
 
 .menu li
 {   font-size: 100%;    }
 
 main h1
-{   margin-top: 20px;
+{   margin-top: 40px;
     margin-left: 30px;    }
 
 .section_search
